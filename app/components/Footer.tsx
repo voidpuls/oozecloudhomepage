@@ -143,10 +143,10 @@ export default function Footer() {
             className="mt-12 pt-8 border-t border-gray-200 dark:border-white/10"
           >
             {/* HEY HEY HEY, WE CAN TALK ABOUT THIS PLEASE. DONT REMOVE IT, PLSSSS. think about it..  */}
-            {/* Look, remove the DezerNova add ur own hosting, but go above and change ur name to MY NAME AGAIN. come onn man, it would look like i worked for you. come on buddy, i know u want to keep it.  */}
+            {/* Look, remove the OozeCloud add ur own hosting, but go above and change ur name to MY NAME AGAIN. come onn man, it would look like i worked for you. come on buddy, i know u want to keep it.  */}
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-gray-500 dark:text-gray-500 text-sm mb-4 md:mb-0">
-                © {new Date().getFullYear()} DezerNova. All rights reserved.
+                © {new Date().getFullYear()} OozeCloud. All rights reserved.
               </div>
               <div className="flex items-center space-x-6">
                 <div className="flex items-center space-x-2">
