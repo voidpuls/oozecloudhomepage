@@ -59,7 +59,7 @@ export default function Footer() {
               </p>
               <div className="text-xs text-gray-500 dark:text-gray-500">
                 {/* HEY, HOLD UR HORSES, EITHER FULLY REMOVE IT OR KEEP IT. IT WOULD BE A SHAME IF I BUSTED YOU FOR CLAIMING YOU DID SOMETHING THAT U DIDN'T, RIGHT?  */}
-                Made by <span className="icon-text-primary font-medium">Anthony S</span>
+                Designed By <span className="icon-text-primary font-medium">Anthony S</span>
               </div>
             </motion.div>
             <motion.div
