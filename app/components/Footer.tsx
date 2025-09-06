@@ -26,7 +26,7 @@ export default function Footer() {
   const contactInfo = [
     { icon: Mail, label: t('footer.email'), value: "support@dezerx.com", href: "mailto:support@dezerx.com" },
     { icon: Phone, label: t('footer.phone'), value: "N/A", href: "tel:+15551234567" },
-    { icon: Gamepad2, label: t('footer.gamePanel'), value: "panel.dezerx.com", href: "https://panel.dezerx.com" },
+    { icon: Gamepad2, label: t('footer.gamePanel'), value: "dashboard.oozecloud.com", href: "https://dashboard.oozecloud.com" },
   ]
 
   return (
