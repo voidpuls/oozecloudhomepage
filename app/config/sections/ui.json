@@ -19,7 +19,7 @@
   "themeSwitcher": {
     "show": true,
     "position": "bottom-left",
-    "defaultColor": "blue",
+    "defaultColor": "green",
     "availableColors": [
       {
         "name": "orange",
@@ -27,9 +27,9 @@
         "label": "Orange"
       },
       {
-        "name": "blue",
-        "value": "rgba(37, 99, 235, 1)",
-        "label": "Blue"
+        "name": "green",
+        "value": "rgb(72, 246, 59, 1)",
+        "label": "Green"
       },
       {
         "name": "purple",
