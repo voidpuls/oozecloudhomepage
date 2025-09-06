@@ -82,11 +82,6 @@
         "loading": "lazy"
       },
       {
-        "name": "NeoProtect",
-        "src": "/advertisement/neoprotect.png",
-        "loading": "lazy"
-      },
-      {
         "name": "DezerX",
         "src": "/banners/Dezer-Banner.webp",
         "loading": "lazy"
