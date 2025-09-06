@@ -7,7 +7,7 @@
   "hero": {
     "title": {
       "suffixColor": "white",
-      "gameNameColor": "blue"
+      "gameNameColor": "green"
     },
     "games": [
       {
