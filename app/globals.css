@@ -92,37 +92,37 @@
   --foreground: rgba(37, 37, 37, 1);
   
   /* Primary Colors - Soft Blue (Default) */
-  --icon-primary: rgba(59, 130, 246, 1);
+  --icon-primary: rgb(72, 246, 59);
   --color-primary: rgba(52, 52, 52, 1);
   --color-secondary: rgba(247, 247, 247, 1);
-  --button-primary: rgba(59, 130, 246, 1);
+  --button-primary: rgb(59, 246, 125);
   --text-button-primary: rgba(255, 255, 255, 1);
   --card-primary: rgba(255, 255, 255, 1);
   --text-card-primary: rgba(37, 37, 37, 1);
   --border-primary: rgba(179, 179, 179, 0.486);
   --border-secondary: rgba(59, 130, 246, 0.205);
-  --text-secondary: rgba(59, 130, 246, 1);
-  --icon-text-primary: rgba(59, 130, 246, 1);
+  --text-secondary: rgb(59, 246, 96);
+  --icon-text-primary: rgb(59, 246, 106);
   --hover-gradient: radial-gradient(50% 50% at 50% 100%, rgba(59, 130, 246, 0.288) 0%, transparent 100%);
 }
 
 .dark {
   --background: rgba(37, 37, 37, 1);
-  --foreground: rgba(251, 251, 251, 1);
+  --foreground: rgb(208, 196, 196);
   
   /* Primary Colors - Dark Mode Soft Blue */
-  --icon-primary: rgba(59, 130, 246, 1);
+  --icon-primary: rgb(72, 246, 59);
   --color-primary: rgba(235, 235, 235, 1);
   --color-secondary: rgba(69, 69, 69, 1);
-  --button-primary: rgba(59, 130, 246, 1);
+  --button-primary: rgb(59, 246, 125);
   --text-button-primary: rgba(251, 251, 251, 1);
-  --card-primary: rgba(59, 130, 246, 0.301);
+  --card-primary: rgba(59, 246, 62, 0.301);
   --text-card-primary: rgba(251, 251, 251, 1);
   --border-primary: rgba(68, 68, 68, 0.486);
-  --border-secondary: rgba(59, 130, 246, 0.308);
-  --text-secondary: rgba(59, 130, 246, 1);
-  --icon-text-primary: rgba(59, 130, 246, 1);
-  --hover-gradient: radial-gradient(50% 50% at 50% 100%, rgba(59, 130, 246, 0.25) 0%, transparent 100%);
+  --border-secondary: rgba(96, 246, 59, 0.308);
+  --text-secondary: rgb(59, 246, 96);
+  --icon-text-primary: rgb(59, 246, 106);
+  --hover-gradient: radial-gradient(50% 50% at 50% 100%, rgba(68, 246, 59, 0.25) 0%, transparent 100%);
 }
 
 @layer base {

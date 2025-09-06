@@ -72,18 +72,18 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Anthony" }],
   creator: "Anthony",
-  publisher: "DezerX | NovaTemplate",
+  publisher: "OozeCloud | Hosting",
   category: "Game Hosting & Server Solutions",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://nova.dezerx.com",
+    url: "https://www.oozecloud.com",
     siteName: "OozeCloud - Game Hosting & Servers",
     title: "OozeCloud - Game Hosting, VPS & Dedicated Servers",
     description: "Premium game hosting, VPS, and dedicated server solutions. High-performance infrastructure for gaming communities and developers with DDoS protection.",
     images: [
       {
-        url: "https://nova.dezerx.com/meta/Banner.png",
+        url: "https://www.oozecloud.com/meta/Banner.png",
         width: 1200,
         height: 630,
         alt: "OozeCloud - Game Hosting, VPS & Dedicated Servers",
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "OozeCloud - Game Hosting, VPS & Dedicated Servers",
     description: "Premium game hosting and server solutions. High-performance infrastructure for gaming communities with DDoS protection and 24/7 support.",
-    images: ["https://nova.dezerx.com/meta/Banner.png"]
+    images: ["https://www.oozecloud.com/meta/Banner.png"]
   },
   robots: {
     index: true,
@@ -133,13 +133,13 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://nova.dezerx.com"
+    canonical: "https://www.oozecloud.com"
   },
   other: {
-    "msapplication-TileColor": "#1e40af",
+    "msapplication-TileColor": "#1eaf28ff",
     "msapplication-config": "/browserconfig.xml",
-    "terms-of-service": "https://nova.dezerx.com/terms-of-services",
-    "privacy-policy": "https://nova.dezerx.com/privacy-policy"
+    "terms-of-service": "https://www.oozecloud.com/terms-of-services",
+    "privacy-policy": "https://www.oozecloud.com/privacy-policy"
   }
 };
 // yo yo, wassup, ma name is big A aka the big ANTHONYYYYYYYYYYYYYYYYYY. like my work so far? rate it a 5 star on BBB pweaseeeeeeeeee
@@ -165,8 +165,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "OozeCloud",
-              "url": "https://nova.dezerx.com",
-              "logo": "https://nova.dezerx.com/meta/Logo.png",
+              "url": "https://www.oozecloud.com",
+              "logo": "https://www.oozecloud.com/meta/Logo.png",
               "description": "Premium game hosting, VPS, and dedicated server solutions for gaming communities and developers",
               "serviceType": ["Game Server Hosting", "VPS Hosting", "Dedicated Servers", "Cloud Infrastructure"],
               "areaServed": "Worldwide",
@@ -214,8 +214,8 @@ export default function RootLayout({
                 "@type": "Person",
                 "name": "Anthony "
               },
-              "termsOfService": "https://nova.dezerx.com/terms-of-services",
-              "privacyPolicy": "https://nova.dezerx.com/privacy-policy"
+              "termsOfService": "https://www.oozecloud.com/terms-of-services",
+              "privacyPolicy": "https://www.oozecloud.com/privacy-policy"
             })
           }}
         />
