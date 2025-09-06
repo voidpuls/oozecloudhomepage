@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "logo": "/banners/Dezer-Banner.webp",
+    "logo": "/advertisement/logo2.png",
     "brandName": "Ooze",
     "brandAccent": "Cloud"
   },
@@ -76,17 +76,7 @@
     ],
     "cycleInterval": 10000,
     "partners": [
-      {
-        "name": "Hetzner",
-        "src": "/advertisement/hetzner.png",
-        "loading": "lazy"
-      },
-      {
-        "name": "Intel",
-        "src": "/advertisement/intel.png",
-        "loading": "lazy"
-      },
-      {
+            {
         "name": "Pterodactyl",
         "src": "/advertisement/pterodactyl.png",
         "loading": "lazy"
@@ -94,11 +84,6 @@
       {
         "name": "NeoProtect",
         "src": "/advertisement/neoprotect.png",
-        "loading": "lazy"
-      },
-      {
-        "name": "Samsung",
-        "src": "/advertisement/samsung.png",
         "loading": "lazy"
       },
       {
