@@ -1,50 +1,54 @@
 {
   "termsOfService": {
     "title": "Terms of Service",
-    "lastUpdated": "July 2025",
+    "lastUpdated": "September 2025",
     "companyName": "OozeCloud",
     "websiteUrl": "https://www.oozecloud.com",
     "contactEmail": "legal@dezerx.com",
     "sections": [
       {
-        "title": "1. Acceptance of Terms",
-        "content": "By accessing and using our services, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service."
+        "title": "1. Introduction and Definitions",
+        "content": "These terms govern and control the relationship between the parties named herein. Revisions may be implemented to improve clarity and readability. You are advised to review and understand this agreement before using or conducting business with OozeCloud. 'You,' 'I,' 'the client,' or similar refer to the individual or entity purchasing or using our services. 'Us,' 'we,' 'our,' 'OozeCloud,' or 'the company' refer to OozeCloud. 'Services' include all products, website functionalities, and features provided by us."
       },
       {
-        "title": "2. Service Description",
-        "content": "We provide VPS hosting, dedicated servers, and game server hosting services. Our services are subject to availability and may be modified, suspended, or discontinued at any time without notice."
+        "title": "2. Binding Terms",
+        "content": "By using or purchasing our services, you agree to all terms. These are subject to periodic review and modification without prior notice. Continued use signifies acceptance of future revisions. This agreement remains valid until your business relationship with OozeCloud concludes and your account is closed. Continued use also implies acknowledgment that regional rights may be waived, but the company will comply with applicable laws."
       },
       {
-        "title": "3. User Responsibilities",
-        "content": "You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account."
+        "title": "3. Revisions to this Agreement",
+        "content": "We reserve the right to modify, revise, or amend this agreement at any time. Continued use or business with us constitutes acceptance. The last update was on September 4, 2025, with periodic revisions every three months. Clients are responsible for reviewing this document regularly."
       },
       {
-        "title": "4. Acceptable Use Policy",
-        "content": "You agree not to use our services for any unlawful purpose or in any way that could damage, disable, overburden, or impair our servers or networks. Prohibited activities include but are not limited to: illegal content distribution, spam, malware distribution, and DDoS attacks."
+        "title": "4. Warranties",
+        "content": "We make no representations or warranties regarding the accuracy or suitability of any information in this agreement."
       },
       {
-        "title": "5. Payment Terms",
-        "content": "Payment is due in advance for all services. We accept various payment methods as displayed on our website. Failure to pay may result in service suspension or termination."
+        "title": "5. General Governance and Arbitration",
+        "content": "No waiver or amendment is valid unless in writing, signed, and witnessed by an authorized OozeCloud representative. The agreement is governed by Utah law, USA. We prioritize data security and aim to comply with GDPR and US data regulations. Disputes are resolved via ICC arbitration at a location determined by OozeCloud, with mandatory arbitration prior to litigation. Efforts should be made to resolve disputes amicably beforehand."
       },
       {
-        "title": "6. Service Level Agreement",
-        "content": "We strive to maintain 99.9% uptime for our services. In case of extended downtime, service credits may be provided as outlined in our SLA documentation."
+        "title": "6. Fair Use Policy",
+        "content": "For 'unlimited' or 'unmetered' services, clients must adhere to fair use standards. We reserve the right to enforce limits, terminate services immediately upon violation, and notify clients if resource usage exceeds 5%. No client shall use more than 10% of system resources or network bandwidth."
       },
       {
-        "title": "7. Data Protection",
-        "content": "We implement appropriate security measures to protect your data. However, you are responsible for maintaining backups of your data. We are not liable for data loss."
+        "title": "7. Abuse and Prohibited Activities",
+        "content": "Activities such as hacking, hosting illegal content, spamming, distributing malware, hosting child pornography, DDoS, doxing, selling illicit codes, or any activity illegal under US law are strictly prohibited. Violations will result in immediate termination without refund."
       },
       {
-        "title": "8. Limitation of Liability",
-        "content": "Our liability is limited to the amount paid for the service in the preceding 12 months. We are not liable for any indirect, incidental, or consequential damages."
+        "title": "8. Termination of Service",
+        "content": "Services may be suspended or terminated at any time for violations, with all data permanently deleted after 15 days unless lawfully retained. Clients are responsible for backups. Data related to abuse-related terminations may be retained for up to 365 days and shared with authorities."
       },
       {
-        "title": "9. Termination",
-        "content": "Either party may terminate this agreement at any time. Upon termination, your access to the services will be discontinued, and any outstanding fees become immediately due."
+        "title": "9. Payments, Cancellations, and Chargebacks",
+        "content": "Clients agree to pay in advance. Invoices are generated 15 days prior to due date. Automatic payments may occur if on file. Refunds are issued at our discretion, mainly for unresolved technical issues, with specific policies for certain services. Cancellations prevent future billing; refunds are limited to payments within the last 180 days. Chargebacks are prohibited and will result in immediate suspension, with possible reporting to credit bureaus and fraud prevention agencies."
       },
       {
-        "title": "10. Changes to Terms",
-        "content": "We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting. Your continued use of the service constitutes acceptance of the modified terms."
+        "title": "10. Severability",
+        "content": "If any part of this agreement is deemed invalid or unenforceable, the remaining parts will remain in effect. Invalid provisions will be replaced with valid ones reflecting the original intent."
+      },
+      {
+        "title": "11. Indemnification and Miscellaneous",
+        "content": "You agree to indemnify OozeCloud against claims arising from your breach of this agreement, negligence, or illegal activities. We are not responsible for user-generated content. We may modify discounts or promotional offers at any time, and misuse of discount codes can lead to service termination."
       }
     ]
   },
@@ -56,44 +60,64 @@
     "contactEmail": "legal@dezerx.com",
     "sections": [
       {
-        "title": "1. Information We Collect",
-        "content": "We collect information you provide directly to us, such as when you create an account, make a purchase, or contact us for support. This may include your name, email address, billing information, and technical support communications."
+        "title": "1. Introduction",
+        "content": "This policy outlines how we use your data, what data we collect and store, how we protect stored data, data retention, and waivers of rights. It also outlines our procedures for handling cases under the general data protection regulations in the European Union, as well as our further commitment to supporting industry best security practices and supporting the protection of children while they utilize our platform."
       },
       {
-        "title": "2. How We Use Your Information",
-        "content": "We use the information we collect to provide, maintain, and improve our services, process transactions, send you technical notices and support messages, and communicate with you about products, services, and promotional offers."
+        "title": "2. Data Protection Officer",
+        "content": "Allocated Data Protection Officer: Mr Austin Pasmore, tasked with observing and overseeing the active functions of this policy."
       },
       {
-        "title": "3. Information Sharing",
-        "content": "We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy. We may share information with trusted service providers who assist us in operating our website and conducting our business."
+        "title": "3. Binding Nature",
+        "content": "This policy remains in effect for the duration of your use of our services, with an additional term of five (5) years. By utilizing any service or part of our platform owned or controlled by us, you accept and agree to all clauses within this policy."
       },
       {
-        "title": "4. Data Security",
-        "content": "We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure."
+        "title": "4. Children’s Privacy",
+        "content": "We may collect and store children’s information since our services are targeted towards children. Parental consent is required for children under 16. Children’s data is only shared with trusted third parties necessary for operation, and we never sell children’s data. Guardians are encouraged to review children’s activities online regularly. By using our platform, children and parents explicitly consent to this policy."
       },
       {
-        "title": "5. Cookies and Tracking",
-        "content": "We use cookies and similar tracking technologies to enhance your experience on our website. You can control cookie settings through your browser preferences."
+        "title": "5. Data Retention",
+        "content": "We retain data for as long as necessary, typically 5 years after the data is no longer reasonably needed, for taxation and financial obligations. Logs and request data are retained indefinitely for security purposes. Service files are retained as long as necessary, even after business termination."
       },
       {
-        "title": "6. Data Retention",
-        "content": "We retain your personal information for as long as necessary to provide our services and fulfill the purposes outlined in this policy, unless a longer retention period is required by law."
+        "title": "6. Data Erasure",
+        "content": "Clients can request data erasure by contacting Austin@oozecloud.com. Proof of identity may be required. The process involves a formal request, verification, and confirmation. Requests can be made by guardians for children under 13, with appropriate identification. If requests are lost or rejected, we are not responsible for damages."
       },
       {
-        "title": "7. Your Rights",
-        "content": "You have the right to access, update, or delete your personal information. You may also opt out of certain communications from us. Contact us to exercise these rights."
+        "title": "7. Right of Appeal",
+        "content": "If you believe your erasure request was mishandled, you can appeal within 28 days of our final response. Failure to appeal within this period waives your right to do so."
       },
       {
-        "title": "8. Third-Party Services",
-        "content": "Our website may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties."
+        "title": "8. Data We Collect",
+        "content": "We collect various data including personally-identifiable information (name, email, phone, address, IP, geolocation), cookies, log data (IP address, browser info, visit times), and data from third-party services such as Crisp Chat, Google Ads, Trustpilot, etc."
       },
       {
-        "title": "9. International Data Transfers",
-        "content": "Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place for such transfers."
+        "title": "9. Access Arrangements",
+        "content": "Requests for access are supported only with a valid legal document, directed to compliance@sparkedhost.com. Access is limited to authorized employees under confidentiality agreements."
       },
       {
-        "title": "10. Changes to This Policy",
-        "content": "We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the 'Last Updated' date."
+        "title": "10. Review of Data",
+        "content": "You may request a data export once every 30 days, with up to six (6) requests per year. Additional requests may incur an $80 fee. Requests are made via email to compliance@oozecloud.com. Processing may take up to one month, and proof of ID is required."
+      },
+      {
+        "title": "11. Data Breaches",
+        "content": "In case of a breach, affected parties will be notified within 48 hours. We will disclose known details and suspend compromised services until resolved. Our DPO will guide next steps."
+      },
+      {
+        "title": "12. Data Collection Consent",
+        "content": "Using our services constitutes consent to data collection and processing as outlined in this policy."
+      },
+      {
+        "title": "13. Third-Party Links",
+        "content": "Links to third-party sites are not our responsibility. We advise reviewing their privacy policies before engaging."
+      },
+      {
+        "title": "14. Changes to Policy",
+        "content": "We may update this policy at any time, posting changes on this page. Continued use of our services indicates acceptance of any updates."
+      },
+      {
+        "title": "15. Contacting the Data Protection Officer",
+        "content": "Questions or concerns? Contact our DPO at Voidpulse@oozecloud.com or Austin@oozecloud.com."
       }
     ]
   }
