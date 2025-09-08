@@ -3,7 +3,7 @@
     {
       "id": "budget",
       "name": "Budget EPYC",
-      "image": "/cpu/epyc.png"
+      "image": "/cpu/amd-epyc.png"
     }
   ],
   "locations": [
