@@ -55,11 +55,6 @@ export default function FeaturesSection() {
       title: t('features.resourceScaling'),
       description: t('features.resourceScalingDesc')
     },
-    {
-      icon: Cloud,
-      title: t('features.globalNetwork'),
-      description: t('features.globalNetworkDesc')
-    }
   ]
 
   const FeaturedCard = ({ feature, index }: { feature: Feature; index: number }) => {
