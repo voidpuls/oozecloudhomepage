@@ -201,14 +201,14 @@ export default function RootLayout({
                 ]
               },
               "sameAs": [
-                "https://discord.gg/Qrzn2enUP2"
+                "https://discord.gg/28KeyVFzSX"
               ],
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "customer service",
                 "availableLanguage": "English",
                 "serviceType": "Technical Support",
-                "url": "https://discord.gg/Qrzn2enUP2"
+                "url": "https://discord.gg/28KeyVFzSX"
               },
               "founder": {
                 "@type": "Person",

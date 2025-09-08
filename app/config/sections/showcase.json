@@ -35,14 +35,6 @@
         "description": "Our developers worked hard to bring you the best experience when hosting ur minecraft server. install mods in a single click.",
         "imageDark": "/showcase/dark/mod.png",
         "imageLight": "/showcase/light/mod.png"
-      },
-      {
-        "id": 4,
-        "icon": "HeartPulse",
-        "title": "Analytics",
-        "description": "View ur server analytic in 1 minute, giving you detailed logs and charts.",
-        "imageDark": "/showcase/dark/analytics.png",
-        "imageLight": "/showcase/light/analytics.png"
       }
     ],
     "settings": {
