@@ -27,11 +27,6 @@
         "label": "Orange"
       },
       {
-        "name": "green",
-        "value": "rgb(72, 246, 59, 1)",
-        "label": "Green"
-      },
-      {
         "name": "purple",
         "value": "rgba(147, 51, 234, 1)",
         "label": "Purple"
