@@ -8,7 +8,7 @@ const locations = [
   {
     name: "Germany ",
     flag: "/flags/germany.png",
-    cpu: "AMD Ryzen Threadripper PRO",
+    cpu: "AMD Ryzen",
     lat: 59.1109,
     lng: -8.6821,
   }
