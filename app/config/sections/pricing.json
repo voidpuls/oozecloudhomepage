@@ -11,7 +11,7 @@
         "titleKey": "pricingPlans.gameServers.title",
         "image": "/games.jpg",
         "descriptionKey": "pricingPlans.gameServers.description",
-        "basePrice": 4.99,
+        "basePrice": 0.00,
         "featuresKeys": [
           "pricingPlans.gameServers.features.instantDeployment",
           "pricingPlans.gameServers.features.ddosProtection",
@@ -21,7 +21,7 @@
         ],
         "buttonTextKey": "pricingPlans.gameServers.buttonText",
         "buttonStyle": "secondary",
-        "popular": false,
+        "popular": true,
         "link": "/games"
       },
       {
@@ -38,7 +38,7 @@
         ],
         "buttonTextKey": "pricingPlans.vpsHosting.buttonText",
         "buttonStyle": "primary",
-        "popular": true,
+        "popular": false,
         "link": "/vps"
       },
       {
