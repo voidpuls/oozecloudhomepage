@@ -16,22 +16,6 @@
   ],
   "locations": [
     {
-      "id": "singapore",
-      "name": "Singapore",
-      "flag": "/flags/singapore.png",
-      "displayName": "Singapore",
-      "cpu": "AMD Ryzen 9",
-      "availableCpus": ["ryzen-9"]
-    },
-    {
-      "id": "usa",
-      "name": "USA",
-      "flag": "/flags/usa.png",
-      "displayName": "USA",
-      "cpu": "AMD Ryzen 9",
-      "availableCpus": ["ryzen-9"]
-    },
-    {
       "id": "germany",
       "name": "Germany",
       "flag": "/flags/germany.png",

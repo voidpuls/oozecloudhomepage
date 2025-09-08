@@ -15,25 +15,11 @@
   ],
   "locations": [
     {
-      "id": "usa",
-      "name": "United States",
-      "flag": "/flags/usa.png",
-      "displayName": "USA",
-      "availableCpus": ["ryzen-7"]
-    },
-    {
       "id": "germany",
       "name": "Germany",
       "flag": "/flags/germany.png",
       "displayName": "Germany",
       "availableCpus": ["ryzen-7"]
-    },
-    {
-      "id": "singapore",
-      "name": "Singapore",
-      "flag": "/flags/singapore.png",
-      "displayName": "Singapore",
-      "availableCpus": ["ryzen-9"]
     }
   ],
   "plans": {

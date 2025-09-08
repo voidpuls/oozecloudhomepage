@@ -17,12 +17,6 @@
       "name": "Germany",
       "flag": "/flags/germany.png",
       "availablePlanTypes": ["budget"]
-    },
-    {
-      "id": "singapore",
-      "name": "Singapore",
-      "flag": "/flags/singapore.png",
-      "availablePlanTypes": ["budget", "premium"]
     }
   ],
   "games": [
