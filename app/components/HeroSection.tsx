@@ -353,7 +353,7 @@ export default function HeroSection() {
                     whileTap="tap"
                   >
                     <a
-                      href="#"
+                      href="https://www.oozecloud.com/games"
                       className="hidden sm:inline-flex text-gray-700 dark:text-white hover:bg-transparent hover:shadow-none px-8 py-3 rounded-lg orbitron-font text-md transition-all duration-300 items-center gap-2 no-underline"
                     >
                       {t('hero.learnMore')}
