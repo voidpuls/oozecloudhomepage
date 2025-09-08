@@ -6,20 +6,6 @@ import { memo, useMemo, useState, useEffect, useRef } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 const locations = [
   {
-    name: "Singapore",
-    flag: "/flags/singapore.png",
-    cpu: "AMD Ryzen 9 5950X",
-    lat: -20.3521,
-    lng: 103.8198,
-  },
-  {
-    name: "United States",
-    flag: "/flags/usa.png",
-    cpu: "AMD EPYC 7763",
-    lat: 30.7128,
-    lng: -142.0060, 
-  },
-  {
     name: "Germany ",
     flag: "/flags/germany.png",
     cpu: "AMD Ryzen Threadripper PRO",
