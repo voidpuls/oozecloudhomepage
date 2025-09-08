@@ -20,12 +20,6 @@
       "hasDropdown": false
     },
      {
-      "name": "Discord Bot",
-      "href": "/discord",
-      "icon": "FaDiscord",
-      "hasDropdown": false
-    },
-     {
       "name": "WebHosting",
       "href": "/webhosting",
       "icon": "GrServerCluster",
