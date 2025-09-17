@@ -3,12 +3,12 @@
     {
       "id": "budget",
       "name": "Budget Plan",
-      "image": "/cpu/budget.png"
+      "image": "/cpu/amd-epyc.png"
     },
     {
       "id": "premium",
-      "name": "Premium Node (Xeon 2690v4)",
-      "image": "/cpu/xeon2690v4.png"
+      "name": "Premium plan",
+      "image": "/cpu/ntel-xeon.webp"
     }
   ],
   "locations": [
@@ -163,8 +163,8 @@
       "id": "unturned",
       "name": "Unturned",
       "description": "Survive the zombie apocalypse in this open-world survival game",
-      "icon": "/icons/unturned-icon.webp",
-      "banner": "/banners/unturned-banner.webp",
+      "icon": "/icons/unturned.jpg",
+      "banner": "/banners/Unturned-banner.jpeg",
       "featured": false,
       "startingAt": "Free",
       "primaryColor": "#2E8B57",
@@ -299,8 +299,8 @@
       "id": "nodejs",
       "name": "Node JS",
       "description": "Host your NodeJS applications with reliable performance",
-      "icon": "/icons/nodejs-icon.webp",
-      "banner": "/banners/nodejs-banner.webp",
+      "icon": "/icons/nodejs.png",
+      "banner": "/banners/node.webp",
       "featured": true,
       "startingAt": "Free",
       "primaryColor": "#339933",
@@ -435,8 +435,8 @@
       "id": "python",
       "name": "Python",
       "description": "Host your Python applications with ease and reliability",
-      "icon": "/icons/python-icon.webp",
-      "banner": "/banners/python-banner.webp",
+      "icon": "/icons/python.webp",
+      "banner": "/banners/pythonbanner.webp",
       "featured": false,
       "startingAt": "Free",
       "primaryColor": "#306998",
