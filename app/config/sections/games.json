@@ -33,7 +33,7 @@
             "ram": "2 GB DDR4",
             "cpu": "2 AMD EPYC Cores",
             "storage": "100GB NVMe",
-            "price": 0.0,
+            "price": 0.00,
             "orderLink": ""
           },
           {
@@ -43,7 +43,7 @@
             "ram": "4 GB DDR4",
             "cpu": "3 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 4.0,
+            "price": 4.00,
             "orderLink": ""
           },
           {
@@ -53,7 +53,7 @@
             "ram": "5 GB DDR4",
             "cpu": "3 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 5.0,
+            "price": 5.00,
             "orderLink": ""
           },
           {
@@ -63,7 +63,7 @@
             "ram": "6 GB DDR4",
             "cpu": "3 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 6.0,
+            "price": 6.00,
             "orderLink": ""
           },
           {
@@ -73,7 +73,7 @@
             "ram": "7 GB DDR4",
             "cpu": "3 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 7.0,
+            "price": 7.00,
             "orderLink": ""
           },
           {
@@ -83,7 +83,7 @@
             "ram": "8 GB DDR4",
             "cpu": "3 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 8.0,
+            "price": 8.00,
             "orderLink": ""
           },
           {
@@ -93,7 +93,7 @@
             "ram": "9 GB DDR4",
             "cpu": "3 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 9.0,
+            "price": 9.00,
             "orderLink": ""
           },
           {
@@ -103,7 +103,7 @@
             "ram": "10 GB DDR4",
             "cpu": "3 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 10.0,
+            "price": 10.00,
             "orderLink": ""
           },
           {
@@ -113,7 +113,7 @@
             "ram": "12 GB DDR4",
             "cpu": "3 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 12.0,
+            "price": 12.00,
             "orderLink": ""
           },
           {
@@ -123,7 +123,7 @@
             "ram": "16 GB DDR4",
             "cpu": "3.5 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 16.0,
+            "price": 16.00,
             "orderLink": ""
           },
           {
@@ -133,7 +133,7 @@
             "ram": "20 GB DDR4",
             "cpu": "3.5 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 20.0,
+            "price": 20.00,
             "orderLink": ""
           },
           {
@@ -143,7 +143,7 @@
             "ram": "24 GB DDR4",
             "cpu": "4 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 24.0,
+            "price": 24.00,
             "orderLink": ""
           },
           {
@@ -153,7 +153,7 @@
             "ram": "32 GB DDR4",
             "cpu": "4.5 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 32.0,
+            "price": 32.00,
             "orderLink": ""
           }
         ]
