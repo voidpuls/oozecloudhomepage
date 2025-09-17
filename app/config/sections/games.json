@@ -51,12 +51,12 @@
       "icon": "/icons/minecraft-icon.webp",
       "banner": "/banners/minecraft-banners.webp",
       "featured": true,
-      "startingAt": "$0.00/mo",
+      "startingAt": "$4.00/mo",
       "primaryColor": "#4CAF50",
       "plans": {
         "standard": [
           {
-            "id": "minecraft-plan-free",
+            "id": "minecraft-free",
             "name": "Free Plan",
             "type": "standard",
             "cores": 2,
@@ -67,7 +67,7 @@
             "orderLink": ""
           },
           {
-            "id": "minecraft-plan-starter",
+            "id": "minecraft-starter",
             "name": "Starter Plan",
             "type": "standard",
             "cores": 2,
@@ -78,7 +78,7 @@
             "orderLink": ""
           },
           {
-            "id": "minecraft-plan-basic",
+            "id": "minecraft-basic",
             "name": "Basic Plan",
             "type": "standard",
             "cores": 2,
@@ -89,7 +89,7 @@
             "orderLink": ""
           },
           {
-            "id": "minecraft-plan-standard",
+            "id": "minecraft-standard",
             "name": "Standard Plan",
             "type": "standard",
             "cores": 4,
@@ -100,7 +100,7 @@
             "orderLink": ""
           },
           {
-            "id": "minecraft-plan-business",
+            "id": "minecraft-business",
             "name": "Business Plan",
             "type": "standard",
             "cores": 4,
@@ -111,7 +111,7 @@
             "orderLink": ""
           },
           {
-            "id": "minecraft-plan-pro",
+            "id": "minecraft-pro",
             "name": "Pro Plan",
             "type": "standard",
             "cores": 4,
@@ -119,6 +119,52 @@
             "storage": "300GB NVMe",
             "price": 32.00,
             "availableNodes": ["germany-main", "germany-premium"],
+            "orderLink": ""
+          }
+        ],
+        "premium": [
+          {
+            "id": "minecraft-premium-1",
+            "name": "Minecraft Premium 4GB",
+            "type": "premium",
+            "cores": 2,
+            "ram": "4 GB",
+            "storage": "Unmetered SSD",
+            "price": 5.00,
+            "availableNodes": ["germany-premium"],
+            "orderLink": ""
+          },
+          {
+            "id": "minecraft-premium-2",
+            "name": "Minecraft Premium 8GB",
+            "type": "premium",
+            "cores": 2,
+            "ram": "8 GB",
+            "storage": "Unmetered SSD",
+            "price": 10.00,
+            "availableNodes": ["germany-premium"],
+            "orderLink": ""
+          },
+          {
+            "id": "minecraft-premium-3",
+            "name": "Minecraft Premium 16GB",
+            "type": "premium",
+            "cores": 4,
+            "ram": "16 GB",
+            "storage": "Unmetered SSD",
+            "price": 20.00,
+            "availableNodes": ["germany-premium"],
+            "orderLink": ""
+          },
+          {
+            "id": "minecraft-premium-4",
+            "name": "Minecraft Premium 32GB",
+            "type": "premium",
+            "cores": 4,
+            "ram": "32 GB",
+            "storage": "Unmetered SSD",
+            "price": 40.00,
+            "availableNodes": ["germany-premium"],
             "orderLink": ""
           }
         ]
@@ -131,12 +177,12 @@
       "icon": "/icons/unturned.jpg",
       "banner": "/banners/Unturned-banner.jpeg",
       "featured": true,
-      "startingAt": "$0.00/mo",
+      "startingAt": "$4.00/mo",
       "primaryColor": "#FF6B35",
       "plans": {
         "standard": [
           {
-            "id": "unturned-plan-free",
+            "id": "unturned-free",
             "name": "Free Plan",
             "type": "standard",
             "cores": 2,
@@ -147,7 +193,7 @@
             "orderLink": ""
           },
           {
-            "id": "unturned-plan-starter",
+            "id": "unturned-starter",
             "name": "Starter Plan",
             "type": "standard",
             "cores": 2,
@@ -158,7 +204,7 @@
             "orderLink": ""
           },
           {
-            "id": "unturned-plan-basic",
+            "id": "unturned-basic",
             "name": "Basic Plan",
             "type": "standard",
             "cores": 2,
@@ -169,7 +215,7 @@
             "orderLink": ""
           },
           {
-            "id": "unturned-plan-standard",
+            "id": "unturned-standard",
             "name": "Standard Plan",
             "type": "standard",
             "cores": 4,
@@ -180,7 +226,7 @@
             "orderLink": ""
           },
           {
-            "id": "unturned-plan-business",
+            "id": "unturned-business",
             "name": "Business Plan",
             "type": "standard",
             "cores": 4,
@@ -191,7 +237,7 @@
             "orderLink": ""
           },
           {
-            "id": "unturned-plan-pro",
+            "id": "unturned-pro",
             "name": "Pro Plan",
             "type": "standard",
             "cores": 4,
@@ -199,6 +245,52 @@
             "storage": "300GB NVMe",
             "price": 32.00,
             "availableNodes": ["germany-main", "germany-premium"],
+            "orderLink": ""
+          }
+        ],
+        "premium": [
+          {
+            "id": "unturned-premium-1",
+            "name": "Unturned Premium 4GB",
+            "type": "premium",
+            "cores": 2,
+            "ram": "4 GB",
+            "storage": "Unmetered SSD",
+            "price": 5.00,
+            "availableNodes": ["germany-premium"],
+            "orderLink": ""
+          },
+          {
+            "id": "unturned-premium-2",
+            "name": "Unturned Premium 8GB",
+            "type": "premium",
+            "cores": 2,
+            "ram": "8 GB",
+            "storage": "Unmetered SSD",
+            "price": 10.00,
+            "availableNodes": ["germany-premium"],
+            "orderLink": ""
+          },
+          {
+            "id": "unturned-premium-3",
+            "name": "Unturned Premium 16GB",
+            "type": "premium",
+            "cores": 4,
+            "ram": "16 GB",
+            "storage": "Unmetered SSD",
+            "price": 20.00,
+            "availableNodes": ["germany-premium"],
+            "orderLink": ""
+          },
+          {
+            "id": "unturned-premium-4",
+            "name": "Unturned Premium 32GB",
+            "type": "premium",
+            "cores": 4,
+            "ram": "32 GB",
+            "storage": "Unmetered SSD",
+            "price": 40.00,
+            "availableNodes": ["germany-premium"],
             "orderLink": ""
           }
         ]
@@ -211,73 +303,73 @@
       "icon": "/icons/nodejs.png",
       "banner": "/banners/node.webp",
       "featured": true,
-      "startingAt": "$0.00/mo",
+      "startingAt": "$0.90/mo",
       "primaryColor": "#339933",
       "plans": {
         "standard": [
           {
-            "id": "discord-nodejs-plan-free",
+            "id": "discord-nodejs-free",
             "name": "Free Plan",
             "type": "standard",
             "cores": 2,
             "ram": "2 GB DDR4",
             "storage": "100GB NVMe",
-            "price": 0.00,
+            "price": 0.90,
             "availableNodes": ["germany-main"],
             "orderLink": ""
           },
           {
-            "id": "discord-nodejs-plan-starter",
+            "id": "discord-nodejs-starter",
             "name": "Starter Plan",
             "type": "standard",
             "cores": 2,
             "ram": "4 GB DDR4",
             "storage": "150GB NVMe",
-            "price": 4.00,
+            "price": 1.80,
             "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "discord-nodejs-plan-basic",
+            "id": "discord-nodejs-basic",
             "name": "Basic Plan",
             "type": "standard",
             "cores": 2,
             "ram": "8 GB DDR4",
             "storage": "200GB NVMe",
-            "price": 8.00,
+            "price": 2.70,
             "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "discord-nodejs-plan-standard",
+            "id": "discord-nodejs-standard",
             "name": "Standard Plan",
             "type": "standard",
             "cores": 4,
             "ram": "16 GB DDR4",
             "storage": "250GB NVMe",
-            "price": 16.00,
+            "price": 4.50,
             "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "discord-nodejs-plan-business",
+            "id": "discord-nodejs-business",
             "name": "Business Plan",
             "type": "standard",
             "cores": 4,
             "ram": "24 GB DDR4",
             "storage": "300GB NVMe",
-            "price": 24.00,
+            "price": 6.30,
             "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "discord-nodejs-plan-pro",
+            "id": "discord-nodejs-pro",
             "name": "Pro Plan",
             "type": "standard",
             "cores": 4,
             "ram": "32 GB DDR4",
             "storage": "300GB NVMe",
-            "price": 32.00,
+            "price": 8.10,
             "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           }
@@ -291,62 +383,62 @@
       "icon": "/icons/python.webp",
       "banner": "/banners/pythonbanner.webp",
       "featured": true,
-      "startingAt": "$0.00/mo",
+      "startingAt": "$0.90/mo",
       "primaryColor": "#3776ab",
       "plans": {
         "standard": [
           {
-            "id": "python-plan-free",
+            "id": "python-free",
             "name": "Free Plan",
             "type": "standard",
             "cores": 2,
             "ram": "2 GB DDR4",
             "storage": "100GB NVMe",
-            "price": 0.00,
+            "price": 0.90,
             "availableNodes": ["germany-main"],
             "orderLink": ""
           },
           {
-            "id": "python-plan-starter",
+            "id": "python-starter",
             "name": "Starter Plan",
             "type": "standard",
             "cores": 2,
             "ram": "4 GB DDR4",
             "storage": "150GB NVMe",
-            "price": 4.00,
+            "price": 1.80,
             "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "python-plan-basic",
+            "id": "python-basic",
             "name": "Basic Plan",
             "type": "standard",
             "cores": 2,
             "ram": "8 GB DDR4",
             "storage": "200GB NVMe",
-            "price": 8.00,
+            "price": 2.70,
             "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "python-plan-standard",
+            "id": "python-standard",
             "name": "Standard Plan",
             "type": "standard",
             "cores": 4,
             "ram": "16 GB DDR4",
             "storage": "250GB NVMe",
-            "price": 16.00,
+            "price": 4.50,
             "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "python-plan-pro",
+            "id": "python-pro",
             "name": "Pro Plan",
             "type": "standard",
             "cores": 4,
             "ram": "32 GB DDR4",
             "storage": "300GB NVMe",
-            "price": 32.00,
+            "price": 6.30,
             "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           }
