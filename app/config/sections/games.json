@@ -15,7 +15,7 @@
     {
       "id": "global",
       "name": "Global",
-      "flag": "/flags/global.png",
+      "flag": "/flags/germany.png",
       "availablePlanTypes": [
         "budget",
         "premium"
