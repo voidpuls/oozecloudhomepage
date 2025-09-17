@@ -1,9 +1,14 @@
 {
   "planTypes": [
     {
-      "id": "budget",
-      "name": "Budget EPYC",
+      "id": "standard",
+      "name": "Standard",
       "image": "/cpu/amd-epyc.png"
+    },
+    {
+      "id": "premium",
+      "name": "Premium",
+      "image": "/cpu/xeon-2690v4.png"
     }
   ],
   "locations": [
@@ -11,7 +16,31 @@
       "id": "germany",
       "name": "Germany",
       "flag": "/flags/germany.png",
-      "availablePlanTypes": ["budget"]
+      "availablePlanTypes": ["standard", "premium"]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "germany-main",
+      "name": "Germany Main Node",
+      "cpu": "AMD EPYC",
+      "features": [
+        "High performance AMD EPYC CPU",
+        "Low latency connection",
+        "Dedicated resources"
+      ],
+      "link": "/nodes/germany-main"
+    },
+    {
+      "id": "germany-premium",
+      "name": "Germany Premium Node",
+      "cpu": "Xeon 2690v4",
+      "features": [
+        "High performance Intel Xeon CPU",
+        "Low latency connection",
+        "Dedicated resources"
+      ],
+      "link": "/nodes/germany-premium"
     }
   ],
   "games": [
@@ -25,135 +54,71 @@
       "startingAt": "$0.00/mo",
       "primaryColor": "#4CAF50",
       "plans": {
-        "budget": [
+        "standard": [
           {
-            "id": "minecraft-budget-1",
-            "name": "Slime Spore",
-            "type": "budget",
+            "id": "minecraft-plan-free",
+            "name": "Free Plan",
+            "type": "standard",
+            "cores": 2,
             "ram": "2 GB DDR4",
-            "cpu": "2 AMD EPYC Cores",
             "storage": "100GB NVMe",
             "price": 0.00,
+            "availableNodes": ["germany-main"],
             "orderLink": ""
           },
           {
-            "id": "minecraft-budget-2",
-            "name": "Slime Bud",
-            "type": "budget",
+            "id": "minecraft-plan-starter",
+            "name": "Starter Plan",
+            "type": "standard",
+            "cores": 2,
             "ram": "4 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
+            "storage": "150GB NVMe",
             "price": 4.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "minecraft-budget-3",
-            "name": "Slime Bloom",
-            "type": "budget",
-            "ram": "5 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 5.00,
-            "orderLink": ""
-          },
-          {
-            "id": "minecraft-budget-4",
-            "name": "Slime Stream",
-            "type": "budget",
-            "ram": "6 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 6.00,
-            "orderLink": ""
-          },
-          {
-            "id": "minecraft-budget-5",
-            "name": "Slime Core",
-            "type": "budget",
-            "ram": "7 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 7.00,
-            "orderLink": ""
-          },
-          {
-            "id": "minecraft-budget-6",
-            "name": "Slime Forge",
-            "type": "budget",
+            "id": "minecraft-plan-basic",
+            "name": "Basic Plan",
+            "type": "standard",
+            "cores": 2,
             "ram": "8 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
+            "storage": "200GB NVMe",
             "price": 8.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "minecraft-budget-7",
-            "name": "Slime Nexus",
-            "type": "budget",
-            "ram": "9 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 9.00,
-            "orderLink": ""
-          },
-          {
-            "id": "minecraft-budget-8",
-            "name": "Slime Surge",
-            "type": "budget",
-            "ram": "10 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 10.00,
-            "orderLink": ""
-          },
-          {
-            "id": "minecraft-budget-9",
-            "name": "Slime Prime",
-            "type": "budget",
-            "ram": "12 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 12.00,
-            "orderLink": ""
-          },
-          {
-            "id": "minecraft-budget-10",
-            "name": "Slime Elite",
-            "type": "budget",
+            "id": "minecraft-plan-standard",
+            "name": "Standard Plan",
+            "type": "standard",
+            "cores": 4,
             "ram": "16 GB DDR4",
-            "cpu": "3.5 AMD EPYC Cores",
             "storage": "250GB NVMe",
             "price": 16.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "minecraft-budget-11",
-            "name": "Slime Mastery",
-            "type": "budget",
-            "ram": "20 GB DDR4",
-            "cpu": "3.5 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 20.00,
-            "orderLink": ""
-          },
-          {
-            "id": "minecraft-budget-12",
-            "name": "Slime Ascend",
-            "type": "budget",
+            "id": "minecraft-plan-business",
+            "name": "Business Plan",
+            "type": "standard",
+            "cores": 4,
             "ram": "24 GB DDR4",
-            "cpu": "4 AMD EPYC Cores",
-            "storage": "250GB NVMe",
+            "storage": "300GB NVMe",
             "price": 24.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "minecraft-budget-13",
-            "name": "Slime Eternal",
-            "type": "budget",
+            "id": "minecraft-plan-pro",
+            "name": "Pro Plan",
+            "type": "standard",
+            "cores": 4,
             "ram": "32 GB DDR4",
-            "cpu": "4.5 AMD EPYC Cores",
-            "storage": "250GB NVMe",
+            "storage": "300GB NVMe",
             "price": 32.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           }
         ]
@@ -169,135 +134,71 @@
       "startingAt": "$0.00/mo",
       "primaryColor": "#FF6B35",
       "plans": {
-        "budget": [
+        "standard": [
           {
-            "id": "unturned-budget-1",
-            "name": "Slime Spore",
-            "type": "budget",
+            "id": "unturned-plan-free",
+            "name": "Free Plan",
+            "type": "standard",
+            "cores": 2,
             "ram": "2 GB DDR4",
-            "cpu": "2 AMD EPYC Cores",
             "storage": "100GB NVMe",
-            "price": 0.0,
+            "price": 0.00,
+            "availableNodes": ["germany-main"],
             "orderLink": ""
           },
           {
-            "id": "unturned-budget-2",
-            "name": "Slime Bud",
-            "type": "budget",
+            "id": "unturned-plan-starter",
+            "name": "Starter Plan",
+            "type": "standard",
+            "cores": 2,
             "ram": "4 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 4.0,
+            "storage": "150GB NVMe",
+            "price": 4.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "unturned-budget-3",
-            "name": "Slime Bloom",
-            "type": "budget",
-            "ram": "5 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 5.0,
-            "orderLink": ""
-          },
-          {
-            "id": "unturned-budget-4",
-            "name": "Slime Stream",
-            "type": "budget",
-            "ram": "6 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 6.0,
-            "orderLink": ""
-          },
-          {
-            "id": "unturned-budget-5",
-            "name": "Slime Core",
-            "type": "budget",
-            "ram": "7 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 7.0,
-            "orderLink": ""
-          },
-          {
-            "id": "unturned-budget-6",
-            "name": "Slime Forge",
-            "type": "budget",
+            "id": "unturned-plan-basic",
+            "name": "Basic Plan",
+            "type": "standard",
+            "cores": 2,
             "ram": "8 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 8.0,
+            "storage": "200GB NVMe",
+            "price": 8.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "unturned-budget-7",
-            "name": "Slime Nexus",
-            "type": "budget",
-            "ram": "9 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 9.0,
-            "orderLink": ""
-          },
-          {
-            "id": "unturned-budget-8",
-            "name": "Slime Surge",
-            "type": "budget",
-            "ram": "10 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 10.0,
-            "orderLink": ""
-          },
-          {
-            "id": "unturned-budget-9",
-            "name": "Slime Prime",
-            "type": "budget",
-            "ram": "12 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 12.0,
-            "orderLink": ""
-          },
-          {
-            "id": "unturned-budget-10",
-            "name": "Slime Elite",
-            "type": "budget",
+            "id": "unturned-plan-standard",
+            "name": "Standard Plan",
+            "type": "standard",
+            "cores": 4,
             "ram": "16 GB DDR4",
-            "cpu": "3.5 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 16.0,
+            "price": 16.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "unturned-budget-11",
-            "name": "Slime Mastery",
-            "type": "budget",
-            "ram": "20 GB DDR4",
-            "cpu": "3.5 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 20.0,
-            "orderLink": ""
-          },
-          {
-            "id": "unturned-budget-12",
-            "name": "Slime Ascend",
-            "type": "budget",
+            "id": "unturned-plan-business",
+            "name": "Business Plan",
+            "type": "standard",
+            "cores": 4,
             "ram": "24 GB DDR4",
-            "cpu": "4 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 24.0,
+            "storage": "300GB NVMe",
+            "price": 24.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "unturned-budget-13",
-            "name": "Slime Eternal",
-            "type": "budget",
+            "id": "unturned-plan-pro",
+            "name": "Pro Plan",
+            "type": "standard",
+            "cores": 4,
             "ram": "32 GB DDR4",
-            "cpu": "4.5 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 32.0,
+            "storage": "300GB NVMe",
+            "price": 32.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           }
         ]
@@ -313,135 +214,71 @@
       "startingAt": "$0.00/mo",
       "primaryColor": "#339933",
       "plans": {
-        "budget": [
+        "standard": [
           {
-            "id": "discord-budget-1",
-            "name": "Slime Spore",
-            "type": "budget",
+            "id": "discord-nodejs-plan-free",
+            "name": "Free Plan",
+            "type": "standard",
+            "cores": 2,
             "ram": "2 GB DDR4",
-            "cpu": "2 AMD EPYC Cores",
             "storage": "100GB NVMe",
-            "price": 0.0,
+            "price": 0.00,
+            "availableNodes": ["germany-main"],
             "orderLink": ""
           },
           {
-            "id": "discord-budget-2",
-            "name": "Slime Bud",
-            "type": "budget",
+            "id": "discord-nodejs-plan-starter",
+            "name": "Starter Plan",
+            "type": "standard",
+            "cores": 2,
             "ram": "4 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 4.0,
+            "storage": "150GB NVMe",
+            "price": 4.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "discord-budget-3",
-            "name": "Slime Bloom",
-            "type": "budget",
-            "ram": "5 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 5.0,
-            "orderLink": ""
-          },
-          {
-            "id": "discord-budget-4",
-            "name": "Slime Stream",
-            "type": "budget",
-            "ram": "6 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 6.0,
-            "orderLink": ""
-          },
-          {
-            "id": "discord-budget-5",
-            "name": "Slime Core",
-            "type": "budget",
-            "ram": "7 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 7.0,
-            "orderLink": ""
-          },
-          {
-            "id": "discord-budget-6",
-            "name": "Slime Forge",
-            "type": "budget",
+            "id": "discord-nodejs-plan-basic",
+            "name": "Basic Plan",
+            "type": "standard",
+            "cores": 2,
             "ram": "8 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 8.0,
+            "storage": "200GB NVMe",
+            "price": 8.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "discord-budget-7",
-            "name": "Slime Nexus",
-            "type": "budget",
-            "ram": "9 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 9.0,
-            "orderLink": ""
-          },
-          {
-            "id": "discord-budget-8",
-            "name": "Slime Surge",
-            "type": "budget",
-            "ram": "10 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 10.0,
-            "orderLink": ""
-          },
-          {
-            "id": "discord-budget-9",
-            "name": "Slime Prime",
-            "type": "budget",
-            "ram": "12 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 12.0,
-            "orderLink": ""
-          },
-          {
-            "id": "discord-budget-10",
-            "name": "Slime Elite",
-            "type": "budget",
+            "id": "discord-nodejs-plan-standard",
+            "name": "Standard Plan",
+            "type": "standard",
+            "cores": 4,
             "ram": "16 GB DDR4",
-            "cpu": "3.5 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 16.0,
+            "price": 16.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "discord-budget-11",
-            "name": "Slime Mastery",
-            "type": "budget",
-            "ram": "20 GB DDR4",
-            "cpu": "3.5 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 20.0,
-            "orderLink": ""
-          },
-          {
-            "id": "discord-budget-12",
-            "name": "Slime Ascend",
-            "type": "budget",
+            "id": "discord-nodejs-plan-business",
+            "name": "Business Plan",
+            "type": "standard",
+            "cores": 4,
             "ram": "24 GB DDR4",
-            "cpu": "4 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 24.0,
+            "storage": "300GB NVMe",
+            "price": 24.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "discord-budget-13",
-            "name": "Slime Eternal",
-            "type": "budget",
+            "id": "discord-nodejs-plan-pro",
+            "name": "Pro Plan",
+            "type": "standard",
+            "cores": 4,
             "ram": "32 GB DDR4",
-            "cpu": "4.5 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 32.0,
+            "storage": "300GB NVMe",
+            "price": 32.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           }
         ]
@@ -457,135 +294,60 @@
       "startingAt": "$0.00/mo",
       "primaryColor": "#3776ab",
       "plans": {
-        "budget": [
+        "standard": [
           {
-            "id": "python-budget-1",
-            "name": "Slime Spore",
-            "type": "budget",
+            "id": "python-plan-free",
+            "name": "Free Plan",
+            "type": "standard",
+            "cores": 2,
             "ram": "2 GB DDR4",
-            "cpu": "2 AMD EPYC Cores",
             "storage": "100GB NVMe",
-            "price": 0.0,
+            "price": 0.00,
+            "availableNodes": ["germany-main"],
             "orderLink": ""
           },
           {
-            "id": "python-budget-2",
-            "name": "Slime Bud",
-            "type": "budget",
+            "id": "python-plan-starter",
+            "name": "Starter Plan",
+            "type": "standard",
+            "cores": 2,
             "ram": "4 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 4.0,
+            "storage": "150GB NVMe",
+            "price": 4.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "python-budget-3",
-            "name": "Slime Bloom",
-            "type": "budget",
-            "ram": "5 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 5.0,
-            "orderLink": ""
-          },
-          {
-            "id": "python-budget-4",
-            "name": "Slime Stream",
-            "type": "budget",
-            "ram": "6 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 6.0,
-            "orderLink": ""
-          },
-          {
-            "id": "python-budget-5",
-            "name": "Slime Core",
-            "type": "budget",
-            "ram": "7 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 7.0,
-            "orderLink": ""
-          },
-          {
-            "id": "python-budget-6",
-            "name": "Slime Forge",
-            "type": "budget",
+            "id": "python-plan-basic",
+            "name": "Basic Plan",
+            "type": "standard",
+            "cores": 2,
             "ram": "8 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 8.0,
+            "storage": "200GB NVMe",
+            "price": 8.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "python-budget-7",
-            "name": "Slime Nexus",
-            "type": "budget",
-            "ram": "9 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 9.0,
-            "orderLink": ""
-          },
-          {
-            "id": "python-budget-8",
-            "name": "Slime Surge",
-            "type": "budget",
-            "ram": "10 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 10.0,
-            "orderLink": ""
-          },
-          {
-            "id": "python-budget-9",
-            "name": "Slime Prime",
-            "type": "budget",
-            "ram": "12 GB DDR4",
-            "cpu": "3 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 12.0,
-            "orderLink": ""
-          },
-          {
-            "id": "python-budget-10",
-            "name": "Slime Elite",
-            "type": "budget",
+            "id": "python-plan-standard",
+            "name": "Standard Plan",
+            "type": "standard",
+            "cores": 4,
             "ram": "16 GB DDR4",
-            "cpu": "3.5 AMD EPYC Cores",
             "storage": "250GB NVMe",
-            "price": 16.0,
+            "price": 16.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           },
           {
-            "id": "python-budget-11",
-            "name": "Slime Mastery",
-            "type": "budget",
-            "ram": "20 GB DDR4",
-            "cpu": "3.5 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 20.0,
-            "orderLink": ""
-          },
-          {
-            "id": "python-budget-12",
-            "name": "Slime Ascend",
-            "type": "budget",
-            "ram": "24 GB DDR4",
-            "cpu": "4 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 24.0,
-            "orderLink": ""
-          },
-          {
-            "id": "python-budget-13",
-            "name": "Slime Eternal",
-            "type": "budget",
+            "id": "python-plan-pro",
+            "name": "Pro Plan",
+            "type": "standard",
+            "cores": 4,
             "ram": "32 GB DDR4",
-            "cpu": "4.5 AMD EPYC Cores",
-            "storage": "250GB NVMe",
-            "price": 32.0,
+            "storage": "300GB NVMe",
+            "price": 32.00,
+            "availableNodes": ["germany-main", "germany-premium"],
             "orderLink": ""
           }
         ]
