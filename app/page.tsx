@@ -21,7 +21,6 @@ export default function Home() {
         <HeroSection />
         <FeaturesSection />
         <LocationsSection />
-        <PricingSection />
         <FAQSection />
         <PanelShowcase />
         <Footer />
