@@ -22,7 +22,8 @@
         "buttonTextKey": "Get Started",
         "buttonStyle": "secondary",
         "popular": false,
-        "link": "/plans/free"
+        "link": "/plans/free",
+        "availableNodes": ["main"]
       },
       {
         "titleKey": "pricingPlans.starter.title",
@@ -39,7 +40,8 @@
         "buttonTextKey": "Choose Starter",
         "buttonStyle": "primary",
         "popular": false,
-        "link": "/plans/starter"
+        "link": "/plans/starter",
+        "availableNodes": ["main", "germany"]
       },
       {
         "titleKey": "pricingPlans.basic.title",
@@ -56,7 +58,8 @@
         "buttonTextKey": "Choose Basic",
         "buttonStyle": "primary",
         "popular": false,
-        "link": "/plans/basic"
+        "link": "/plans/basic",
+        "availableNodes": ["main", "germany"]
       },
       {
         "titleKey": "pricingPlans.standard.title",
@@ -73,7 +76,8 @@
         "buttonTextKey": "Choose Standard",
         "buttonStyle": "primary",
         "popular": true,
-        "link": "/plans/standard"
+        "link": "/plans/standard",
+        "availableNodes": ["main", "germany"]
       },
       {
         "titleKey": "pricingPlans.business.title",
@@ -90,7 +94,8 @@
         "buttonTextKey": "Choose Business",
         "buttonStyle": "primary",
         "popular": false,
-        "link": "/plans/business"
+        "link": "/plans/business",
+        "availableNodes": ["main", "germany"]
       },
       {
         "titleKey": "pricingPlans.pro.title",
@@ -107,7 +112,21 @@
         "buttonTextKey": "Choose Pro",
         "buttonStyle": "primary",
         "popular": false,
-        "link": "/plans/pro"
+        "link": "/plans/pro",
+        "availableNodes": ["main", "germany"]
+      }
+    ],
+    "nodes": [
+      {
+        "location": "Germany",
+        "cpu": "Xeon 2690v4",
+        "features": [
+          "High performance Intel Xeon CPU",
+          "Low latency connection",
+          "Dedicated resources",
+          "Optimized for European clients"
+        ],
+        "link": "/nodes/germany"
       }
     ],
     "footer": {
