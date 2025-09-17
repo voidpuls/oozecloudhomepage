@@ -8,72 +8,106 @@
     "description": "Select the perfect hosting solution for your needs",
     "plans": [
       {
-        "titleKey": "pricingPlans.gameServers.title",
-        "image": "/games.jpg",
-        "descriptionKey": "pricingPlans.gameServers.description",
+        "titleKey": "pricingPlans.free.title",
+        "image": "/free.png",
+        "descriptionKey": "pricingPlans.free.description",
         "basePrice": 0.00,
         "featuresKeys": [
-          "pricingPlans.gameServers.features.instantDeployment",
-          "pricingPlans.gameServers.features.ddosProtection",
-          "pricingPlans.gameServers.features.support247",
-          "pricingPlans.gameServers.features.customConfigurations",
-          "pricingPlans.gameServers.features.modSupport"
+          "Instant deployment",
+          "DDoS protection",
+          "24/7 support",
+          "Custom configurations",
+          "Mod support"
         ],
-        "buttonTextKey": "pricingPlans.gameServers.buttonText",
+        "buttonTextKey": "Get Started",
         "buttonStyle": "secondary",
-        "popular": true,
-        "link": "/games"
+        "popular": false,
+        "link": "/plans/free"
       },
       {
-        "titleKey": "pricingPlans.vpsHosting.title",
-        "image": "/vps.png",
-        "descriptionKey": "pricingPlans.vpsHosting.description",
-        "basePrice": 9.99,
+        "titleKey": "pricingPlans.starter.title",
+        "image": "/starter.png",
+        "descriptionKey": "pricingPlans.starter.description",
+        "basePrice": 4.00,
         "featuresKeys": [
-          "pricingPlans.vpsHosting.features.fullRootAccess",
-          "pricingPlans.vpsHosting.features.ssdStorage",
-          "pricingPlans.vpsHosting.features.uptime",
-          "pricingPlans.vpsHosting.features.multipleOS",
-          "pricingPlans.vpsHosting.features.backupIncluded"
+          "Instant deployment",
+          "DDoS protection",
+          "24/7 support",
+          "Custom configurations",
+          "Mod support"
         ],
-        "buttonTextKey": "pricingPlans.vpsHosting.buttonText",
+        "buttonTextKey": "Choose Starter",
         "buttonStyle": "primary",
         "popular": false,
-        "link": "/vps"
+        "link": "/plans/starter"
       },
       {
-        "titleKey": "pricingPlans.dedicatedServers.title",
-        "image": "/dedicated.webp",
-        "descriptionKey": "pricingPlans.dedicatedServers.description",
-        "basePrice": 99.99,
+        "titleKey": "pricingPlans.basic.title",
+        "image": "/basic.png",
+        "descriptionKey": "pricingPlans.basic.description",
+        "basePrice": 8.00,
         "featuresKeys": [
-          "pricingPlans.dedicatedServers.features.bareMetalPerformance",
-          "pricingPlans.dedicatedServers.features.customHardware",
-          "pricingPlans.dedicatedServers.features.enterpriseSupport",
-          "pricingPlans.dedicatedServers.features.advancedSecurity",
-          "pricingPlans.dedicatedServers.features.managedServices"
+          "Instant deployment",
+          "DDoS protection",
+          "24/7 support",
+          "Custom configurations",
+          "Mod support"
         ],
-        "buttonTextKey": "pricingPlans.dedicatedServers.buttonText",
-        "buttonStyle": "secondary",
+        "buttonTextKey": "Choose Basic",
+        "buttonStyle": "primary",
         "popular": false,
-        "link": "/dedicated"
+        "link": "/plans/basic"
       },
       {
-        "titleKey": "pricingPlans.webHosting.title",
-        "image": "/banners/webhosting.png",
-        "descriptionKey": "pricingPlans.webHosting.description",
-        "basePrice": 2.99,
+        "titleKey": "pricingPlans.standard.title",
+        "image": "/standard.png",
+        "descriptionKey": "pricingPlans.standard.description",
+        "basePrice": 16.00,
         "featuresKeys": [
-          "pricingPlans.webHosting.features.ssdStorage",
-          "pricingPlans.webHosting.features.uptime",
-          "pricingPlans.webHosting.features.support247",
-          "pricingPlans.webHosting.features.freeSSL",
-          "pricingPlans.webHosting.features.dailyBackups"
+          "Instant deployment",
+          "DDoS protection",
+          "24/7 support",
+          "Custom configurations",
+          "Mod support"
         ],
-        "buttonTextKey": "pricingPlans.webHosting.buttonText",
-        "buttonStyle": "secondary",
+        "buttonTextKey": "Choose Standard",
+        "buttonStyle": "primary",
+        "popular": true,
+        "link": "/plans/standard"
+      },
+      {
+        "titleKey": "pricingPlans.business.title",
+        "image": "/business.png",
+        "descriptionKey": "pricingPlans.business.description",
+        "basePrice": 24.00,
+        "featuresKeys": [
+          "Instant deployment",
+          "DDoS protection",
+          "24/7 support",
+          "Custom configurations",
+          "Mod support"
+        ],
+        "buttonTextKey": "Choose Business",
+        "buttonStyle": "primary",
         "popular": false,
-        "link": "/webhosting"
+        "link": "/plans/business"
+      },
+      {
+        "titleKey": "pricingPlans.pro.title",
+        "image": "/pro.png",
+        "descriptionKey": "pricingPlans.pro.description",
+        "basePrice": 32.00,
+        "featuresKeys": [
+          "Instant deployment",
+          "DDoS protection",
+          "24/7 support",
+          "Custom configurations",
+          "Mod support"
+        ],
+        "buttonTextKey": "Choose Pro",
+        "buttonStyle": "primary",
+        "popular": false,
+        "link": "/plans/pro"
       }
     ],
     "footer": {
