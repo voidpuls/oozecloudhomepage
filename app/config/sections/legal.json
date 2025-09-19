@@ -6,51 +6,55 @@
     "websiteUrl": "https://www.oozecloud.com",
     "contactEmail": "legal@oozecloud.com",
     "sections": [
-      {
-        "title": "1. Introduction and Definitions",
-        "content": "These terms govern and control the relationship between the parties named herein. Revisions may be implemented to improve clarity and readability. You are advised to review and understand this agreement before using or conducting business with OozeCloud. 'You,' 'I,' 'the client,' or similar refer to the individual or entity purchasing or using our services. 'Us,' 'we,' 'our,' 'OozeCloud,' or 'the company' refer to OozeCloud. 'Services' include all products, website functionalities, and features provided by us."
-      },
-      {
-        "title": "2. Binding Terms",
-        "content": "By using or purchasing our services, you agree to all terms. These are subject to periodic review and modification without prior notice. Continued use signifies acceptance of future revisions. This agreement remains valid until your business relationship with OozeCloud concludes and your account is closed. Continued use also implies acknowledgment that regional rights may be waived, but the company will comply with applicable laws."
-      },
-      {
-        "title": "3. Revisions to this Agreement",
-        "content": "We reserve the right to modify, revise, or amend this agreement at any time. Continued use or business with us constitutes acceptance. The last update was on September 4, 2025, with periodic revisions every three months. Clients are responsible for reviewing this document regularly."
-      },
-      {
-        "title": "4. Warranties",
-        "content": "We make no representations or warranties regarding the accuracy or suitability of any information in this agreement."
-      },
-      {
-        "title": "5. General Governance and Arbitration",
-        "content": "No waiver or amendment is valid unless in writing, signed, and witnessed by an authorized OozeCloud representative. The agreement is governed by Utah law, USA. We prioritize data security and aim to comply with GDPR and US data regulations. Disputes are resolved via ICC arbitration at a location determined by OozeCloud, with mandatory arbitration prior to litigation. Efforts should be made to resolve disputes amicably beforehand."
-      },
-      {
-        "title": "6. Fair Use Policy",
-        "content": "For 'unlimited' or 'unmetered' services, clients must adhere to fair use standards. We reserve the right to enforce limits, terminate services immediately upon violation, and notify clients if resource usage exceeds 5%. No client shall use more than 10% of system resources or network bandwidth."
-      },
-      {
-        "title": "7. Abuse and Prohibited Activities",
-        "content": "Activities such as hacking, hosting illegal content, spamming, distributing malware, hosting child pornography, DDoS, doxing, selling illicit codes, or any activity illegal under US law are strictly prohibited. Violations will result in immediate termination without refund."
-      },
-      {
-        "title": "8. Termination of Service",
-        "content": "Services may be suspended or terminated at any time for violations, with all data permanently deleted after 15 days unless lawfully retained. Clients are responsible for backups. Data related to abuse-related terminations may be retained for up to 365 days and shared with authorities."
-      },
-      {
-        "title": "9. Payments, Cancellations, and Chargebacks",
-        "content": "Clients agree to pay in advance. Invoices are generated 15 days prior to due date. Automatic payments may occur if on file. Refunds are issued at our discretion, mainly for unresolved technical issues, with specific policies for certain services. Cancellations prevent future billing; refunds are limited to payments within the last 180 days. Chargebacks are prohibited and will result in immediate suspension, with possible reporting to credit bureaus and fraud prevention agencies."
-      },
-      {
-        "title": "10. Severability",
-        "content": "If any part of this agreement is deemed invalid or unenforceable, the remaining parts will remain in effect. Invalid provisions will be replaced with valid ones reflecting the original intent."
-      },
-      {
-        "title": "11. Indemnification and Miscellaneous",
-        "content": "You agree to indemnify OozeCloud against claims arising from your breach of this agreement, negligence, or illegal activities. We are not responsible for user-generated content. We may modify discounts or promotional offers at any time, and misuse of discount codes can lead to service termination."
-      }
-    ]
+    {
+      "title": "1. Introduction and Definitions",
+      "content": "These terms govern and control the relationship between the parties named herein. Revisions may be implemented to improve clarity and readability. You are advised to review and understand this agreement before using or conducting business with OozeCloud. 'You,' 'I,' 'the client,' or similar refer to the individual or entity purchasing or using our services. 'Us,' 'we,' 'our,' 'OozeCloud,' or 'the company' refer to OozeCloud. 'Services' include all products, website functionalities, and features provided by us."
+    },
+    {
+      "title": "2. Binding Terms",
+      "content": "By using or purchasing our services, you agree to all terms. These are subject to periodic review and modification without prior notice. Continued use signifies acceptance of future revisions. This agreement remains valid until your business relationship with OozeCloud concludes and your account is closed. Continued use also implies acknowledgment that regional rights may be waived, but the company will comply with applicable laws."
+    },
+    {
+      "title": "3. Revisions to this Agreement",
+      "content": "We reserve the right to modify, revise, or amend this agreement at any time. Continued use or business with us constitutes acceptance. The last update was on September 4, 2025, with periodic revisions every three months. Clients are responsible for reviewing this document regularly."
+    },
+    {
+      "title": "4. Warranties",
+      "content": "We make no representations or warranties regarding the accuracy or suitability of any information in this agreement."
+    },
+    {
+      "title": "5. General Governance and Arbitration",
+      "content": "No waiver or amendment is valid unless in writing, signed, and witnessed by an authorized OozeCloud representative. The agreement is governed by Utah law, USA. We prioritize data security and aim to comply with GDPR and US data regulations. Disputes are resolved via ICC arbitration at a location determined by OozeCloud, with mandatory arbitration prior to litigation. Efforts should be made to resolve disputes amicably beforehand."
+    },
+    {
+      "title": "6. Fair Use Policy",
+      "content": "For 'unlimited' or 'unmetered' services, clients must adhere to fair use standards. We reserve the right to enforce limits, terminate services immediately upon violation, and notify clients if resource usage exceeds 5%. No client shall use more than 10% of system resources or network bandwidth."
+    },
+    {
+      "title": "7. Abuse and Prohibited Activities",
+      "content": "Activities such as hacking, hosting illegal content, spamming, distributing malware, hosting child pornography, DDoS, doxing, selling illicit codes, or any activity illegal under US law are strictly prohibited. Additionally, contest winners must ensure their servers do not contain any illegal content, including piracy or cracked software. Servers found to host illegal content or piracy will be subject to removal from our hosting services immediately. Violations will result in immediate termination without refund."
+    },
+    {
+      "title": "8. Termination of Service",
+      "content": "Services may be suspended or terminated at any time for violations, with all data permanently deleted after 15 days unless lawfully retained. Clients are responsible for backups. Data related to abuse-related terminations may be retained for up to 365 days and shared with authorities. OozeCloud is not liable for any data corruption, loss, or damage that occurs during service provision or after, and clients are advised to maintain their own backups."
+    },
+    {
+      "title": "9. Payments, Cancellations, and Chargebacks",
+      "content": "Clients agree to pay in advance. Invoices are generated 15 days prior to due date. Automatic payments may occur if on file. Refunds are issued at our discretion, mainly for unresolved technical issues, with specific policies for certain services. Cancellations prevent future billing; refunds are limited to payments within the last 180 days. Chargebacks are prohibited and will result in immediate suspension, with possible reporting to credit bureaus and fraud prevention agencies."
+    },
+    {
+      "title": "10. Severability",
+      "content": "If any part of this agreement is deemed invalid or unenforceable, the remaining parts will remain in effect. Invalid provisions will be replaced with valid ones reflecting the original intent."
+    },
+    {
+      "title": "11. Indemnification and Miscellaneous",
+      "content": "You agree to indemnify OozeCloud against claims arising from your breach of this agreement, negligence, or illegal activities. We are not responsible for user-generated content. We may modify discounts or promotional offers at any time, and misuse of discount codes can lead to service termination."
+    },
+    {
+      "title": "12. Support and Ticket Response",
+      "content": "Support tickets will be responded to based on their priority level and the time of receipt. Urgent issues will receive prompt attention, while lower priority inquiries may experience longer response times. Clients are encouraged to provide detailed information to facilitate efficient resolution."
+    }
+  ]
   },
   "privacyPolicy": {
     "title": "Privacy Policy",
