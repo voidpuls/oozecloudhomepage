@@ -1,7 +1,7 @@
 {
   "termsOfService": {
     "title": "Terms of Service",
-    "lastUpdated": "September 2025",
+    "lastUpdated": "September 19 2025",
     "companyName": "OozeCloud",
     "websiteUrl": "https://www.oozecloud.com",
     "contactEmail": "legal@oozecloud.com",
@@ -57,72 +57,76 @@
   ]
   },
   "privacyPolicy": {
-    "title": "Privacy Policy",
-    "lastUpdated": "July 2025",
-    "companyName": "OozeCloud",
-    "websiteUrl": "https://www.oozecloud.com",
-    "contactEmail": "legal@oozecloud.com",
-    "sections": [
-      {
-        "title": "1. Introduction",
-        "content": "This policy outlines how we use your data, what data we collect and store, how we protect stored data, data retention, and waivers of rights. It also outlines our procedures for handling cases under the general data protection regulations in the European Union, as well as our further commitment to supporting industry best security practices and supporting the protection of children while they utilize our platform."
-      },
-      {
-        "title": "2. Data Protection Officer",
-        "content": "Allocated Data Protection Officer: Mr Austin Pasmore, tasked with observing and overseeing the active functions of this policy."
-      },
-      {
-        "title": "3. Binding Nature",
-        "content": "This policy remains in effect for the duration of your use of our services, with an additional term of five (5) years. By utilizing any service or part of our platform owned or controlled by us, you accept and agree to all clauses within this policy."
-      },
-      {
-        "title": "4. Children’s Privacy",
-        "content": "We may collect and store children’s information since our services are targeted towards children. Parental consent is required for children under 16. Children’s data is only shared with trusted third parties necessary for operation, and we never sell children’s data. Guardians are encouraged to review children’s activities online regularly. By using our platform, children and parents explicitly consent to this policy."
-      },
-      {
-        "title": "5. Data Retention",
-        "content": "We retain data for as long as necessary, typically 5 years after the data is no longer reasonably needed, for taxation and financial obligations. Logs and request data are retained indefinitely for security purposes. Service files are retained as long as necessary, even after business termination."
-      },
-      {
-        "title": "6. Data Erasure",
-        "content": "Clients can request data erasure by contacting Austin@oozecloud.com. Proof of identity may be required. The process involves a formal request, verification, and confirmation. Requests can be made by guardians for children under 13, with appropriate identification. If requests are lost or rejected, we are not responsible for damages."
-      },
-      {
-        "title": "7. Right of Appeal",
-        "content": "If you believe your erasure request was mishandled, you can appeal within 28 days of our final response. Failure to appeal within this period waives your right to do so."
-      },
-      {
-        "title": "8. Data We Collect",
-        "content": "We collect various data including personally-identifiable information (name, email, phone, address, IP, geolocation), cookies, log data (IP address, browser info, visit times), and data from third-party services such as Crisp Chat, Google Ads, Trustpilot, etc."
-      },
-      {
-        "title": "9. Access Arrangements",
-        "content": "Requests for access are supported only with a valid legal document, directed to compliance@sparkedhost.com. Access is limited to authorized employees under confidentiality agreements."
-      },
-      {
-        "title": "10. Review of Data",
-        "content": "You may request a data export once every 30 days, with up to six (6) requests per year. Additional requests may incur an $80 fee. Requests are made via email to compliance@oozecloud.com. Processing may take up to one month, and proof of ID is required."
-      },
-      {
-        "title": "11. Data Breaches",
-        "content": "In case of a breach, affected parties will be notified within 48 hours. We will disclose known details and suspend compromised services until resolved. Our DPO will guide next steps."
-      },
-      {
-        "title": "12. Data Collection Consent",
-        "content": "Using our services constitutes consent to data collection and processing as outlined in this policy."
-      },
-      {
-        "title": "13. Third-Party Links",
-        "content": "Links to third-party sites are not our responsibility. We advise reviewing their privacy policies before engaging."
-      },
-      {
-        "title": "14. Changes to Policy",
-        "content": "We may update this policy at any time, posting changes on this page. Continued use of our services indicates acceptance of any updates."
-      },
-      {
-        "title": "15. Contacting the Data Protection Officer",
-        "content": "Questions or concerns? Contact our DPO at Voidpulse@oozecloud.com or Austin@oozecloud.com."
-      }
-    ]
+  "title": "Privacy Policy",
+  "lastUpdated": "September 19 2025",
+  "companyName": "OozeCloud",
+  "websiteUrl": "https://www.oozecloud.com",
+  "contactEmail": "legal@oozecloud.com",
+  "sections": [
+    {
+      "title": "1. Introduction",
+      "content": "This policy outlines how we use your data, what data we collect and store, how we protect stored data, data retention, and waivers of rights. It also outlines our procedures for handling cases under the general data protection regulations in the European Union, as well as our further commitment to supporting industry best security practices and supporting the protection of children while they utilize our platform."
+    },
+    {
+      "title": "2. Data Protection Officer",
+      "content": "Allocated Data Protection Officer: Mr Austin Pasmore, tasked with observing and overseeing the active functions of this policy."
+    },
+    {
+      "title": "3. Binding Nature",
+      "content": "This policy remains in effect for the duration of your use of our services, with an additional term of five (5) years. By utilizing any service or part of our platform owned or controlled by us, you accept and agree to all clauses within this policy."
+    },
+    {
+      "title": "4. Children’s Privacy",
+      "content": "We may collect and store children’s information since our services are targeted towards children. Parental consent is required for children under 16. Children’s data is only shared with trusted third parties necessary for operation, and we never sell children’s data. Guardians are encouraged to review children’s activities online regularly. By using our platform, children and parents explicitly consent to this policy."
+    },
+    {
+      "title": "5. Data Retention",
+      "content": "We retain data for as long as necessary, typically 5 years after the data is no longer reasonably needed, for taxation and financial obligations. Logs and request data are retained indefinitely for security purposes. Service files are retained as long as necessary, even after business termination."
+    },
+    {
+      "title": "6. Data Erasure",
+      "content": "Clients can request data erasure by contacting Austin@oozecloud.com. Proof of identity may be required. The process involves a formal request, verification, and confirmation. Requests can be made by guardians for children under 13, with appropriate identification. If requests are lost or rejected, we are not responsible for damages."
+    },
+    {
+      "title": "7. Right of Appeal",
+      "content": "If you believe your erasure request was mishandled, you can appeal within 28 days of our final response. Failure to appeal within this period waives your right to do so."
+    },
+    {
+      "title": "8. Data We Collect",
+      "content": "We collect various data including personally-identifiable information (name, email, phone, address, IP, geolocation), cookies, log data (IP address, browser info, visit times), and data from third-party services such as Crisp Chat, Google Ads, Trustpilot, etc."
+    },
+    {
+      "title": "9. Access Arrangements",
+      "content": "Requests for access are supported only with a valid legal document, directed to compliance@sparkedhost.com. Access is limited to authorized employees under confidentiality agreements."
+    },
+    {
+      "title": "10. Review of Data",
+      "content": "You may request a data export once every 30 days, with up to six (6) requests per year. Additional requests may incur an $80 fee. Requests are made via email to compliance@oozecloud.com. Processing may take up to one month, and proof of ID is required."
+    },
+    {
+      "title": "11. Data Breaches",
+      "content": "In case of a breach, affected parties will be notified within 48 hours. We will disclose known details and suspend compromised services until resolved. Our DPO will guide next steps."
+    },
+    {
+      "title": "12. Data Collection Consent",
+      "content": "Using our services constitutes consent to data collection and processing as outlined in this policy."
+    },
+    {
+      "title": "13. Third-Party Links",
+      "content": "Links to third-party sites are not our responsibility. We advise reviewing their privacy policies before engaging."
+    },
+    {
+      "title": "14. Automated Content Scanning System",
+      "content": "We have implemented an automated scanning system that monitors content uploaded or shared on our platform. Access to this system is restricted to the CEO and Co-CEO. These executives receive notifications of any detected malicious or illegal content, enabling prompt action and ensuring compliance with legal and safety standards."
+    },
+    {
+      "title": "15. Changes to Policy",
+      "content": "We may update this policy at any time, posting changes on this page. Continued use of our services indicates acceptance of any updates."
+    },
+    {
+      "title": "16. Contacting the Data Protection Officer",
+      "content": "Questions or concerns? Contact our DPO at Voidpulse@oozecloud.com or Austin@oozecloud.com."
+    }
+  ]
   }
 }
