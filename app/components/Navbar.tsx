@@ -310,10 +310,7 @@ const Navbar: React.FC = () => {
     const navKey = itemName.toLowerCase().replace(/\s+/g, '');
     switch (navKey) {
       case 'games': return t('navbar.games');
-      case 'cloud': return t('navbar.cloud');
-      case 'dedicated': return t('navbar.dedicated');
       case 'discordbot': return t('navbar.discord');
-      case 'webhosting': return t('navbar.webhosting');
       case 'legal': return t('navbar.legal');
       default: return itemName;
     }
