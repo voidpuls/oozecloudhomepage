@@ -23,11 +23,6 @@ export default function Footer() {
     { name: t('navbar.privacyPolicy'), href: "/privacy-policy" },
   ]
 
-  const contactInfo = [
-    { icon: Mail, label: t('footer.email'), value: "kbennet475@gmail.com", href: "mailto:kbennet475@gmail.com" },
-    { icon: Gamepad2, label: t('footer.gamePanel'), value: "dashboard.oozecloud.com", href: "https://dashboard.oozecloud.com" },
-  ]
-
   return (
     <div className="relative">
       <div className="relative z-30 -mb-47">
