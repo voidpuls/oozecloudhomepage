@@ -17,34 +17,6 @@ export default function Footer() {
 
   const description = "Next-generation web hosting solutions for businesses of all sizes. Fast, secure, and reliable."
 
-  const socialLinks = [
-    {
-      icon: "Facebook",
-      label: "Facebook",
-      href: "#",
-    },
-    {
-      icon: "Twitter",
-      label: "Twitter",
-      href: "#",
-    },
-    {
-      icon: "Instagram",
-      label: "Instagram",
-      href: "#",
-    },
-    {
-      icon: "Linkedin",
-      label: "LinkedIn",
-      href: "#",
-    },
-    {
-      icon: "Github",
-      label: "GitHub",
-      href: "#",
-    },
-  ]
-
   const columns = [
     {
       title: "Hosting",

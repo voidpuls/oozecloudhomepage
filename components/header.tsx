@@ -70,7 +70,7 @@ export default function Header() {
         },
         {
           text: "Status",
-          href: "/status",
+          href: "https://status.oozecloud.com/",
           icon: <Activity className="w-4 h-4 mr-2" />,
         },
       ],
@@ -82,12 +82,12 @@ export default function Header() {
       items: [
         {
           text: "Dashboard",
-          href: "https://example.com/dashboard",
+          href: "https://dashboard.oozecloud.com/",
           icon: <Users className="w-4 h-4 mr-2" />,
         },
         {
           text: "Billing",
-          href: "https://example.com/billing",
+          href: "https://billing.oozecloud.com/",
           icon: <Users className="w-4 h-4 mr-2" />,
         }
       ]
