@@ -118,18 +118,6 @@ export default function Footer() {
               </span>
             </Link>
             <p className="max-w-xs mb-6 text-gray-400">{description}</p>
-            <div className="flex gap-4">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  className="text-gray-400 hover:text-green-400 transition-colors p-2 rounded-full hover:bg-green-500/10"
-                >
-                  {iconComponents[social.icon]}
-                  <span className="sr-only">{social.label}</span>
-                </a>
-              ))}
-            </div>
           </div>
 
           {columns.map((column, columnIndex) => (
