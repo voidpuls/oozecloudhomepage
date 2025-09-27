@@ -168,7 +168,7 @@ export default function AboutUsPage() {
                   className="w-full h-auto transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                  <p className="text-white text-sm">Our state-of-the-art data center in New York</p>
+                  <p className="text-white text-sm">Our game panel!</p>
                 </div>
               </div>
             </div>
