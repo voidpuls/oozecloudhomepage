@@ -15,7 +15,7 @@ export const metadata = {
 export default function DiscordBotPage() {
   // Discord bot hosting plans
   // Hosting Plans Data with Features
-  const hostingPlans = [
+  const discordBotPlans = [
     {
       name: "Free Plan",
       price: "$0.00",
