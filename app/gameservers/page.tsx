@@ -14,25 +14,19 @@ export default function GameServersPage() {
   const gameOptions = [
     {
       name: "Minecraft",
-      description: "Host your own Minecraft server with mods, plugins, and custom configurations.",
+      description: "Start your Minecraft server on the fastest hardware, with great proven value, at prices lower than you'll find anywhere else. Are you playing with friends? Running a bunch of mods? Starting a community? We have the server for you.",
       image: "/images/minecraft.webp",
       href: "/gameservers/minecraft",
     },
     {
-      name: "Rust",
-      description: "Create your Rust server with custom maps, mods, and advanced configuration options.",
-      image: "/images/rust.png",
-      href: "/gameservers/rust",
-    },
-    {
-      name: "FiveM",
-      description: "Build your GTA V roleplay community with a customized FiveM server.",
+      name: "Unturned",
+      description: "Build your own post-apocalyptic adventure with fast, reliable, and fully customizable Unturned server hosting. Control everything you need to get started.",
       image: "/images/fivem.webp",
-      href: "/gameservers/fivem",
+      href: "/gameservers/unturned",
     },
     {
       name: "Discord Bot",
-      description: "Host your Discord bot with 24/7 uptime and reliable performance.",
+      description: "Host a Discord bot with blazing fast performance, one-click setup, and 24/7 uptime. ",
       image: "/images/discordbot.webp",
       href: "/gameservers/discordbot",
     },
@@ -94,7 +88,7 @@ export default function GameServersPage() {
                   </div>
                   <div className="p-4 text-center">
                     <h3 className="text-xl font-bold text-white mb-1">{game.name}</h3>
-                    <p className="text-green-400">Starting at $4.99</p>
+                    <p className="text-green-400">Starting at $0</p>
                   </div>
                 </div>
               </Link>
