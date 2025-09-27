@@ -1,14 +1,23 @@
 import { SpaceBackground } from "@/components/space-background"
 import FeaturesSection from "@/components/features-section"
 import DiscordCTA from "@/components/discord-cta"
-import { Check } from "lucide-react"
-
-export const metadata = {
-  title: "Minecraft Servers - Oozecloud",
-  description: "High-performance Minecraft servers with mods, plugins, and custom configurations.",
-}
+import { Check, Gamepad2, Zap, Shield, Clock, Users, Server, Cpu } from "lucide-react"
+import Link from "next/link"
+import Pricing from "@/components/pricing"
+import { motion } from "framer-motion"
+import { useInView } from "framer-motion"
+import { useRef } from "react"
 
 export default function MinecraftPage() {
+  const heroRef = useRef(null)
+  const featuresRef = useRef(null)
+  const pricingRef = useRef(null)
+  
+  const heroInView = useInView(heroRef, { once: true })
+  const featuresInView = useInView(featuresRef, { once: true })
+  const pricingInView = useInView(pricingRef, { once: true })
+
+  // Minecraft server plans
   const minecraftPlans = [
     {
       name: "Free Plan",
@@ -83,7 +92,7 @@ export default function MinecraftPage() {
         "Advanced DDoS Protection",
         "24/7 Support",
       ],
-      popular: false,
+      popular: true,
       buttonLink: "/order/minecraft/pro",
     },
     {
@@ -221,6 +230,7 @@ export default function MinecraftPage() {
     },
   ]
 
+  // Minecraft-specific features
   const minecraftFeatures = [
     {
       icon: "shield",
@@ -242,110 +252,205 @@ export default function MinecraftPage() {
     },
   ]
 
+  // Stats data
+  const stats = [
+    { icon: Users, label: "Active Players", value: "50,000+" },
+    { icon: Server, label: "Servers Hosted", value: "2,500+" },
+    { icon: Cpu, label: "Uptime", value: "99.9%" },
+    { icon: Gamepad2, label: "Modpacks Supported", value: "100+" },
+  ]
+
   return (
-    <div className="min-h-screen bg-gray-950 font-sans text-white">
-      {/* Background */}
+    <div className="min-h-screen bg-gradient-to-br from-[#010901] via-[#0a1a0a] to-[#010901] overflow-hidden">
       <SpaceBackground />
 
       {/* Hero Section */}
-      <section
-        className="relative h-[80vh] bg-cover bg-center"
-        style={{ backgroundImage: 'url("/images/minecraft-hero.jpg")' }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center px-4">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Ultimate Minecraft Server Hosting</h1>
-            <p className="text-lg md:text-xl mb-6">
-              Power your world with high-performance servers, instant setup, and easy plugin management.
-            </p>
-            <a
-              href="#plans"
-              className="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg font-semibold transition"
+      <section ref={heroRef} className="pt-32 pb-20 relative">
+        <div className="container px-4 mx-auto">
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={heroInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8 }}
+              className="mb-8"
             >
-              View Plans
-            </a>
+              <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-green-500/10 border border-green-500/20 rounded-full">
+                <Gamepad2 className="w-4 h-4 text-green-400" />
+                <span className="text-sm text-green-400 font-medium">Minecraft Hosting</span>
+              </div>
+              
+              <h1 className="mb-6 text-5xl font-bold text-white md:text-7xl bg-gradient-to-r from-white via-green-100 to-green-300 bg-clip-text text-transparent">
+                Minecraft Servers
+              </h1>
+              
+              <p className="mb-8 text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                High-performance Minecraft servers with easy plugin installation, modpack support, and instant setup. 
+                <span className="text-green-400 font-semibold"> Start your adventure today!</span>
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={heroInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
+            >
+              <Link
+                href="#pricing"
+                className="px-8 py-4 bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold rounded-lg hover:from-green-700 hover:to-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/25"
+              >
+                View Plans
+              </Link>
+              <Link
+                href="/demo"
+                className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
+              >
+                Try Demo
+              </Link>
+            </motion.div>
+
+            {/* Stats Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={heroInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+            >
+              {stats.map((stat, index) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={heroInView ? { opacity: 1, scale: 1 } : {}}
+                  transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+                  className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-green-500/30 transition-all duration-300 group"
+                >
+                  <stat.icon className="w-8 h-8 text-green-400 mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
+                  <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
+                  <div className="text-sm text-gray-400">{stat.label}</div>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
+        </div>
+
+        {/* Floating Minecraft blocks animation */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          {[...Array(6)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-sm opacity-20"
+              initial={{ 
+                x: Math.random() * window.innerWidth,
+                y: window.innerHeight + 50,
+                rotate: 0 
+              }}
+              animate={{ 
+                y: -50,
+                rotate: 360,
+                x: Math.random() * window.innerWidth
+              }}
+              transition={{
+                duration: Math.random() * 10 + 10,
+                repeat: Infinity,
+                ease: "linear",
+                delay: Math.random() * 5
+              }}
+            />
+          ))}
         </div>
       </section>
 
-      {/* Plans Section */}
-      <section id="plans" className="py-16 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Choose Your Plan</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {minecraftPlans.map((plan) => (
-              <div
-                key={plan.name}
-                className={`border-2 rounded-lg p-6 relative transition-transform hover:scale-105 ${
-                  plan.popular ? 'border-green-400 shadow-xl' : 'border-gray-700'
-                }`}
-              >
-                {plan.popular && (
-                  <div className="absolute top-4 right-4 bg-green-400 text-white text-xs px-2 py-1 rounded-full font-semibold">
-                    Popular
-                  </div>
-                )}
-                <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
-                <p className="text-gray-400 mb-4">{plan.description}</p>
-                <div className="mb-4">
-                  <span className="text-3xl font-bold">{plan.price}</span> <span className="text-sm">{plan.period}</span>
-                </div>
-                <ul className="mb-6 space-y-2">
-                  {plan.features.map((feat) => (
-                    <li key={feat} className="flex items-center text-gray-300">
-                      <Check className="w-4 h-4 mr-2 text-green-500" /> {feat}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href={plan.buttonLink}
-                  className="block w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-lg transition text-center"
+      {/* Enhanced Features Preview */}
+      <section className="py-16 relative">
+        <div className="container px-4 mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-6xl mx-auto"
+          >
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-white mb-4">Why Choose Our Minecraft Hosting?</h2>
+              <p className="text-gray-400 max-w-2xl mx-auto">
+                Experience the best Minecraft hosting with cutting-edge features designed for gamers.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  icon: Shield,
+                  title: "Advanced DDoS Protection",
+                  description: "Enterprise-grade protection keeps your server online 24/7",
+                  color: "from-blue-500 to-cyan-500"
+                },
+                {
+                  icon: Zap,
+                  title: "Lightning Fast Performance",
+                  description: "NVMe SSD storage and optimized hardware for zero lag",
+                  color: "from-yellow-500 to-orange-500"
+                },
+                {
+                  icon: Clock,
+                  title: "Instant Deployment",
+                  description: "Your server is ready in under 60 seconds",
+                  color: "from-green-500 to-emerald-500"
+                }
+              ].map((feature, index) => (
+                <motion.div
+                  key={feature.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                  className="group"
                 >
-                  Get {plan.name}
-                </a>
-              </div>
-            ))}
-          </div>
+                  <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300 h-full hover:transform hover:scale-105">
+                    <div className={`w-16 h-16 rounded-xl bg-gradient-to-r ${feature.color} p-4 mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                      <feature.icon className="w-full h-full text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-white mb-4">{feature.title}</h3>
+                    <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section ref={pricingRef} id="pricing" className="py-20 relative">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={pricingInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.8 }}
+        >
+          <Pricing plans={minecraftPlans} />
+        </motion.div>
       </section>
 
       {/* Features Section */}
-      <section className="py-16 bg-gray-950">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Features & Benefits</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {minecraftFeatures.map((feature) => (
-              <div
-                key={feature.title}
-                className="bg-gray-800 rounded-lg p-6 transition hover:shadow-xl hover:bg-gray-700"
-              >
-                {/* Replace with actual icons or SVGs */}
-                <div className="flex items-center justify-center mb-4 text-3xl text-green-400">
-                  <i className={`icon-${feature.icon}`}></i>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-400">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+      <section ref={featuresRef} className="relative">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={featuresInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.8 }}
+        >
+          <FeaturesSection features={minecraftFeatures} />
+        </motion.div>
       </section>
 
       {/* Discord CTA */}
-      <section className="py-16 bg-gray-900 text-center">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Join Our Minecraft Community</h2>
-          <p className="mb-8 text-gray-400">
-            Connect with us on Discord for updates, support, and community events.
-          </p>
-          <a
-            href="#"
-            className="bg-blue-500 hover:bg-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition"
-          >
-            Join Our Discord
-          </a>
-        </div>
-      </section>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <DiscordCTA />
+      </motion.div>
     </div>
   )
 }
