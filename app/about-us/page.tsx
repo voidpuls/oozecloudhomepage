@@ -161,7 +161,7 @@ export default function AboutUsPage() {
               <div className="absolute inset-0 bg-green-500/20 rounded-full blur-3xl animate-pulse"></div>
               <div className="relative z-10 rounded-lg border border-green-500/20 shadow-[0_0_25px_rgba(16,185,129,0.3)] overflow-hidden">
                 <Image
-                  src="/server-room-maintenance.png"
+                  src="/dashboard.png"
                   alt="Oozecloud Team"
                   width={600}
                   height={600}
