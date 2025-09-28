@@ -17,7 +17,7 @@ export default function LegalPage() {
           <div className="p-8 border rounded-lg border-green-500/20 bg-[#010901]/70 backdrop-blur-md space-y-6 text-gray-300">
             <section>
               <h2 className="text-2xl font-semibold text-white mb-4">Company Information</h2>
-              <p>Oozecloud is operated by Oozecloud Technologies, Inc., a company registered in Delaware, USA.</p>
+              <p>Oozecloud is operated by Oozecloud Inc., a company registered in Delaware, USA.</p>
               <p className="mt-2">
                 Registration Number: 12345678
                 <br />
