@@ -167,18 +167,13 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <p>Some, not all, of the third-party services we use include:</p>
                 <ul className="list-disc pl-6 space-y-1">
-                  <li>Crisp Chat</li>
                   <li>Google Advertising</li>
                   <li>FontAwesome</li>
-                  <li>WHMCS</li>
-                  <li>Trustpilot</li>
-                  <li>Cookie declaration services</li>
+                  <li>DEZERX</li>
                   <li>Cloudflare</li>
                   <li>CosmicGuard</li>
                   <li>Discord</li>
-                  <li>Voluum (and other marketing platforms, we'll never share your details without requesting your permission first)</li>
                   <li>Amazon</li>
-                  <li>Optinmonster</li>
                 </ul>
                 <p>
                   Because of any data shared with third-party services – we may be unable to regulate erasure requests with the listed companies/services above, and you may be required to submit erasure requests to the specific company as listed above.
