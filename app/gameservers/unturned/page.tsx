@@ -7,8 +7,8 @@ import Link from "next/link"
 import Pricing from "@/components/pricing"
 
 export const metadata = {
-  title: "FiveM Servers - Oozecloud",
-  description: "High-performance FiveM servers for your GTA V roleplay community with custom resources and scripts.",
+  title: "Unturned Servers - Oozecloud",
+  description: "Build your own post-apocalyptic adventure with fast, reliable, and fully customizable Unturned server hosting. Control everything you need to get started.",
 }
 
 export default function FiveMPage() {
@@ -79,7 +79,7 @@ export default function FiveMPage() {
       icon: "shield",
       title: "Custom Resources",
       description:
-        "Install and manage custom FiveM resources and scripts to create a unique roleplay experience for your community.",
+        "Install and manage custom Unturned resources and scripts to create a unique roleplay experience for your community.",
     },
     {
       icon: "zap",
@@ -91,7 +91,7 @@ export default function FiveMPage() {
       icon: "clock",
       title: "Easy Setup",
       description:
-        "Get your FiveM server up and running quickly with our pre-configured server templates and easy-to-use control panel.",
+        "Get your Unturned server up and running quickly with our pre-configured server templates and easy-to-use control panel.",
     },
   ]
 
@@ -103,10 +103,9 @@ export default function FiveMPage() {
       <section className="pt-32 pb-16 relative">
         <div className="container px-4 mx-auto">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="mb-6 text-4xl font-bold text-white md:text-5xl">FiveM Servers</h1>
+            <h1 className="mb-6 text-4xl font-bold text-white md:text-5xl">Unturned Servers</h1>
             <p className="mb-8 text-xl text-gray-400">
-              High-performance FiveM servers for your GTA V roleplay community with custom resources and database
-              integration.
+             Build your own post-apocalyptic adventure with fast, reliable, and fully customizable Unturned server hosting. Control everything you need to get started.
             </p>
           </div>
         </div>

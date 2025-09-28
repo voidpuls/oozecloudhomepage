@@ -21,7 +21,7 @@ export default function GameServersPage() {
     {
       name: "Unturned",
       description: "Build your own post-apocalyptic adventure with fast, reliable, and fully customizable Unturned server hosting. Control everything you need to get started.",
-      image: "/images/fivem.webp",
+      image: "/images/unturned.webp",
       href: "/gameservers/unturned",
     },
     {
