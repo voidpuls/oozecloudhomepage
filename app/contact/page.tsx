@@ -19,55 +19,6 @@ export default function ContactPage() {
 
             <p>Have questions about our services? Need technical support? Our team is here to help you.</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-              <div className="flex items-start space-x-4">
-                <Mail className="w-6 h-6 text-green-400 mt-1" />
-                <div>
-                  <h3 className="text-white font-medium text-lg mb-2">Email Us</h3>
-                  <p className="text-gray-400">
-                    General Inquiries:{" "}
-                    <a href="mailto:info@Oozecloud.com" className="text-green-400 hover:text-green-300">
-                      info@Oozecloud.com
-                    </a>
-                  </p>
-                  <p className="text-gray-400">
-                    Support:{" "}
-                    <a href="mailto:support@Oozecloud.com" className="text-green-400 hover:text-green-300">
-                      support@Oozecloud.com
-                    </a>
-                  </p>
-                  <p className="text-gray-400">
-                    Sales:{" "}
-                    <a href="mailto:sales@Oozecloud.com" className="text-green-400 hover:text-green-300">
-                      sales@Oozecloud.com
-                    </a>
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <Phone className="w-6 h-6 text-green-400 mt-1" />
-                <div>
-                  <h3 className="text-white font-medium text-lg mb-2">Call Us</h3>
-                  <p className="text-gray-400">
-                    Support:{" "}
-                    <a href="tel:+18001234567" className="text-green-400 hover:text-green-300">
-                      +1 (800) 123-4567
-                    </a>
-                  </p>
-                  <p className="text-gray-400">
-                    Sales:{" "}
-                    <a href="tel:+18009876543" className="text-green-400 hover:text-green-300">
-                      +1 (800) 987-6543
-                    </a>
-                  </p>
-                  <p className="text-gray-400">
-                    International:{" "}
-                    <a href="tel:+442012345678" className="text-green-400 hover:text-green-300">
-                      +44 (20) 1234-5678
-                    </a>
-                  </p>
-                </div>
               </div>
 
               <div className="flex items-start space-x-4 md:col-span-2">
