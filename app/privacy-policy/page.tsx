@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
                 This policy outlines how we use your data, what data we collect and store, how we protect stored data, data retention, and waivers of rights. It also outlines our procedures for handling cases under the general data protection regulations in the European Union, as well as our further commitment to supporting industry best security practices and supporting the protection of children while they utilize our platform.
               </p>
               <p className="text-sm text-gray-400">
-                This policy was last reviewed and approved for publication on July 1, 2025, and is scheduled for re-review on September 29, 2025.
+                This policy was last reviewed and approved for publication on September 28, 2025, and is scheduled for re-review on March 28, 2026.
               </p>
             </section>
 
