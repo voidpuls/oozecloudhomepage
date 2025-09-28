@@ -174,6 +174,7 @@ export default function PrivacyPolicyPage() {
                   <li>CosmicGuard</li>
                   <li>Discord</li>
                   <li>Amazon</li>
+                  <li>Arb Hosting</li>
                 </ul>
                 <p>
                   Because of any data shared with third-party services – we may be unable to regulate erasure requests with the listed companies/services above, and you may be required to submit erasure requests to the specific company as listed above.
