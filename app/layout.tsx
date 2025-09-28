@@ -1,8 +1,9 @@
-import type React from "react"
+import React from "react"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import Head from "next/head" // Import next/head
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -20,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+        <link rel="icon" href="/images/logo.png" />
+      </Head>
       <body className={inter.className}>
         <script
           async
