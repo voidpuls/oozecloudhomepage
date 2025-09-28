@@ -31,7 +31,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "/order/minecraft/free",
+    buttonLink: "https://billing.oozecloud.com/",
   },
   {
     name: "Standard Plan",
@@ -50,7 +50,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "/order/minecraft/standard",
+    buttonLink: "https://billing.oozecloud.com/",
   },
   {
     name: "Plus Plan",
@@ -69,7 +69,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "/order/minecraft/plus",
+    buttonLink: "https://billing.oozecloud.com/",
   },
   {
     name: "Pro Plan",
@@ -88,7 +88,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "/order/minecraft/pro",
+    buttonLink: "https://billing.oozecloud.com/",
   },
   {
     name: "Advanced Plan",
@@ -107,7 +107,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "/order/minecraft/advanced",
+    buttonLink: "https://billing.oozecloud.com/",
   },
   {
     name: "Premium Plan",
@@ -126,7 +126,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "/order/minecraft/premium",
+    buttonLink: "https://billing.oozecloud.com/",
   },
   {
     name: "Enterprise Plan",
@@ -145,7 +145,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "/order/minecraft/enterprise",
+    buttonLink: "https://billing.oozecloud.com/",
   },
   {
     name: "Ultimate Plan",
@@ -164,7 +164,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "/order/minecraft/ultimate",
+    buttonLink: "https://billing.oozecloud.com/",
   },
   {
     name: "Business Plan",
@@ -183,7 +183,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "/order/minecraft/business",
+    buttonLink: "https://billing.oozecloud.com/",
   },
   {
     name: "Executive Plan",
@@ -202,7 +202,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "/order/minecraft/executive",
+    buttonLink: "https://billing.oozecloud.com/",
   },
   {
     name: "Mega Plan",
@@ -221,7 +221,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "/order/minecraft/mega",
+    buttonLink: "https://billing.oozecloud.com/",
   },
 ]
 

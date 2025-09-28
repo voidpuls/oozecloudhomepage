@@ -12,66 +12,54 @@ export const metadata = {
 }
 
 export default function FiveMPage() {
-  // FiveM server plans
-  const fivemPlans = [
-    {
-      name: "Starter",
-      price: "$14.99",
-      period: "per month",
-      description: "Perfect for new roleplay communities",
-      features: [
-        "2GB RAM",
-        "Up to 32 Players",
-        "SSD Storage",
-        "Automated Backups",
-        "DDoS Protection",
-        "Custom Resource Support",
-        "24/7 Support",
-      ],
-      popular: false,
-      buttonText: "Get Started",
-      buttonLink: "/order/fivem/starter",
-    },
-    {
-      name: "Premium",
-      price: "$24.99",
-      period: "per month",
-      description: "Ideal for established roleplay communities",
-      features: [
-        "4GB RAM",
-        "Up to 64 Players",
-        "SSD Storage",
-        "Automated Backups",
-        "DDoS Protection",
-        "Custom Resource Support",
-        "Database Support",
-        "24/7 Priority Support",
-      ],
-      popular: true,
-      buttonText: "Get Started",
-      buttonLink: "/order/fivem/premium",
-    },
-    {
-      name: "Ultimate",
-      price: "$49.99",
-      period: "per month",
-      description: "For large roleplay communities",
-      features: [
-        "8GB RAM",
-        "Up to 128 Players",
-        "SSD Storage",
-        "Automated Backups",
-        "DDoS Protection",
-        "Custom Resource Support",
-        "Database Support",
-        "Custom Domain",
-        "24/7 Priority Support",
-      ],
-      popular: false,
-      buttonText: "Get Started",
-      buttonLink: "/order/fivem/ultimate",
-    },
-  ]
+// FiveM server plans
+const fivemPlans = [
+  {
+    name: "Basic",
+    price: "$2.50",
+    period: "per month",
+    description: "Affordable plan for small communities",
+    features: [
+      "1 Core",
+      "2GB RAM",
+      "50GB SSD Storage",
+      "10 Players",
+    ],
+    popular: true,
+    buttonText: "Get Started",
+    buttonLink: "https://billing.oozecloud.com/",
+  },
+  {
+    name: "Pro",
+    price: "$3.25",
+    period: "per month",
+    description: "Balanced plan for growing communities",
+    features: [
+      "2 Core",
+      "3GB RAM",
+      "50GB SSD Storage",
+      "16 Players",
+    ],
+    popular: false,
+    buttonText: "Get Started",
+    buttonLink: "https://billing.oozecloud.com/",
+  },
+  {
+    name: "Advanced",
+    price: "$4.00",
+    period: "per month",
+    description: "Enhanced plan for larger communities",
+    features: [
+      "2 Core",
+      "4GB RAM",
+      "50GB SSD Storage",
+      "20 Players",
+    ],
+    popular: false,
+    buttonText: "Get Started",
+    buttonLink: "https://billing.oozecloud.com/",
+  },
+];
 
   // FiveM-specific features
   const fivemFeatures = [
