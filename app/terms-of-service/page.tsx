@@ -167,7 +167,7 @@ export default function TermsOfServicePage() {
                   </p>
                 </div>
                 <p className="font-semibold">
-                  After 15 days, all data will be irretrievably deleted and cannot be recovered.
+                  After 2 days, all data will be irretrievably deleted and cannot be recovered.
                 </p>
                 <p>
                   We reserve the right to terminate services at our discretion for violations of policies, including abuse or acceptable use violations.
