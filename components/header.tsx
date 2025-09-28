@@ -29,8 +29,8 @@ export default function Header() {
 
   // Hardcoded navigation data
   const brand = {
-    name: "Oozecloud",
-    highlightedText: "Host",
+    name: "Ooze",
+    highlightedText: "cloud",
     logo: "/images/logo.png",
     alt: "Oozecloud Logo",
   }

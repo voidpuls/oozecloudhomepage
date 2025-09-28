@@ -25,7 +25,7 @@ export default function Home() {
     description:
       "Powerful, secure, and lightning-fast hosting solutions with 99.9% uptime guarantee. Launch your website into the stratosphere.",
     image: {
-      src: "/images/space-cat.png",
+      src: "/images/logo.png",
       alt: "Futuristic Server",
       width: 600,
       height: 400,
@@ -35,12 +35,12 @@ export default function Home() {
         text: "Get Started",
         variant: "primary",
         icon: "ChevronRight",
-        href: "/get-started",
+        href: "/gameservers",
       },
       {
         text: "View Plans",
         variant: "outline",
-        href: "#hosting-options",
+        href: "/gameservers",
       },
     ],
   }
