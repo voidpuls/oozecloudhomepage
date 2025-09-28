@@ -92,18 +92,6 @@ export default function Header() {
         }
       ]
     },
-    {
-      text: "Help",
-      type: "dropdown",
-      icon: <HelpCircle className="w-4 h-4 mr-2" />,
-      items: [
-        {
-          text: "Docs",
-          href: "/docs",
-          icon: <FileText className="w-4 h-4 mr-2" />,
-        },
-      ],
-    },
   ]
 
   const buttons = [
