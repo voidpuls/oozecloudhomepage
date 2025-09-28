@@ -3,7 +3,6 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import Head from "next/head"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -21,15 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        {/* Your script added here */}
+      <body className={inter.className}>
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4211552204137638"
           crossOrigin="anonymous"
         ></script>
-      </Head>
-      <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <div className="flex flex-col min-h-screen">
             <Header />
