@@ -31,7 +31,7 @@ export default function Header() {
   const brand = {
     name: "Oozecloud",
     highlightedText: "Host",
-    logo: "/images/logo.svg",
+    logo: "/images/logo.png",
     alt: "Oozecloud Logo",
   }
 
