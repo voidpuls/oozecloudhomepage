@@ -53,32 +53,6 @@ export const metadata: Metadata = {
     images: ["/images/twitter-image.png"], // 1200x600px recommended
   },
   
-  // Additional metadata
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  
-  // Verification tags (add your actual verification codes)
-  verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
-  },
-  
-  // Additional Discord-specific metadata
-  other: {
-    "theme-color": "#000000", // Your brand color
-    "msapplication-TileColor": "#000000",
-    "msapplication-config": "/browserconfig.xml",
-  },
 }
 
 export default function RootLayout({
