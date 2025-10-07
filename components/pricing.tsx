@@ -57,7 +57,7 @@ export default function Pricing({ plans }: PricingProps) {
 
                   <div className="p-6 pt-0"> {/* Added a separate div for the button */}
                     <Link
-  href="https://www.oozecloud.com/gameservers"
+  href="https://billing.oozecloud.com/market"
   className={`block w-full text-center py-3 px-4 rounded-md transition-all duration-300 ${
     plan.popular
       ? "bg-gradient-to-r from-green-500 to-green-400 hover:from-green-400 hover:to-green-500 text-black font-bold"
