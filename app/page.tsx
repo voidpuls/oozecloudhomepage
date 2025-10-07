@@ -188,6 +188,9 @@ export default function Home() {
       {/* Hosting Options */}
       <HostingOptions />
 
+      {/* Partners & Service Providers */}
+      <PartnersSection />
+
       {/* FAQ */}
       <FAQ />
     </div>
