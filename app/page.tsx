@@ -35,7 +35,7 @@ export default function Home() {
         text: "Get Started",
         variant: "primary",
         icon: "ChevronRight",
-        href: "/gameservers",
+        href: "https://billing.oozecloud.com/market",
       },
       {
         text: "View Plans",
