@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button"
 import { ChevronRight } from "lucide-react"
 import Image from "next/image"
 
-// Sample data for partners/service providers
-const partnersData = {
+// Replace these with your actual partners data
+const partners = {
   title: "Our Trusted Partners",
   badge: "Partner Network",
   description: "Meet our trusted partners and service providers who help us serve you better.",
@@ -57,27 +57,27 @@ export default function PartnersSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
-    <section id="partners" className="py-20 bg-gray-900 text-white relative">
+    <section id="partners" className="py-20 relative bg-gray-900 text-white">
       <div className="container px-4 mx-auto">
         {/* Header */}
         <div className="max-w-3xl mx-auto mb-16 text-center">
           <div className="inline-flex items-center px-3 py-1 space-x-2 text-sm bg-green-500/10 border border-green-500/20 rounded-full text-green-400 mb-4">
-            <span>{partnersData.badge}</span>
+            <span>{partners.badge}</span>
           </div>
-          <h2 className="mb-4 text-3xl font-bold md:text-4xl">{partnersData.title}</h2>
-          <p className="text-gray-400">{partnersData.description}</p>
+          <h2 className="mb-4 text-3xl font-bold md:text-4xl">{partners.title}</h2>
+          <p className="text-gray-400">{partners.description}</p>
         </div>
 
         {/* Partner Cards */}
         <div className="grid gap-8 md:grid-cols-3">
-          {partnersData.providers.map((provider, index) => (
+          {partners.providers.map((provider, index) => (
             <div
               key={index}
               className="relative overflow-hidden rounded-lg border border-gray-700 bg-gray-800 hover:shadow-xl transition-shadow duration-300"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              {/* Logo/Image */}
+              {/* Logo */}
               <div className="flex justify-center p-4 bg-gray-700">
                 <Image
                   src={provider.logo}
@@ -95,8 +95,8 @@ export default function PartnersSection() {
                 {/* Features */}
                 <ul className="mb-6 space-y-2">
                   {provider.features.map((feat, i) => (
-                    <li key={i} className="flex items-center gap-2 text-gray-300">
-                      <div className="w-2 h-2 rounded-full bg-green-400"></div>
+                    <li key={i} className="flex items-start gap-2 text-gray-300">
+                      <div className="w-2 h-2 rounded-full bg-green-400 mt-0.5"></div>
                       <span>{feat}</span>
                     </li>
                   ))}
@@ -106,7 +106,7 @@ export default function PartnersSection() {
                   onClick={() => {
                     window.location.href = provider.buttonHref
                   }}
-                  className="w-full relative bg-gradient-to-r from-green-500 to-green-400 hover:from-green-400 hover:to-green-500 text-black font-semibold"
+                  className="w-full bg-gradient-to-r from-green-500 to-green-400 hover:from-green-400 hover:to-green-500 text-black font-semibold"
                 >
                   <span className="flex items-center justify-center relative z-10">
                     {provider.buttonText}
@@ -116,7 +116,7 @@ export default function PartnersSection() {
                       }`}
                     />
                   </span>
-                  {/* Hover effect overlay */}
+                  {/* Hover overlay */}
                   <span
                     className={`absolute inset-0 w-full h-full bg-white/20 transition-transform origin-left duration-300 ${
                       hoveredIndex === index ? "scale-x-100" : "scale-x-0"
