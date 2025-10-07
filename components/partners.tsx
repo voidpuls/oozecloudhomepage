@@ -12,8 +12,8 @@ const partners = {
   description: "Meet our trusted partners and service providers who help us serve you better.",
   providers: [
     {
-      name: "Tech Innovators",
-      logo: "/images/partners/tech-innovators.png",
+      name: "Arb Hosting",
+      logo: "https://abrhosting.com/assets/images/temps/footer/logo-d.png",
       description: "Leading technology solutions for secure and scalable infrastructure.",
       features: [
         "Cloud Integration",
@@ -22,33 +22,7 @@ const partners = {
         "Custom Solutions",
       ],
       buttonText: "Learn More",
-      buttonHref: "/partners/tech-innovators",
-    },
-    {
-      name: "CloudMaster",
-      logo: "/images/partners/cloudmaster.png",
-      description: "Cloud hosting and management experts with extensive experience.",
-      features: [
-        "Managed Cloud Services",
-        "Migration Assistance",
-        "Performance Optimization",
-        "Dedicated Support",
-      ],
-      buttonText: "Discover Services",
-      buttonHref: "/partners/cloudmaster",
-    },
-    {
-      name: "SecureNet",
-      logo: "/images/partners/securenet.png",
-      description: "Cybersecurity solutions to protect your digital assets.",
-      features: [
-        "Threat Detection",
-        "Firewall Management",
-        "Data Encryption",
-        "Compliance Consulting",
-      ],
-      buttonText: "Get Started",
-      buttonHref: "/partners/securenet",
+      buttonHref: "https://abrhosting.com/",
     },
   ],
 }
