@@ -12,11 +12,11 @@ const partners = {
   description: "Meet our trusted partners and service providers who help us deliver exceptional hosting solutions.",
   providers: [
     {
-      name: "Arb Hosting",
+      name: "ABR Hosting",
       icon: "Users",
       logo: "https://abrhosting.com/assets/images/temps/footer/logo-d.png",
       description: "Leading technology solutions for secure and scalable infrastructure with enterprise-grade reliability.",
-      image: "/images/partner-bg.png", // Add a background image for the partner
+      image: "https://abrhosting.com/assets/images/pages/game-server/map.png", // Add a background image for the partner
       features: [
         "Cloud Integration",
         "Security & Compliance", 
