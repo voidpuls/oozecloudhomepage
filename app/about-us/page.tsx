@@ -254,7 +254,6 @@ export default function AboutUsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
               <div
                 key={index}
                 className="p-6 border rounded-lg border-green-500/20 bg-[#010901]/70 backdrop-blur-md hover:border-green-400/30 hover:shadow-[0_0_15px_rgba(16,185,129,0.2)] transition-all duration-300 text-center group"
