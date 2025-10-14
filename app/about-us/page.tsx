@@ -238,21 +238,6 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* Leadership Team Section */}
-      <section className="py-16 relative">
-        <div className="container px-4 mx-auto">
-          <div className="max-w-3xl mx-auto mb-16 text-center">
-            <div className="inline-flex items-center px-3 py-1 space-x-2 text-sm bg-green-500/10 border border-green-500/20 rounded-full text-green-400 mb-4">
-              <Users className="w-4 h-4 mr-1" />
-              <span>Meet The Team</span>
-            </div>
-            <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">Our Leadership Team</h2>
-            <p className="text-gray-400">
-              Our experienced team of industry veterans is dedicated to providing the best hosting experience for our
-              customers.
-            </p>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div
                 key={index}
