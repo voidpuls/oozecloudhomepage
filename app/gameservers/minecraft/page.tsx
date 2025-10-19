@@ -30,7 +30,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "https://billing.oozecloud.com/",
+    buttonLink: "https://client.oozecloud.com/",
   },
   {
     name: "Dirt",
@@ -49,7 +49,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "https://billing.oozecloud.com/",
+    buttonLink: "https://client.oozecloud.com/",
   },
   {
     name: "Stone",
@@ -68,7 +68,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "https://billing.oozecloud.com/",
+    buttonLink: "https://client.oozecloud.com/",
   },
   {
     name: "Iron",
@@ -87,7 +87,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "https://billing.oozecloud.com/",
+    buttonLink: "https://client.oozecloud.com/",
   },
   {
     name: "Gold",
@@ -106,7 +106,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "https://billing.oozecloud.com/",
+    buttonLink: "https://client.oozecloud.com/",
   },
   {
     name: "Redstone",
@@ -125,7 +125,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "https://billing.oozecloud.com/",
+    buttonLink: "https://client.oozecloud.com/",
   },
   {
     name: "Emerald",
@@ -144,7 +144,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "https://billing.oozecloud.com/",
+    buttonLink: "https://client.oozecloud.com/",
   },
   {
     name: "Diamond",
@@ -163,7 +163,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "https://billing.oozecloud.com/",
+    buttonLink: "https://client.oozecloud.com/",
   },
   {
     name: "Netherite",
@@ -182,7 +182,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "https://billing.oozecloud.com/",
+    buttonLink: "https://client.oozecloud.com/",
   },
   {
     name: "Beacon",
@@ -201,7 +201,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "https://billing.oozecloud.com/",
+    buttonLink: "https://client.oozecloud.com/",
   },
   {
     name: "End Portal",
@@ -220,7 +220,7 @@ export default function MinecraftPage() {
       "24/7 Support",
     ],
     popular: false,
-    buttonLink: "https://billing.oozecloud.com/",
+    buttonLink: "https://client.oozecloud.com/",
   },
 ]
 
