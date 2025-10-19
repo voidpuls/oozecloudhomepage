@@ -15,10 +15,10 @@ export default function MinecraftPage() {
   // Minecraft server plans
   const minecraftPlans = [
   {
-    name: "Free Plan",
+    name: "Cobblestone",
     price: "$0.00",
     period: "per month",
-    description: "Ideal for testing and small projects",
+    description: "Basic plan with essential features",
     features: [
       "2 Cores",
       "3GB RAM",
@@ -34,10 +34,10 @@ export default function MinecraftPage() {
     buttonLink: "https://billing.oozecloud.com/",
   },
   {
-    name: "Standard Plan",
+    name: "Dirt",
     price: "$4.00",
     period: "per month",
-    description: "Basic hosting for small servers",
+    description: "Affordable plan for small servers",
     features: [
       "2 Cores",
       "4GB RAM",
@@ -53,10 +53,10 @@ export default function MinecraftPage() {
     buttonLink: "https://billing.oozecloud.com/",
   },
   {
-    name: "Plus Plan",
+    name: "Stone",
     price: "$5.00",
     period: "per month",
-    description: "Enhanced performance for growing communities",
+    description: "Balanced plan for growing servers",
     features: [
       "2 Cores",
       "5GB RAM",
@@ -72,10 +72,10 @@ export default function MinecraftPage() {
     buttonLink: "https://billing.oozecloud.com/",
   },
   {
-    name: "Pro Plan",
+    name: "Iron",
     price: "$6.00",
     period: "per month",
-    description: "Optimized for larger servers",
+    description: "Enhanced resources for larger servers",
     features: [
       "2 Cores",
       "6GB RAM",
@@ -91,10 +91,10 @@ export default function MinecraftPage() {
     buttonLink: "https://billing.oozecloud.com/",
   },
   {
-    name: "Advanced Plan",
+    name: "Gold",
     price: "$7.00",
     period: "per month",
-    description: "For advanced users and modded servers",
+    description: "High-performance hosting for demanding servers",
     features: [
       "2 Cores",
       "7GB RAM",
@@ -110,10 +110,10 @@ export default function MinecraftPage() {
     buttonLink: "https://billing.oozecloud.com/",
   },
   {
-    name: "Premium Plan",
+    name: "Redstone",
     price: "$8.00",
     period: "per month",
-    description: "High-performance hosting for demanding servers",
+    description: "For advanced users and modded servers",
     features: [
       "2.5 Cores",
       "8GB RAM",
@@ -129,10 +129,10 @@ export default function MinecraftPage() {
     buttonLink: "https://billing.oozecloud.com/",
   },
   {
-    name: "Enterprise Plan",
+    name: "Emerald",
     price: "$10.00",
     period: "per month",
-    description: "For large scale servers and heavy modpacks",
+    description: "Premium plan for larger communities",
     features: [
       "2.5 Cores",
       "10GB RAM",
@@ -148,10 +148,10 @@ export default function MinecraftPage() {
     buttonLink: "https://billing.oozecloud.com/",
   },
   {
-    name: "Ultimate Plan",
+    name: "Diamond",
     price: "$12.00",
     period: "per month",
-    description: "Maximum resources for intensive Minecraft hosting",
+    description: "High-end hosting for intensive servers",
     features: [
       "3 Cores",
       "12GB RAM",
@@ -167,10 +167,10 @@ export default function MinecraftPage() {
     buttonLink: "https://billing.oozecloud.com/",
   },
   {
-    name: "Business Plan",
+    name: "Netherite",
     price: "$16.00",
     period: "per month",
-    description: "Business-grade hosting for professional servers",
+    description: "Ultimate performance for heavy-duty servers",
     features: [
       "4 Cores",
       "16GB RAM",
@@ -186,10 +186,10 @@ export default function MinecraftPage() {
     buttonLink: "https://billing.oozecloud.com/",
   },
   {
-    name: "Executive Plan",
+    name: "Beacon",
     price: "$18.00",
     period: "per month",
-    description: "Premium plan for enterprise needs",
+    description: "Top-tier hosting for large-scale projects",
     features: [
       "5 Cores",
       "18GB RAM",
@@ -205,10 +205,10 @@ export default function MinecraftPage() {
     buttonLink: "https://billing.oozecloud.com/",
   },
   {
-    name: "Mega Plan",
+    name: "End Portal",
     price: "$22.00",
     period: "per month",
-    description: "Top-tier hosting for the most demanding servers",
+    description: "Maximum resources for enterprise servers",
     features: [
       "5 Cores",
       "22GB RAM",
