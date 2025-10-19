@@ -226,26 +226,50 @@ export default function MinecraftPage() {
 ]
 
   // Minecraft-specific features
-  const minecraftFeatures = [
-    {
-      icon: "shield",
-      title: "Plugin Support",
-      description:
-        "Easy installation of popular plugins like Essentials, WorldEdit, and PermissionsEx to enhance your Minecraft server experience.",
-    },
-    {
-      icon: "zap",
-      title: "Modpack Support",
-      description:
-        "Run popular modpacks like FTB, Tekkit, and SkyFactory with our optimized servers designed for modded Minecraft.",
-    },
-    {
-      icon: "clock",
-      title: "Instant Setup",
-      description:
-        "Get your Minecraft server up and running in less than 60 seconds with our automated deployment system.",
-    },
-  ]
+ const minecraftFeatures = [
+  {
+    icon: "🔌",
+    title: "Plugin Installer",
+    description:
+      "Easily browse, install, and manage plugins to enhance your server.",
+  },
+  {
+    icon: "🧩",
+    title: "Mod Installer",
+    description:
+      "Seamlessly add and configure mods for a customized experience.",
+  },
+  {
+    icon: "🔄",
+    title: "Version Changer",
+    description:
+      "Switch between different game versions effortlessly.",
+  },
+  {
+    icon: "🌍",
+    title: "World Manager",
+    description:
+      "Create, load, and manage multiple worlds for endless creativity.",
+  },
+  {
+    icon: "🛡️",
+    title: "DDoS Protection",
+    description:
+      "2TB/s DDoS protection to keep your server secure and online.",
+  },
+  {
+    icon: "⚙️",
+    title: "Config UI Editor",
+    description:
+      "User-friendly interface to customize server settings without hassle.",
+  },
+  {
+    icon: "🌐",
+    title: "Subdomain Manager",
+    description:
+      "Manage multiple subdomains easily to organize your services.",
+  },
+]
 
   return (
     <div className="min-h-screen bg-[#010901]">
