@@ -5,7 +5,6 @@ import { Check } from "lucide-react"
 import Link from "next/link"
 import Pricing from "@/components/pricing"
 
-
 export const metadata = {
   title: "Minecraft Servers - Oozecloud",
   description: "High-performance Minecraft servers with mods, plugins, and custom configurations.",
@@ -226,75 +225,81 @@ export default function MinecraftPage() {
 ]
 
   // Minecraft-specific features
- const minecraftFeatures = [
-  {
-    icon: "🔌",
-    title: "Plugin Installer",
-    description:
-      "Easily browse, install, and manage plugins to enhance your server.",
-  },
-  {
-    icon: "🧩",
-    title: "Mod Installer",
-    description:
-      "Seamlessly add and configure mods for a customized experience.",
-  },
-  {
-    icon: "🔄",
-    title: "Version Changer",
-    description:
-      "Switch between different game versions effortlessly.",
-  },
-  {
-    icon: "🌍",
-    title: "World Manager",
-    description:
-      "Create, load, and manage multiple worlds for endless creativity.",
-  },
-  {
-    icon: "🛡️",
-    title: "DDoS Protection",
-    description:
-      "2TB/s DDoS protection to keep your server secure and online.",
-  },
-  {
-    icon: "⚙️",
-    title: "Config UI Editor",
-    description:
-      "User-friendly interface to customize server settings without hassle.",
-  },
-  {
-    icon: "🌐",
-    title: "Subdomain Manager",
-    description:
-      "Manage multiple subdomains easily to organize your services.",
-  },
-]
+  const minecraftFeatures = [
+    {
+      icon: "🔌",
+      title: "Plugin Installer",
+      description:
+        "Easily browse, install, and manage plugins to enhance your server.",
+    },
+    {
+      icon: "🧩",
+      title: "Mod Installer",
+      description:
+        "Seamlessly add and configure mods for a customized experience.",
+    },
+    {
+      icon: "🔄",
+      title: "Version Changer",
+      description:
+        "Switch between different game versions effortlessly.",
+    },
+    {
+      icon: "🌍",
+      title: "World Manager",
+      description:
+        "Create, load, and manage multiple worlds for endless creativity.",
+    },
+    {
+      icon: "🛡️",
+      title: "DDoS Protection",
+      description:
+        "2TB/s DDoS protection to keep your server secure and online.",
+    },
+    {
+      icon: "⚙️",
+      title: "Config UI Editor",
+      description:
+        "User-friendly interface to customize server settings without hassle.",
+    },
+    {
+      icon: "🌐",
+      title: "Subdomain Manager",
+      description:
+        "Manage multiple subdomains easily to organize your services.",
+    },
+  ]
 
   return (
-    <div className="min-h-screen bg-[#010901]">
+    <div className="min-h-screen bg-[#010901] relative overflow-hidden">
       <SpaceBackground />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 relative">
-        <div className="container px-4 mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="mb-6 text-4xl font-bold text-white md:text-5xl">Minecraft Servers</h1>
-            <p className="mb-8 text-xl text-gray-400">
-              High-performance Minecraft servers with easy plugin installation, modpack support, and instant setup.
-            </p>
-          </div>
+      <section className="pt-32 pb-16 relative z-10">
+        <div className="container px-4 mx-auto text-center max-w-3xl">
+          <h1 className="mb-6 text-4xl font-bold text-white md:text-5xl">
+            Minecraft Servers
+          </h1>
+          <p className="mb-8 text-xl text-gray-400">
+            High-performance Minecraft servers with easy plugin installation, modpack support, and instant setup.
+          </p>
         </div>
       </section>
 
       {/* Pricing Section */}
-      <Pricing plans={minecraftPlans} />
+      <section className="relative z-10 px-4 container mx-auto mb-16">
+        <Pricing plans={minecraftPlans} />
+      </section>
 
       {/* Features Section */}
-      <FeaturesSection features={minecraftFeatures} />
+      <section className="relative z-10 px-4 container mx-auto mb-16">
+        <FeaturesSection features={minecraftFeatures} />
+      </section>
 
-      {/* Discord CTA */}
-      <DiscordCTA />
+      {/* Call to Action / Discord */}
+      <section className="relative z-10 px-4 mb-8">
+        <DiscordCTA />
+      </section>
     </div>
   )
 }
