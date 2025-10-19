@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  /* Root CSS variables for light and dark themes */
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -27,7 +26,6 @@
     --radius: 0.5rem;
   }
 
-  /* Dark theme overrides */
   .dark {
     --background: 20 14.3% 4.1%;
     --foreground: 0 0% 95%;
@@ -49,19 +47,18 @@
     --input: 240 3.7% 15.9%;
     --ring: 142.4 71.8% 29.2%;
   }
+}
 
-  /* Apply border color to all elements */
+@layer base {
   * {
     @apply border-border;
   }
-
-  /* Body styles */
   body {
-    @apply bg-[#010901] text-foreground;
+    @apply bg-[#010901];
+    @apply text-foreground;
   }
 }
 
-/* Fade In Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -73,7 +70,6 @@
   }
 }
 
-/* Gradient Background Animation */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -86,7 +82,6 @@
   }
 }
 
-/* Utility classes for animations */
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-out forwards;
 }
@@ -96,7 +91,7 @@
   animation: gradient 4s ease infinite;
 }
 
-/* Scrollbar styles */
+/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -119,22 +114,30 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Reveal animations for scroll effects */
+/* Reveal animations for scroll */
 .reveal {
-  @apply relative opacity-0 transform translate-y-8 transition-opacity transition-transform duration-800 ease;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
+/* Hero elements should be visible by default */
 .hero-element {
-  @apply opacity-100 transform-none;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .reveal.active {
-  @apply opacity-100 transform-none;
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* Staggered reveal for child elements */
+/* Staggered reveal for children */
 .reveal-stagger > * {
-  @apply opacity-0 transform translate-y-5 transition-opacity transition-transform duration-500 ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .reveal-stagger.active > *:nth-child(1) {
@@ -157,10 +160,11 @@ html {
 }
 
 .reveal-stagger.active > * {
-  @apply opacity-100 transform-none;
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* FAQ Item Animations */
+/* FAQ animations */
 .faq-item {
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -180,15 +184,20 @@ html {
   color: #10b981;
 }
 
-/* Progress bar styles */
+/* Progress bar animation */
 .progress-bar {
-  @apply relative h-1 bg-green-100 rounded-full overflow-hidden;
+  position: relative;
   height: 4px;
   background-color: rgba(16, 185, 129, 0.2);
   border-radius: 2px;
+  overflow: hidden;
 }
 
 .progress-bar-fill {
-  @apply absolute top-0 left-0 h-full bg-green-500 transition-width duration-50;
-  width: 0; /* You can set this dynamically in your JS */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #10b981;
+  transition: width 50ms linear;
 }
