@@ -82,12 +82,12 @@ export default function Header() {
       items: [
         {
           text: "Dashboard",
-          href: "https://dashboard.oozecloud.com/",
+          href: "https://control.oozecloud.com/",
           icon: <Users className="w-4 h-4 mr-2" />,
         },
         {
           text: "Billing",
-          href: "https://billing.oozecloud.com/",
+          href: "https://client.oozecloud.com/",
           icon: <Users className="w-4 h-4 mr-2" />,
         }
       ]
@@ -97,7 +97,7 @@ export default function Header() {
   const buttons = [
     {
       text: "Login",
-      href: "https://billing.oozecloud.com/",
+      href: "https://client.oozecloud.com/",
       variant: "link",
     },
     {
