@@ -27,7 +27,6 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
-  // Hardcoded navigation data
   const brand = {
     name: "Ooze",
     highlightedText: "cloud",
@@ -75,9 +74,13 @@ export default function Header() {
         },
       ],
     },
+  ]
+
+  // Updated buttons array:
+  const buttons = [
     {
-      text: "Client Area",
-      type: "dropdown",
+      text: "Login",
+      variant: "dropdown",
       icon: <Users className="w-4 h-4 mr-2" />,
       items: [
         {
@@ -88,17 +91,9 @@ export default function Header() {
         {
           text: "Billing",
           href: "https://client.oozecloud.com/",
-          icon: <Users className="w-4 h-4 mr-2" />,
-        }
-      ]
-    },
-  ]
-
-  const buttons = [
-    {
-      text: "Login",
-      href: "https://client.oozecloud.com/",
-      variant: "link",
+          icon: <FileText className="w-4 h-4 mr-2" />,
+        },
+      ],
     },
     {
       text: "Choose a plan",
@@ -123,21 +118,15 @@ export default function Header() {
 
   const scrollToHostingOptions = (e: React.MouseEvent) => {
     e.preventDefault()
-
-    // Check if we're already on the home page
     const isHomePage = window.location.pathname === "/"
-
     if (isHomePage) {
-      // If on home page, just scroll to the section
       const hostingSection = document.getElementById("hosting-options")
       if (hostingSection) {
         hostingSection.scrollIntoView({ behavior: "smooth" })
       }
     } else {
-      // If on another page, navigate to home page with a hash
       window.location.href = "/#hosting-options"
     }
-
     if (isMenuOpen) {
       setIsMenuOpen(false)
     }
@@ -150,6 +139,7 @@ export default function Header() {
       }`}
     >
       <div className="container flex items-center justify-between px-4 mx-auto">
+        {/* Logo & Brand */}
         <Link href="/" className="flex items-center gap-2 group">
           <div className="w-10 h-10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
             <Image src={brand.logo || "/placeholder.svg"} alt={brand.alt} width={53} height={29} />
@@ -160,7 +150,8 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="hidden lg:!flex md:!flex items-center gap-8" style={{ display: "none" }}>
+        {/* Navigation (hidden on mobile) */}
+        <nav className="hidden lg:flex items-center gap-8">
           {navigation.map((item, index) => {
             if (item.type === "dropdown") {
               return (
@@ -207,9 +198,40 @@ export default function Header() {
           })}
         </nav>
 
-        <div className="hidden lg:!flex md:!flex items-center gap-4" style={{ display: "none" }}>
+        {/* Buttons (including dropdown for "Game Panel & Billing") */}
+        <div className="hidden lg:flex items-center gap-4">
           {buttons.map((button, index) => {
-            if (button.variant === "link") {
+            if (button.variant === "dropdown") {
+              return (
+                <DropdownMenu key={index}>
+                  <DropdownMenuTrigger className="flex items-center gap-1 text-gray-300 hover:text-green-400 transition-colors relative group outline-none focus:outline-none">
+                    <span className="flex items-center">
+                      {button.icon}
+                      {button.text}
+                    </span>
+                    <ChevronDown className="h-4 w-4 ml-1" />
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 group-hover:w-full transition-all duration-300"></span>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="bg-black/90 backdrop-blur-md border-green-500/20 p-3 flex flex-col gap-1 min-w-[180px]">
+                    {button.items?.map((item, subIdx) => (
+                      <DropdownMenuItem
+                        key={subIdx}
+                        asChild
+                        className="py-3 hover:bg-green-500/10 rounded-md focus:bg-green-500/10 focus:text-green-400"
+                      >
+                        <Link
+                          href={item.href}
+                          className="text-gray-300 hover:text-green-400 cursor-pointer transition-colors w-full flex items-center"
+                        >
+                          {item.icon}
+                          {item.text}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              )
+            } else if (button.variant === "link") {
               return (
                 <Link
                   key={index}
@@ -221,40 +243,13 @@ export default function Header() {
                 </Link>
               )
             } else {
-              return (
-                <Button
-                  key={index}
-                  className="relative overflow-hidden group bg-gradient-to-r from-green-500 to-green-400 hover:from-green-400 hover:to-green-500 text-black font-bold transition-all duration-300 shadow-[0_0_15px_rgba(16,185,129,0.3)] hover:shadow-[0_0_25px_rgba(16,185,129,0.5)]"
-                  onClick={button.href === "#hosting-options" ? scrollToHostingOptions : undefined}
-                  asChild={button.href !== "#hosting-options"}
-                >
-                  {button.href !== "#hosting-options" ? (
-                    <Link href={button.href}>
-                      <span className="relative z-10 flex items-center">
-                        {button.text}
-                        {button.icon === "ChevronRight" && (
-                          <ChevronRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-                        )}
-                      </span>
-                      <span className="absolute inset-0 w-full h-full bg-white/20 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-                    </Link>
-                  ) : (
-                    <>
-                      <span className="relative z-10 flex items-center">
-                        {button.text}
-                        {button.icon === "ChevronRight" && (
-                          <ChevronRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-                        )}
-                      </span>
-                      <span className="absolute inset-0 w-full h-full bg-white/20 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-                    </>
-                  )}
-                </Button>
-              )
+              // fallback if needed
+              return null
             }
           })}
         </div>
 
+        {/* Mobile menu button */}
         {mobileMenu.showMobileMenu && (
           <button
             className="lg:!hidden text-white p-2 rounded-full hover:bg-green-500/10 transition-colors"
@@ -310,9 +305,40 @@ export default function Header() {
                   </Link>
                 )
               })}
+              {/* Buttons in mobile menu */}
               <div className="flex flex-col gap-3 pt-4 border-t border-green-500/20 mt-2">
                 {buttons.map((button, index) => {
-                  if (button.variant === "link") {
+                  if (button.variant === "dropdown") {
+                    return (
+                      <DropdownMenu key={index}>
+                        <DropdownMenuTrigger className="flex items-center gap-1 text-gray-300 hover:text-green-400 transition-colors relative group outline-none focus:outline-none">
+                          <span className="flex items-center">
+                            {button.icon}
+                            {button.text}
+                          </span>
+                          <ChevronDown className="h-4 w-4 ml-1" />
+                          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 group-hover:w-full transition-all duration-300"></span>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent className="bg-black/90 backdrop-blur-md border-green-500/20 p-3 flex flex-col gap-1 min-w-[180px]">
+                          {button.items?.map((item, subIdx) => (
+                            <DropdownMenuItem
+                              key={subIdx}
+                              asChild
+                              className="py-3 hover:bg-green-500/10 rounded-md focus:bg-green-500/10 focus:text-green-400"
+                            >
+                              <Link
+                                href={item.href}
+                                className="text-gray-300 hover:text-green-400 cursor-pointer transition-colors w-full flex items-center"
+                              >
+                                {item.icon}
+                                {item.text}
+                              </Link>
+                            </DropdownMenuItem>
+                          ))}
+                        </DropdownMenuContent>
+                      </DropdownMenu>
+                    )
+                  } else if (button.variant === "link") {
                     return (
                       <Link
                         key={index}
@@ -324,20 +350,7 @@ export default function Header() {
                       </Link>
                     )
                   } else {
-                    return (
-                      <Button
-                        key={index}
-                        className="bg-gradient-to-r from-green-500 to-green-400 hover:from-green-400 hover:to-green-500 text-black font-bold"
-                        onClick={button.href === "#hosting-options" ? scrollToHostingOptions : undefined}
-                        asChild={button.href !== "#hosting-options"}
-                      >
-                        {button.href !== "#hosting-options" ? (
-                          <Link href={button.href}>{button.text}</Link>
-                        ) : (
-                          <>{button.text}</>
-                        )}
-                      </Button>
-                    )
+                    return null
                   }
                 })}
               </div>
