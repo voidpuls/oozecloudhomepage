@@ -4,59 +4,58 @@
 
 @layer base {
   :root {
-    /* Modern color palette with gradients and softer tones */
-    --background: #f9fafb; /* Light background */
-    --foreground: #1f2937; /* Dark text */
-    --card: #ffffff; /* Card background */
-    --card-foreground: #374151; /* Card text */
-    --popover: #ffffff; /* Popover background */
-    --popover-foreground: #374151; /* Popover text */
-    --primary: #3b82f6; /* Blue-500 */
-    --primary-foreground: #ffffff; /* White */
-    --secondary: #60a5fa; /* Blue-400 */
-    --secondary-foreground: #ffffff; /* White */
-    --muted: #e5e7eb; /* Gray-200 */
-    --muted-foreground: #6b7280; /* Gray-600 */
-    --accent: #ef4444; /* Red-500 */
-    --accent-foreground: #ffffff; /* White */
-    --destructive: #dc2626; /* Red-600 */
-    --destructive-foreground: #ffffff; /* White */
-    --border: #d1d5db; /* Gray-300 */
-    --input: #f3f4f6; /* Gray-100 */
-    --ring: #3b82f6; /* Blue-500 */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 142.1 76.2% 36.3%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 142.1 76.2% 36.3%;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: #111827; /* Dark background */
-    --foreground: #f9fafb; /* Light text */
-    --card: #1f2937; /* Dark card */
-    --card-foreground: #f9fafb;
-    --popover: #1f2937;
-    --popover-foreground: #f9fafb;
-    --primary: #60a5fa;
-    --primary-foreground: #0f172a;
-    --secondary: #3b82f6;
-    --secondary-foreground: #f9fafb;
-    --muted: #374151;
-    --muted-foreground: #9ca3af;
-    --accent: #ef4444;
-    --accent-foreground: #f9fafb;
-    --destructive: #dc2626;
-    --destructive-foreground: #f9fafb;
-    --border: #374151;
-    --input: #374151;
-    --ring: #3b82f6;
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 95%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 142.1 70.6% 45.3%;
+    --primary-foreground: 144.9 80.4% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 142.4 71.8% 29.2%;
   }
 }
 
 @layer base {
   * {
-    @apply border border-gray-300;
+    @apply border-border;
   }
-
+  
   body {
-    @apply bg-[#f9fafb] text-gray-800;
+    @apply bg-[#010901] text-foreground;
     font-feature-settings: "kern" 1;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -181,10 +180,10 @@
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(34,197,94,0.3);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
   }
   50% {
-    box-shadow: 0 0 40px rgba(34,197,94,0.6);
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.6);
   }
 }
 
@@ -225,9 +224,9 @@
   animation: shimmer 2s infinite;
   background: linear-gradient(
     90deg,
-    rgba(229, 231, 235, 0.2),
-    rgba(229, 231, 235, 0.4),
-    rgba(229, 231, 235, 0.2)
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
   );
   background-size: 1000px 100%;
 }
@@ -253,29 +252,29 @@
    ================================ */
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #3b82f6, #60a5fa);
-  border-radius: 4px;
+  background: linear-gradient(180deg, rgba(16, 185, 129, 0.6), rgba(5, 150, 105, 0.6));
+  border-radius: 5px;
   transition: background 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #2563eb, #3b82f6);
+  background: linear-gradient(180deg, rgba(16, 185, 129, 0.8), rgba(5, 150, 105, 0.8));
 }
 
 /* Firefox scrollbar */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #3b82f6 rgba(0, 0, 0, 0.1);
+  scrollbar-color: rgba(16, 185, 129, 0.6) rgba(0, 0, 0, 0.3);
 }
 
 /* ================================
@@ -351,16 +350,16 @@ html {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(34,197,94,0.1), transparent);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), transparent);
   opacity: 0;
   transition: opacity 0.4s ease;
   pointer-events: none;
 }
 
 .faq-item[data-state="open"] {
-  background-color: rgba(34,197,94,0.08);
-  box-shadow: 0 0 30px rgba(34,197,94,0.15),
-              inset 0 1px 0 rgba(34,197,94,0.2);
+  background-color: rgba(16, 185, 129, 0.08);
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.15),
+              inset 0 1px 0 rgba(16, 185, 129, 0.2);
   transform: scale(1.01);
 }
 
@@ -378,12 +377,12 @@ html {
 
 .faq-trigger[data-state="open"] {
   font-weight: 600;
-  color: #22c55e; /* Green-500 */
-  text-shadow: 0 0 20px rgba(34,197,94,0.3);
+  color: #10b981;
+  text-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
 }
 
 .faq-trigger:hover {
-  color: #22c55e;
+  color: #10b981;
 }
 
 /* ================================
@@ -393,10 +392,13 @@ html {
 .progress-bar {
   position: relative;
   height: 4px;
-  background: linear-gradient(90deg, rgba(34,197,94,0.1), rgba(34,197,94,0.3));
+  background: linear-gradient(90deg, 
+    rgba(16, 185, 129, 0.1) 0%,
+    rgba(16, 185, 129, 0.3) 100%
+  );
   border-radius: 2px;
   overflow: hidden;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .progress-bar-fill {
@@ -404,9 +406,9 @@ html {
   top: 0;
   left: 0;
   height: 100%;
-  background: linear-gradient(90deg, #22c55e, #16a34a);
+  background: linear-gradient(90deg, #10b981, #059669);
   transition: width 50ms linear;
-  box-shadow: 0 0 10px rgba(34,197,94,0.6);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.6);
   animation: shimmer 2s infinite;
 }
 
@@ -421,7 +423,7 @@ html {
 
 .hover-lift:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(34,197,94,0.2);
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
 }
 
 .hover-glow {
@@ -429,7 +431,7 @@ html {
 }
 
 .hover-glow:hover {
-  box-shadow: 0 0 30px rgba(34,197,94,0.4);
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.4);
   transform: scale(1.02);
 }
 
@@ -446,7 +448,7 @@ html {
    ================================ */
 
 *:focus-visible {
-  outline: 2px solid rgba(34,197,94,0.6);
+  outline: 2px solid rgba(16, 185, 129, 0.6);
   outline-offset: 2px;
   transition: outline 0.2s ease;
 }
@@ -456,7 +458,7 @@ html {
    ================================ */
 
 .gradient-text {
-  background: linear-gradient(135deg, #3b82f6, #60a5fa, #2563eb);
+  background: linear-gradient(135deg, #10b981, #059669, #047857);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -477,8 +479,8 @@ html {
 
 .card-glass:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(34,197,94,0.3);
-  box-shadow: 0 8px 32px rgba(34,197,94,0.15);
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.15);
 }
 
 /* ================================
@@ -488,9 +490,9 @@ html {
 .skeleton {
   background: linear-gradient(
     90deg,
-    rgba(229, 231, 235, 0.2),
-    rgba(229, 231, 235, 0.4),
-    rgba(229, 231, 235, 0.2)
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 100%
   );
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
