@@ -6,12 +6,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Custom utility for text balance */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
+/* Custom CSS variables for light and dark themes */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -48,6 +50,8 @@ body {
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  /* Dark mode overrides */
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -84,6 +88,7 @@ body {
   }
 }
 
+/* Applying border and background styles */
 @layer base {
   * {
     @apply border-border;
