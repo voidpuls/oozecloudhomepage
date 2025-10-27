@@ -19,7 +19,7 @@ export default function LoadingScreen() {
       })
     }, 150)
 
-    // Hide loading screen after a minimum time
+    // Hide loading after 2 seconds
     const timer = setTimeout(() => {
       setIsLoading(false)
     }, 2000)
@@ -34,13 +34,14 @@ export default function LoadingScreen() {
     <AnimatePresence mode="wait">
       {isLoading && (
         <motion.div
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#010901]"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 1.1 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#010901]"
         >
           {/* Animated background gradient */}
           <div className="absolute inset-0 overflow-hidden">
+            {/* Gradient layers with infinite animations */}
             <motion.div
               animate={{
                 scale: [1, 1.2, 1],
@@ -67,9 +68,9 @@ export default function LoadingScreen() {
             />
           </div>
 
-          {/* Loading content */}
-          <div className="relative z-10 flex flex-col items-center gap-8">
-            {/* Logo animation */}
+          {/* Centered loading content */}
+          <div className="relative z-10 flex flex-col items-center gap-8 text-center px-4">
+            {/* Logo with spinning ring and glow */}
             <motion.div
               initial={{ scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}
@@ -87,9 +88,9 @@ export default function LoadingScreen() {
                   repeat: Infinity,
                   ease: "linear",
                 }}
-                className="absolute inset-0 w-24 h-24 rounded-full border-4 border-transparent border-t-emerald-500 border-r-emerald-500"
+                className="absolute inset-0 w-24 h-24 rounded-full border-4 border-t-emerald-500 border-r-emerald-500"
               />
-              
+
               {/* Pulsing glow */}
               <motion.div
                 animate={{
@@ -104,7 +105,7 @@ export default function LoadingScreen() {
                 className="absolute inset-0 w-24 h-24 rounded-full bg-emerald-500/30 blur-xl"
               />
 
-              {/* Logo or icon */}
+              {/* Logo SVG */}
               <div className="relative flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-700 shadow-2xl shadow-emerald-500/50">
                 <svg
                   className="w-12 h-12 text-white"
@@ -129,12 +130,11 @@ export default function LoadingScreen() {
               </div>
             </motion.div>
 
-            {/* Brand name */}
+            {/* Brand name and subtitle */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="text-center"
             >
               <h1 className="text-4xl font-bold bg-gradient-to-r from-emerald-400 via-emerald-500 to-emerald-600 bg-clip-text text-transparent">
                 Oozecloud
@@ -144,7 +144,7 @@ export default function LoadingScreen() {
               </p>
             </motion.div>
 
-            {/* Progress bar */}
+            {/* Progress Bar */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -152,12 +152,15 @@ export default function LoadingScreen() {
               className="w-64"
             >
               <div className="h-1.5 bg-emerald-950/50 rounded-full overflow-hidden backdrop-blur-sm border border-emerald-500/20">
+                {/* Progress fill */}
                 <motion.div
+                  style={{ width: `${Math.min(progress, 100)}%` }}
                   initial={{ width: 0 }}
                   animate={{ width: `${Math.min(progress, 100)}%` }}
                   transition={{ duration: 0.3, ease: "easeOut" }}
                   className="h-full bg-gradient-to-r from-emerald-500 to-emerald-400 rounded-full shadow-lg shadow-emerald-500/50"
                 >
+                  {/* Moving shimmer */}
                   <motion.div
                     animate={{
                       x: ["-100%", "100%"],
@@ -171,13 +174,12 @@ export default function LoadingScreen() {
                   />
                 </motion.div>
               </div>
-              
-              {/* Progress percentage */}
+              {/* Percentage text */}
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.7 }}
-                className="text-center text-emerald-500/50 text-xs mt-2 font-mono"
+                className="mt-2 text-xs font-mono text-emerald-500/50"
               >
                 {Math.floor(Math.min(progress, 100))}%
               </motion.p>
@@ -208,12 +210,12 @@ export default function LoadingScreen() {
             </motion.div>
           </div>
 
-          {/* Bottom text */}
+          {/* Bottom Text */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.6 }}
-            className="absolute bottom-8 text-center"
+            className="absolute bottom-8 w-full text-center"
           >
             <p className="text-emerald-500/40 text-xs">
               Powered by next-generation technology
