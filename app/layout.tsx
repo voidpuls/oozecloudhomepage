@@ -3,6 +3,7 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import LoadingScreen from "@/components/loading-screen" // or loading-screen-simple
 import { Metadata } from "next"
 import "./globals.css"
 
@@ -12,30 +13,27 @@ export const metadata: Metadata = {
   title: "Oozecloud - Next-Gen Web Hosting Solutions",
   description: "Fast, secure, and reliable web hosting services for businesses of all sizes. Launch your digital presence into the stratosphere.",
   
-  // Basic metadata
   keywords: ["web hosting", "cloud hosting", "VPS", "dedicated servers", "domain registration", "SSL certificates"],
   authors: [{ name: "Oozecloud Team" }],
   creator: "Oozecloud",
   publisher: "Oozecloud",
   
-  // Favicon and icons
   icons: {
     icon: "/images/logo.png",
     shortcut: "/images/logo.png",
     apple: "/images/logo.png",
   },
   
-  // Open Graph metadata (for Discord, Facebook, etc.)
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://oozecloud.com", // Replace with your actual domain
+    url: "https://oozecloud.com",
     siteName: "Oozecloud",
     title: "Oozecloud - Next-Gen Web Hosting Solutions",
     description: "Fast, secure, and reliable web hosting services for businesses of all sizes. Launch your digital presence into the stratosphere.",
     images: [
       {
-        url: "/images/og-image.png", // Create a 1200x630px image for best results
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Oozecloud - Next-Gen Web Hosting Solutions",
@@ -43,16 +41,14 @@ export const metadata: Metadata = {
     ],
   },
   
-  // Twitter Card metadata
   twitter: {
     card: "summary_large_image",
-    site: "@oozecloud", // Replace with your Twitter handle
+    site: "@oozecloud",
     creator: "@oozecloud",
     title: "Oozecloud - Next-Gen Web Hosting Solutions",
     description: "Fast, secure, and reliable web hosting services for businesses of all sizes. Launch your digital presence into the stratosphere.",
-    images: ["/images/twitter-image.png"], // 1200x600px recommended
+    images: ["/images/twitter-image.png"],
   },
-  
 }
 
 export default function RootLayout({
@@ -63,17 +59,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Additional meta tags for Discord embeds */}
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="theme-color" content="#000000" />
         
-        {/* Discord-specific meta tags */}
         <meta name="discord:server" content="your-discord-server-id" />
         <meta name="discord:channel" content="your-discord-channel-id" />
         
-        {/* Structured data for rich snippets */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -99,6 +92,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4211552204137638"
           crossOrigin="anonymous"
         ></script>
+        <LoadingScreen />
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <div className="flex flex-col min-h-screen">
             <Header />
