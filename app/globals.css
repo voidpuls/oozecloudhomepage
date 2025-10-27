@@ -181,10 +181,10 @@
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+    box-shadow: 0 0 20px rgba(34,197,94,0.3);
   }
   50% {
-    box-shadow: 0 0 40px rgba(34, 197, 94, 0.6);
+    box-shadow: 0 0 40px rgba(34,197,94,0.6);
   }
 }
 
@@ -225,9 +225,9 @@
   animation: shimmer 2s infinite;
   background: linear-gradient(
     90deg,
-    rgba(229, 231, 235, 0.2) 0%,
-    rgba(229, 231, 235, 0.4) 50%,
-    rgba(229, 231, 235, 0.2) 100%
+    rgba(229, 231, 235, 0.2),
+    rgba(229, 231, 235, 0.4),
+    rgba(229, 231, 235, 0.2)
   );
   background-size: 1000px 100%;
 }
@@ -358,7 +358,7 @@ html {
 }
 
 .faq-item[data-state="open"] {
-  background-color: rgba(34, 197, 94, 0.08);
+  background-color: rgba(34,197,94,0.08);
   box-shadow: 0 0 30px rgba(34,197,94,0.15),
               inset 0 1px 0 rgba(34,197,94,0.2);
   transform: scale(1.01);
@@ -494,3 +494,4 @@ html {
   );
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
+}
