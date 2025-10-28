@@ -16,7 +16,7 @@ export default function FiveMPage() {
 const fivemPlans = [
   {
     name: "Basic",
-    price: "$2.50",
+    price: "$1.58",
     period: "per month",
     description: "Affordable plan for small communities",
     features: [
@@ -31,7 +31,7 @@ const fivemPlans = [
   },
   {
     name: "Pro",
-    price: "$3.25",
+    price: "$2.37",
     period: "per month",
     description: "Balanced plan for growing communities",
     features: [
@@ -46,7 +46,7 @@ const fivemPlans = [
   },
   {
     name: "Advanced",
-    price: "$4.00",
+    price: "$3.16",
     period: "per month",
     description: "Enhanced plan for larger communities",
     features: [
@@ -60,6 +60,7 @@ const fivemPlans = [
     buttonLink: "https://billing.oozecloud.com/",
   },
 ];
+
 
   // FiveM-specific features
   const fivemFeatures = [
