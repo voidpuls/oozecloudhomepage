@@ -222,22 +222,6 @@ export default function FAQ() {
                 ))}
               </Accordion>
 
-              {/* Still have questions CTA */}
-              <div className="mt-8 card-glass p-8 text-center hover-lift">
-                <h3 className="text-white font-bold text-xl mb-2">Still have questions?</h3>
-                <p className="text-gray-400 mb-6">
-                  Can't find the answer you're looking for? Our team is here to help.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <button className="btn-primary inline-flex items-center justify-center gap-2 px-6 py-3">
-                    <MessageCircle className="w-4 h-4" />
-                    Start Live Chat
-                  </button>
-                  <button className="px-6 py-3 rounded-full bg-white/5 text-white hover:bg-white/10 transition-all duration-300 font-semibold border border-white/10 hover:border-green-500/30">
-                    Browse Docs
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
         </div>
