@@ -10,90 +10,89 @@ export default function FAQ() {
   title: "Frequently Asked Questions",
   description: "Find answers to common questions about our Minecraft and Discord bot hosting services.",
   items: [
-    {
-      question: "What is Minecraft server hosting?",
-      answer: (
-        <>
-          Minecraft server hosting allows you to create and run your own multiplayer Minecraft worlds. Customize your experience and invite friends to play. Learn more on our{" "}
-          <Link href="/docs/minecraft-hosting" className="text-green-400 hover:text-green-300 underline">
-            documentation page
-          </Link>.
-        </>
-      ),
-      icon: "video-game",
-    },
-    {
-      question: "What is Discord bot hosting?",
-      answer: (
-        <>
-          Discord bot hosting enables you to run your bots continuously without your personal device needing to stay online. Manage and deploy your bots easily. Check out our{" "}
-          <Link href="/docs/discord-hosting" className="text-green-400 hover:text-green-300 underline">
-            guide
-          </Link>.
-        </>
-      ),
-      icon: "message-circle",
-    },
-    {
-      question: "What are the differences between shared, VPS, and dedicated Minecraft/Discord hosting?",
-      answer: (
-        <>
-          Shared hosting means your server shares resources with others, suitable for small communities. VPS (Virtual Private Server) provides dedicated resources for better performance and customization. Dedicated servers offer maximum control and capacity for large communities or high-demand bots. Compare plans on our{" "}
-          <Link href="/pricing" className="text-green-400 hover:text-green-300 underline">
-            pricing page
-          </Link>.
-        </>
-      ),
-      icon: "zap",
-    },
-    {
-      question: "Do you offer a money-back guarantee?",
-      answer: (
-        <>
-          No, we do not offer a money-back guarantee
-          </Link>.
-        </>
-      ),
-      icon: "shield",
-    },
-    {
-      question: "How do I migrate my existing Minecraft server or Discord bot?",
-      answer: (
-        <>
-          We provide <strong>free migration services</strong> to help transfer your servers or bots smoothly. Our team will handle everything — no downtime. Visit{" "}
-          <Link href="/migration" className="text-green-400 hover:text-green-300 underline">
-            migration help
-          </Link>.
-        </>
-      ),
-      icon: "help",
-    },
-    {
-      question: "What kind of support do you offer for Minecraft and Discord hosting?",
-      answer: (
-        <>
-          We offer <strong>24/7 support</strong> via live chat, email, and phone to assist you with setup, troubleshooting, and management. Reach out anytime through{" "}
-          <Link href="/contact" className="text-green-400 hover:text-green-300 underline">
-            Contact Support
-          </Link>.
-        </>
-      ),
-      icon: "message",
-    },
-    {
-      question: "Can I upgrade my hosting plan later?",
-      answer: (
-        <>
-          Absolutely! You can upgrade your plan at any time from your{" "}
-          <Link href="/dashboard" className="text-green-400 hover:text-green-300 underline">
-            account dashboard
-          </Link>. The process is seamless and causes no downtime.
-        </>
-      ),
-      icon: "zap",
-    },
-  ],
-};
+      {
+        question: "What is Minecraft server hosting?",
+        answer: (
+          <>
+            Minecraft server hosting allows you to create and run your own multiplayer Minecraft worlds. Customize your experience and invite friends to play. Learn more on our{" "}
+            <Link href="/docs/minecraft-hosting" className="text-green-400 hover:text-green-300 underline">
+              documentation page
+            </Link>.
+          </>
+        ),
+        icon: "video-game",
+      },
+      {
+        question: "What is Discord bot hosting?",
+        answer: (
+          <>
+            Discord bot hosting enables you to run your bots continuously without your personal device needing to stay online. Manage and deploy your bots easily. Check out our{" "}
+            <Link href="/docs/discord-hosting" className="text-green-400 hover:text-green-300 underline">
+              guide
+            </Link>.
+          </>
+        ),
+        icon: "message-circle",
+      },
+      {
+        question: "What are the differences between shared, VPS, and dedicated Minecraft/Discord hosting?",
+        answer: (
+          <>
+            Shared hosting means your server shares resources with others, suitable for small communities. VPS (Virtual Private Server) provides dedicated resources for better performance and customization. Dedicated servers offer maximum control and capacity for large communities or high-demand bots. Compare plans on our{" "}
+            <Link href="/pricing" className="text-green-400 hover:text-green-300 underline">
+              pricing page
+            </Link>.
+          </>
+        ),
+        icon: "zap",
+      },
+      {
+        question: "Do you offer a money-back guarantee?",
+        answer: (
+          <>
+            No, we do not offer a money-back guarantee.
+          </>
+        ),
+        icon: "shield",
+      },
+      {
+        question: "How do I migrate my existing Minecraft server or Discord bot?",
+        answer: (
+          <>
+            We provide <strong>free migration services</strong> to help transfer your servers or bots smoothly. Our team will handle everything — no downtime. Visit{" "}
+            <Link href="/migration" className="text-green-400 hover:text-green-300 underline">
+              migration help
+            </Link>.
+          </>
+        ),
+        icon: "help",
+      },
+      {
+        question: "What kind of support do you offer for Minecraft and Discord hosting?",
+        answer: (
+          <>
+            We offer <strong>24/7 support</strong> via live chat, email, and phone to assist you with setup, troubleshooting, and management. Reach out anytime through{" "}
+            <Link href="/contact" className="text-green-400 hover:text-green-300 underline">
+              Contact Support
+            </Link>.
+          </>
+        ),
+        icon: "message",
+      },
+      {
+        question: "Can I upgrade my hosting plan later?",
+        answer: (
+          <>
+            Absolutely! You can upgrade your plan at any time from your{" "}
+            <Link href="/dashboard" className="text-green-400 hover:text-green-300 underline">
+              account dashboard
+            </Link>. The process is seamless and causes no downtime.
+          </>
+        ),
+        icon: "zap",
+      },
+    ],
+  };
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
