@@ -3,7 +3,6 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import LoadingScreen from "@/components/loading-screen" // or loading-screen-simple
 import { Metadata } from "next"
 import "./globals.css"
 
@@ -64,8 +63,8 @@ export default function RootLayout({
         <meta property="og:image:height" content="630" />
         <meta name="theme-color" content="#000000" />
         
-        <meta name="discord:server" content="your-discord-server-id" />
-        <meta name="discord:channel" content="your-discord-channel-id" />
+        <meta name="discord:server" content="1391240565072592977" />
+        <meta name="discord:channel" content="1391240565072592977" />
         
         <script
           type="application/ld+json"
@@ -92,7 +91,6 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4211552204137638"
           crossOrigin="anonymous"
         ></script>
-        <LoadingScreen />
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <div className="flex flex-col min-h-screen">
             <Header />
