@@ -12,7 +12,7 @@ import { SpaceBackground } from "@/components/space-background"
 import Link from "next/link"
 
 export default function Home() {
-  // Hardcoded hero data
+  // Hero data
   const hero = {
     badge: {
       text: "Next Generation Hosting",
@@ -46,63 +46,59 @@ export default function Home() {
     ],
   }
 
-  // Add scroll reveal effect
+  // Scroll reveal effect
   useEffect(() => {
     const revealElements = document.querySelectorAll(".reveal:not(.hero-element)")
     const revealStaggerElements = document.querySelectorAll(".reveal-stagger")
-
-    // Immediately show hero elements
     const heroElements = document.querySelectorAll(".hero-element")
-    heroElements.forEach((el) => {
-      el.classList.add("active")
-    })
+    
+    // Show hero elements immediately
+    heroElements.forEach((el) => el.classList.add("active"))
 
     const revealOnScroll = () => {
-      for (let i = 0; i < revealElements.length; i++) {
-        const windowHeight = window.innerHeight
-        const elementTop = revealElements[i].getBoundingClientRect().top
-        const elementVisible = 150
+      const windowHeight = window.innerHeight
+      const elementVisible = 150
 
-        if (elementTop < windowHeight - elementVisible) {
-          revealElements[i].classList.add("active")
+      revealElements.forEach((el) => {
+        if (el.getBoundingClientRect().top < windowHeight - elementVisible) {
+          el.classList.add("active")
         }
-      }
+      })
 
-      for (let i = 0; i < revealStaggerElements.length; i++) {
-        const windowHeight = window.innerHeight
-        const elementTop = revealStaggerElements[i].getBoundingClientRect().top
-        const elementVisible = 150
-
-        if (elementTop < windowHeight - elementVisible) {
-          revealStaggerElements[i].classList.add("active")
+      revealStaggerElements.forEach((el) => {
+        if (el.getBoundingClientRect().top < windowHeight - elementVisible) {
+          el.classList.add("active")
         }
-      }
+      })
     }
 
-    // Run once immediately to check elements in viewport on load
-    revealOnScroll()
-
     window.addEventListener("scroll", revealOnScroll)
+    revealOnScroll()
 
     return () => window.removeEventListener("scroll", revealOnScroll)
   }, [])
 
   return (
     <div className="flex flex-col min-h-screen bg-[#010901]">
-      {/* Background */}
+      
+      {/* Background Effects */}
       <SpaceBackground />
 
-      {/* Hero Section */}
+      {/* HERO SECTION */}
       <section className="relative w-full py-32 overflow-hidden">
         <div className="container relative z-10 px-4 mx-auto">
+          {/* Hero Content Grid */}
           <div className="grid items-center grid-cols-1 gap-12 md:grid-cols-2">
+            {/* Text Content */}
             <div className="space-y-8 text-center md:text-left hero-element opacity-100 transform-none">
+              {/* Badge */}
               <div className="inline-flex items-center px-3 py-1 space-x-2 text-sm bg-green-500/10 border border-green-500/20 rounded-full text-green-400">
                 {hero.badge.showPulse && (
                   <span className="inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
                 )}
                 <span>{hero.badge.text}</span>
               </div>
+              {/* Title */}
               <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">
                 {hero.title.prefix}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-green-300 to-green-500 animate-gradient">
@@ -110,10 +106,13 @@ export default function Home() {
                 </span>
                 {hero.title.suffix}
               </h1>
+              {/* Description */}
               <p className="max-w-[600px] text-gray-400 md:text-xl">{hero.description}</p>
+              {/* Call-to-Action Buttons */}
               <div className="flex flex-wrap gap-4 md:justify-start justify-center">
                 {hero.buttons.map((button, index) =>
                   button.href === "#hosting-options" ? (
+                    // Scroll to hosting options
                     <Button
                       key={index}
                       size="lg"
@@ -125,10 +124,7 @@ export default function Home() {
                       }
                       onClick={(e) => {
                         e.preventDefault()
-                        const section = document.getElementById("hosting-options")
-                        if (section) {
-                          section.scrollIntoView({ behavior: "smooth" })
-                        }
+                        document.getElementById("hosting-options")?.scrollIntoView({ behavior: "smooth" })
                       }}
                     >
                       <span className="relative z-10 flex items-center justify-center">
@@ -163,10 +159,12 @@ export default function Home() {
                         )}
                       </Button>
                     </Link>
-                  ),
+                  )
                 )}
               </div>
             </div>
+
+            {/* Hero Image */}
             <div className="relative flex justify-center hero-element opacity-100 transform-none">
               <div className="relative w-full max-w-md">
                 <div className="absolute inset-0 bg-green-500/20 rounded-full blur-3xl animate-pulse"></div>
@@ -186,14 +184,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Hosting Options */}
+      {/* MAIN CONTENT SECTIONS */}
+      {/* Hosting Options Section */}
       <HostingOptions />
 
       {/* Partners & Service Providers */}
       <PartnersSection />
 
-      {/* FAQ */}
+      {/* Frequently Asked Questions */}
       <FAQ />
+
     </div>
   )
 }
