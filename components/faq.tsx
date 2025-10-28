@@ -3,6 +3,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useState, useEffect } from "react";
 import { HelpCircle, MessageCircle, Zap, Shield } from "lucide-react";
+import Link from "next/link";
 
 export default function FAQ() {
   // Hardcoded FAQ data
@@ -123,6 +124,23 @@ export default function FAQ() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             {/* Left side - Info cards */}
             <div className="lg:col-span-1 space-y-4 reveal">
+              {/* Quick help card */}
+              <div className="card-glass p-6 hover-lift group">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500/20 to-green-600/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <MessageCircle className="w-6 h-6 text-green-400" />
+                </div>
+                <h3 className="text-white font-semibold text-lg mb-2">Need More Help?</h3>
+                <p className="text-gray-400 text-sm mb-4">Our support team is available 24/7</p>
+                <Link
+                  href="/contact"
+                  className="text-green-400 text-sm font-semibold hover:text-green-300 transition-colors inline-flex items-center gap-2"
+                >
+                  Contact Support
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
 
               {/* Stats card */}
               <div className="card-glass p-6 hover-lift">
@@ -146,15 +164,20 @@ export default function FAQ() {
               <div className="card-glass p-6 hover-lift hidden lg:block">
                 <h4 className="text-white font-semibold mb-4">Quick Links</h4>
                 <ul className="space-y-3">
-                  {["Documentation", "Video Tutorials", "Community Forum", "Knowledge Base"].map((link, idx) => (
+                  {[
+                    { name: "Documentation", href: "/docs" },
+                    { name: "Video Tutorials", href: "/tutorials" },
+                    { name: "Community Forum", href: "/community" },
+                    { name: "Knowledge Base", href: "/knowledge-base" },
+                  ].map((link, idx) => (
                     <li key={idx}>
-                      <a
-                        href="#"
+                      <Link
+                        href={link.href}
                         className="text-gray-400 hover:text-green-400 transition-colors text-sm inline-flex items-center gap-2 group"
                       >
                         <div className="w-1.5 h-1.5 rounded-full bg-green-500/50 group-hover:bg-green-400 transition-colors" />
-                        {link}
-                      </a>
+                        {link.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -191,23 +214,12 @@ export default function FAQ() {
                         <div className="pl-14 pr-4">
                           <div className="pt-2 pb-1 leading-relaxed">{item.answer}</div>
 
-                          {/* Helpful buttons */}
-                          <div className="flex items-center gap-3 mt-4 pt-4 border-t border-green-500/10">
-                            <span className="text-xs text-gray-500">Was this helpful?</span>
-                            <button className="text-xs px-3 py-1.5 rounded-full bg-green-500/10 text-green-400 hover:bg-green-500/20 transition-colors">
-                              Yes
-                            </button>
-                            <button className="text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 hover:bg-white/10 transition-colors">
-                              No
-                            </button>
-                          </div>
                         </div>
                       </AccordionContent>
                     </div>
                   </AccordionItem>
                 ))}
               </Accordion>
-
             </div>
           </div>
         </div>
