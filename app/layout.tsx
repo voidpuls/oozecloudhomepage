@@ -85,12 +85,12 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>
-        <script
+      <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4211552204137638"
           crossOrigin="anonymous"
         ></script>
+      <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <div className="flex flex-col min-h-screen">
             <Header />
