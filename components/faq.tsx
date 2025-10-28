@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { useState, useEffect } from "react"
-import { HelpCircle, MessageCircle, Zap, Shield } from "lucide-react"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useState, useEffect } from "react";
+import { HelpCircle, MessageCircle, Zap, Shield } from "lucide-react";
 
 export default function FAQ() {
   // Hardcoded FAQ data
@@ -48,9 +48,9 @@ export default function FAQ() {
         icon: "zap",
       },
     ],
-  }
+  };
 
-  const [openItem, setOpenItem] = useState<string | null>(null)
+  const [openItem, setOpenItem] = useState<string | null>(null);
 
   // Icon mapping
   const getIcon = (iconName: string) => {
@@ -59,39 +59,42 @@ export default function FAQ() {
       message: MessageCircle,
       zap: Zap,
       shield: Shield,
-    }
-    const Icon = icons[iconName] || HelpCircle
-    return <Icon className="w-5 h-5" />
-  }
+    };
+    const Icon = icons[iconName] || HelpCircle;
+    return <Icon className="w-5 h-5" />;
+  };
 
   // Add scroll reveal effect
   useEffect(() => {
-    const revealElements = document.querySelectorAll(".reveal")
+    const revealElements = document.querySelectorAll(".reveal");
 
     const revealOnScroll = () => {
       for (let i = 0; i < revealElements.length; i++) {
-        const windowHeight = window.innerHeight
-        const elementTop = revealElements[i].getBoundingClientRect().top
-        const elementVisible = 150
+        const windowHeight = window.innerHeight;
+        const elementTop = revealElements[i].getBoundingClientRect().top;
+        const elementVisible = 150;
 
         if (elementTop < windowHeight - elementVisible) {
-          revealElements[i].classList.add("active")
+          revealElements[i].classList.add("active");
         }
       }
-    }
+    };
 
-    window.addEventListener("scroll", revealOnScroll)
-    revealOnScroll()
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
 
-    return () => window.removeEventListener("scroll", revealOnScroll)
-  }, [])
+    return () => window.removeEventListener("scroll", revealOnScroll);
+  }, []);
 
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 -left-48 w-96 h-96 bg-green-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-green-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div
+          className="absolute bottom-1/4 -right-48 w-96 h-96 bg-green-500/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "1s" }}
+        />
       </div>
 
       <div className="container px-4 mx-auto relative z-10">
@@ -107,11 +110,9 @@ export default function FAQ() {
           <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl lg:text-6xl">
             <span className="gradient-text">{faq.title}</span>
           </h2>
-          
+
           {/* Description */}
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            {faq.description}
-          </p>
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">{faq.description}</p>
 
           {/* Decorative line */}
           <div className="mt-8 w-24 h-1 mx-auto bg-gradient-to-r from-transparent via-green-500 to-transparent rounded-full" />
@@ -142,7 +143,7 @@ export default function FAQ() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400 text-sm">Response Time</span>
-                    <span className="text-green-400 font-bold">< 2 min</span>
+                    <span className="text-green-400 font-bold">&lt; 2 min</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400 text-sm">Satisfaction Rate</span>
@@ -159,9 +160,12 @@ export default function FAQ() {
               <div className="card-glass p-6 hover-lift hidden lg:block">
                 <h4 className="text-white font-semibold mb-4">Quick Links</h4>
                 <ul className="space-y-3">
-                  {['Documentation', 'Video Tutorials', 'Community Forum', 'Knowledge Base'].map((link, idx) => (
+                  {["Documentation", "Video Tutorials", "Community Forum", "Knowledge Base"].map((link, idx) => (
                     <li key={idx}>
-                      <a href="#" className="text-gray-400 hover:text-green-400 transition-colors text-sm inline-flex items-center gap-2 group">
+                      <a
+                        href="#"
+                        className="text-gray-400 hover:text-green-400 transition-colors text-sm inline-flex items-center gap-2 group"
+                      >
                         <div className="w-1.5 h-1.5 rounded-full bg-green-500/50 group-hover:bg-green-400 transition-colors" />
                         {link}
                       </a>
@@ -181,36 +185,26 @@ export default function FAQ() {
                 onValueChange={(value) => setOpenItem(value)}
               >
                 {faq.items.map((item, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="faq-item border-none"
-                  >
+                  <AccordionItem key={index} value={`item-${index}`} className="faq-item border-none">
                     <div className="card-glass hover-glow overflow-hidden">
                       <AccordionTrigger className="text-white hover:text-green-400 transition-all duration-300 px-6 py-5 faq-trigger hover:no-underline [&[data-state=open]]:pb-4">
                         <div className="flex items-start gap-4 text-left w-full">
                           {/* Icon */}
                           <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-gradient-to-br from-green-500/20 to-green-600/20 flex items-center justify-center mt-1">
-                            <div className="text-green-400">
-                              {getIcon(item.icon)}
-                            </div>
+                            <div className="text-green-400">{getIcon(item.icon)}</div>
                           </div>
-                          
+
                           {/* Question */}
                           <div className="flex-1 pr-4">
-                            <span className="font-semibold text-base">
-                              {item.question}
-                            </span>
+                            <span className="font-semibold text-base">{item.question}</span>
                           </div>
                         </div>
                       </AccordionTrigger>
-                      
+
                       <AccordionContent className="text-gray-400 px-6 pb-6 faq-content">
                         <div className="pl-14 pr-4">
-                          <div className="pt-2 pb-1 leading-relaxed">
-                            {item.answer}
-                          </div>
-                          
+                          <div className="pt-2 pb-1 leading-relaxed">{item.answer}</div>
+
                           {/* Helpful buttons */}
                           <div className="flex items-center gap-3 mt-4 pt-4 border-t border-green-500/10">
                             <span className="text-xs text-gray-500">Was this helpful?</span>
@@ -231,7 +225,9 @@ export default function FAQ() {
               {/* Still have questions CTA */}
               <div className="mt-8 card-glass p-8 text-center hover-lift">
                 <h3 className="text-white font-bold text-xl mb-2">Still have questions?</h3>
-                <p className="text-gray-400 mb-6">Can't find the answer you're looking for? Our team is here to help.</p>
+                <p className="text-gray-400 mb-6">
+                  Can't find the answer you're looking for? Our team is here to help.
+                </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <button className="btn-primary inline-flex items-center justify-center gap-2 px-6 py-3">
                     <MessageCircle className="w-4 h-4" />
@@ -247,5 +243,5 @@ export default function FAQ() {
         </div>
       </div>
     </section>
-  )
+  );
 }
