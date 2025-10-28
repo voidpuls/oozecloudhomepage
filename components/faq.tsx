@@ -38,9 +38,7 @@ export default function FAQ() {
         question: "What are the differences between shared, VPS, and dedicated Minecraft/Discord hosting?",
         answer: (
           <>
-            Shared hosting means your server shares resources with others, suitable for small communities. VPS (Virtual Private Server) provides dedicated resources for better performance and customization. Dedicated servers offer maximum control and capacity for large communities or high-demand bots. Compare plans on our{" "}
-            <Link href="/pricing" className="text-green-400 hover:text-green-300 underline">
-              pricing page
+            Shared hosting means your server shares resources with others, suitable for small communities. VPS (Virtual Private Server) provides dedicated resources for better performance and customization. Dedicated servers offer maximum control and capacity for large communities or high-demand bots. Compare plans on our pricing page
             </Link>.
           </>
         ),
@@ -54,18 +52,6 @@ export default function FAQ() {
           </>
         ),
         icon: "shield",
-      },
-      {
-        question: "How do I migrate my existing Minecraft server or Discord bot?",
-        answer: (
-          <>
-            We provide <strong>free migration services</strong> to help transfer your servers or bots smoothly. Our team will handle everything — no downtime. Visit{" "}
-            <Link href="/migration" className="text-green-400 hover:text-green-300 underline">
-              migration help
-            </Link>.
-          </>
-        ),
-        icon: "help",
       },
       {
         question: "What kind of support do you offer for Minecraft and Discord hosting?",
