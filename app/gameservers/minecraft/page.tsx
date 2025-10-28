@@ -15,7 +15,7 @@ export default function MinecraftPage() {
   const minecraftPlans = [
   {
     name: "Cobblestone",
-    price: "$0.00",
+    price: "$2.37",
     period: "per month",
     description: "Basic plan with essential features",
     features: [
@@ -34,7 +34,7 @@ export default function MinecraftPage() {
   },
   {
     name: "Dirt",
-    price: "$4.00",
+    price: "$3.16",
     period: "per month",
     description: "Affordable plan for small servers",
     features: [
@@ -53,7 +53,7 @@ export default function MinecraftPage() {
   },
   {
     name: "Stone",
-    price: "$5.00",
+    price: "$3.95",
     period: "per month",
     description: "Balanced plan for growing servers",
     features: [
@@ -72,7 +72,7 @@ export default function MinecraftPage() {
   },
   {
     name: "Iron",
-    price: "$6.00",
+    price: "$4.74",
     period: "per month",
     description: "Enhanced resources for larger servers",
     features: [
@@ -91,7 +91,7 @@ export default function MinecraftPage() {
   },
   {
     name: "Gold",
-    price: "$7.00",
+    price: "$5.53",
     period: "per month",
     description: "High-performance hosting for demanding servers",
     features: [
@@ -110,7 +110,7 @@ export default function MinecraftPage() {
   },
   {
     name: "Redstone",
-    price: "$8.00",
+    price: "$6.32",
     period: "per month",
     description: "For advanced users and modded servers",
     features: [
@@ -129,7 +129,7 @@ export default function MinecraftPage() {
   },
   {
     name: "Emerald",
-    price: "$10.00",
+    price: "$7.90",
     period: "per month",
     description: "Premium plan for larger communities",
     features: [
@@ -148,7 +148,7 @@ export default function MinecraftPage() {
   },
   {
     name: "Diamond",
-    price: "$12.00",
+    price: "$9.48",
     period: "per month",
     description: "High-end hosting for intensive servers",
     features: [
@@ -167,7 +167,7 @@ export default function MinecraftPage() {
   },
   {
     name: "Netherite",
-    price: "$16.00",
+    price: "$12.64",
     period: "per month",
     description: "Ultimate performance for heavy-duty servers",
     features: [
@@ -186,7 +186,7 @@ export default function MinecraftPage() {
   },
   {
     name: "Beacon",
-    price: "$18.00",
+    price: "$14.22",
     period: "per month",
     description: "Top-tier hosting for large-scale projects",
     features: [
@@ -205,7 +205,7 @@ export default function MinecraftPage() {
   },
   {
     name: "End Portal",
-    price: "$22.00",
+    price: "$17.38",
     period: "per month",
     description: "Maximum resources for enterprise servers",
     features: [
@@ -223,6 +223,7 @@ export default function MinecraftPage() {
     buttonLink: "https://client.oozecloud.com/",
   },
 ]
+
 
   // Minecraft-specific features
   const minecraftFeatures = [
