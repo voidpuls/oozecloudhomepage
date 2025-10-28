@@ -84,7 +84,7 @@ export default function FAQ() {
         answer: (
           <>
             Absolutely! You can upgrade your plan at any time from your{" "}
-            <Link href="/dashboard" className="text-green-400 hover:text-green-300 underline">
+            <Link href="https://client.oozecloud.com/" className="text-green-400 hover:text-green-300 underline">
               account dashboard
             </Link>. The process is seamless and causes no downtime.
           </>
