@@ -34,7 +34,7 @@ export default function DiscordBotPage() {
   },
   {
     name: "Starter Plan",
-    price: "$1.00",
+    price: "$0.79",
     features: [
       "1 Core CPU",
       "1 GB RAM",
@@ -50,7 +50,7 @@ export default function DiscordBotPage() {
   },
   {
     name: "Standard Plan",
-    price: "$2.00",
+    price: "$1.58",
     features: [
       "2 Core CPU",
       "2 GB RAM",
@@ -66,7 +66,7 @@ export default function DiscordBotPage() {
   },
   {
     name: "Professional Plan",
-    price: "$4.00",
+    price: "$3.16",
     features: [
       "4 Core CPU",
       "4 GB RAM",
@@ -82,7 +82,7 @@ export default function DiscordBotPage() {
   },
   {
     name: "Business Plan",
-    price: "$8.00",
+    price: "$6.32",
     features: [
       "8 Core CPU",
       "8 GB RAM",
@@ -98,7 +98,7 @@ export default function DiscordBotPage() {
   },
   {
     name: "Enterprise Plan",
-    price: "$16.00",
+    price: "$12.64",
     features: [
       "16 Core CPU",
       "16 GB RAM",
@@ -113,6 +113,7 @@ export default function DiscordBotPage() {
     ],
   },
 ];
+
 
   // Discord bot-specific features
   const discordBotFeatures = [
