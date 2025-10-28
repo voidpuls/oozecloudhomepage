@@ -81,7 +81,7 @@ export default function FAQ() {
     }
 
     window.addEventListener("scroll", revealOnScroll)
-    revealOnScroll() // Check on initial load
+    revealOnScroll()
 
     return () => window.removeEventListener("scroll", revealOnScroll)
   }, [])
