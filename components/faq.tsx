@@ -184,7 +184,7 @@ export default function FAQ() {
               <h4 className="text-white font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-3">
                 {[
-                  { name: "Documentation", href: "/docs" },
+                  { name: "Documentation", href: "https://docs.oozecloud.com" },
                   { name: "Video Tutorials", href: "/tutorials" },
                   { name: "Community Forum", href: "/community" },
                   { name: "Knowledge Base", href: "/knowledge-base" },
