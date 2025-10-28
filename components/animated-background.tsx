@@ -1,108 +1,118 @@
-"use client"
+"use client";
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef } from "react";
 
 export default function AnimatedBackground() {
-  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
 
-    const ctx = canvas.getContext("2d")
-    if (!ctx) return
+    // --- Setup & Scaling ---
+    const dpr = window.devicePixelRatio || 1;
 
-    // Set canvas dimensions
-    const setCanvasDimensions = () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
-    }
+    const setCanvasSize = () => {
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      ctx.scale(dpr, dpr);
+    };
 
-    setCanvasDimensions()
-    window.addEventListener("resize", setCanvasDimensions)
+    setCanvasSize();
+    const resizeHandler = () => {
+      clearTimeout((resizeHandler as any)._t);
+      (resizeHandler as any)._t = setTimeout(setCanvasSize, 150);
+    };
+    window.addEventListener("resize", resizeHandler);
 
-    // Particle class
+    // --- Particle class ---
     class Particle {
-      x: number
-      y: number
-      size: number
-      speedX: number
-      speedY: number
-      color: string
+      x: number;
+      y: number;
+      size: number;
+      speedX: number;
+      speedY: number;
+      color: string;
 
       constructor() {
-        this.x = Math.random() * canvas!.width
-        this.y = Math.random() * canvas!.height
-        this.size = Math.random() * 2 + 0.5
-        this.speedX = Math.random() * 0.5 - 0.25
-        this.speedY = Math.random() * 0.5 - 0.25
-        this.color = `rgba(16, 185, 129, ${Math.random() * 0.5 + 0.2})`
+        this.reset();
+      }
+
+      reset() {
+        this.x = Math.random() * window.innerWidth;
+        this.y = Math.random() * window.innerHeight;
+        this.size = Math.random() * 2 + 0.5;
+        this.speedX = Math.random() * 0.4 - 0.2;
+        this.speedY = Math.random() * 0.4 - 0.2;
+        this.color = `hsla(${Math.random() * 30 + 140}, 70%, 55%, ${Math.random() * 0.5 + 0.2})`;
       }
 
       update() {
-        this.x += this.speedX
-        this.y += this.speedY
+        this.x += this.speedX;
+        this.y += this.speedY;
 
-        if (this.x < 0 || this.x > canvas!.width) {
-          this.speedX = -this.speedX
-        }
-        if (this.y < 0 || this.y > canvas!.height) {
-          this.speedY = -this.speedY
-        }
+        if (this.x < 0 || this.x > window.innerWidth) this.speedX *= -1;
+        if (this.y < 0 || this.y > window.innerHeight) this.speedY *= -1;
       }
 
       draw() {
-        if (!ctx) return
-        ctx.fillStyle = this.color
-        ctx.beginPath()
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
-        ctx.fill()
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
       }
     }
 
-    // Create particles
-    const particlesArray: Particle[] = []
-    const numberOfParticles = Math.min(100, Math.floor((canvas.width * canvas.height) / 15000))
+    // --- Create particles ---
+    const particleCount = Math.min(120, Math.floor((window.innerWidth * window.innerHeight) / 14000));
+    const particles: Particle[] = Array.from({ length: particleCount }, () => new Particle());
 
-    for (let i = 0; i < numberOfParticles; i++) {
-      particlesArray.push(new Particle())
-    }
-
-    // Animation loop
+    // --- Animation Loop ---
     const animate = () => {
-      if (!ctx) return
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      // Add a subtle fade effect for smoother trails
+      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      for (let i = 0; i < particlesArray.length; i++) {
-        particlesArray[i].update()
-        particlesArray[i].draw()
+      // Draw and connect particles
+      for (let i = 0; i < particles.length; i++) {
+        const p1 = particles[i];
+        p1.update();
+        p1.draw();
 
-        // Connect particles
-        for (let j = i; j < particlesArray.length; j++) {
-          const dx = particlesArray[i].x - particlesArray[j].x
-          const dy = particlesArray[i].y - particlesArray[j].y
-          const distance = Math.sqrt(dx * dx + dy * dy)
+        for (let j = i + 1; j < particles.length; j++) {
+          const p2 = particles[j];
+          const dx = p1.x - p2.x;
+          const dy = p1.y - p2.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (distance < 150) {
-            ctx.beginPath()
-            ctx.strokeStyle = `rgba(16, 185, 129, ${0.1 * (1 - distance / 150)})`
-            ctx.lineWidth = 0.5
-            ctx.moveTo(particlesArray[i].x, particlesArray[i].y)
-            ctx.lineTo(particlesArray[j].x, particlesArray[j].y)
-            ctx.stroke()
+          if (dist < 150) {
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(16, 185, 129, ${0.12 * (1 - dist / 150)})`;
+            ctx.lineWidth = 0.4;
+            ctx.moveTo(p1.x, p1.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.stroke();
           }
         }
       }
 
-      requestAnimationFrame(animate)
-    }
+      requestAnimationFrame(animate);
+    };
 
-    animate()
+    animate();
 
+    // --- Cleanup ---
     return () => {
-      window.removeEventListener("resize", setCanvasDimensions)
-    }
-  }, [])
+      window.removeEventListener("resize", resizeHandler);
+    };
+  }, []);
 
-  return <canvas ref={canvasRef} className="fixed inset-0 z-0 bg-transparent pointer-events-none" />
+  return (
+    <canvas
+      ref={canvasRef}
+      className="fixed inset-0 z-0 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 pointer-events-none"
+    />
+  );
 }
