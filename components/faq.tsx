@@ -50,9 +50,7 @@ export default function FAQ() {
       question: "Do you offer a money-back guarantee?",
       answer: (
         <>
-          Yes, we offer a <strong>30-day money-back guarantee</strong> on all hosting plans. If you're not satisfied, you can{" "}
-          <Link href="/refund-policy" className="text-green-400 hover:text-green-300 underline">
-            request a full refund
+          No, we do not offer a money-back guarantee
           </Link>.
         </>
       ),
