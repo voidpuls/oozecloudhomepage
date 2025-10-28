@@ -123,20 +123,6 @@ export default function FAQ() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             {/* Left side - Info cards */}
             <div className="lg:col-span-1 space-y-4 reveal">
-              {/* Quick help card */}
-              <div className="card-glass p-6 hover-lift group">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500/20 to-green-600/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <MessageCircle className="w-6 h-6 text-green-400" />
-                </div>
-                <h3 className="text-white font-semibold text-lg mb-2">Need More Help?</h3>
-                <p className="text-gray-400 text-sm mb-4">Our support team is available 24/7</p>
-                <button className="text-green-400 text-sm font-semibold hover:text-green-300 transition-colors inline-flex items-center gap-2">
-                  Contact Support
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </div>
 
               {/* Stats card */}
               <div className="card-glass p-6 hover-lift">
