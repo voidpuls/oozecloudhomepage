@@ -1,8 +1,8 @@
 import { SpaceBackground } from "@/components/space-background"
 import FeaturesSection from "@/components/features-section"
 import DiscordCTA from "@/components/discord-cta"
-import Link from "next/link"
 import Image from "next/image"
+import { Check } from "lucide-react"
 
 export const metadata = {
   title: "Game Servers - Oozecloud",
@@ -10,25 +10,22 @@ export const metadata = {
 }
 
 export default function GameServersPage() {
-  // Game server options
+  // Updated game server options with no links and uniform pricing
   const gameOptions = [
     {
       name: "Minecraft",
-      description: "Start your Minecraft server on the fastest hardware, with great proven value, at prices lower than you'll find anywhere else. Are you playing with friends? Running a bunch of mods? Starting a community? We have the server for you.",
+      description: "Start your Minecraft server on the fastest hardware, with great proven value, at prices lower than you'll find anywhere else. Whether you're playing with friends, running mods, or building a community, we've got you covered.",
       image: "/images/minecraft.webp",
-      href: "/gameservers/minecraft",
     },
     {
       name: "Unturned",
       description: "Build your own post-apocalyptic adventure with fast, reliable, and fully customizable Unturned server hosting. Control everything you need to get started.",
       image: "/images/unturned.webp",
-      href: "/gameservers/unturned",
     },
     {
       name: "Discord Bot",
-      description: "Host a Discord bot with blazing fast performance, one-click setup, and 24/7 uptime. ",
+      description: "Host a Discord bot with blazing fast performance, one-click setup, and 24/7 uptime.",
       image: "/images/discordbot.webp",
-      href: "/gameservers/discordbot",
     },
   ]
 
@@ -54,6 +51,118 @@ export default function GameServersPage() {
     },
   ]
 
+  // Pricing plans
+  const pricingPlans = [
+    {
+      name: "Cobblestone",
+      description: "Basic plan with essential features",
+      price: "$2.37",
+      cores: "2 Cores",
+      ram: "3GB RAM",
+      storage: "15GB SSD Storage",
+      ports: "3 Ports",
+    },
+    {
+      name: "Dirt",
+      description: "Affordable plan for small servers",
+      price: "$3.16",
+      cores: "2 Cores",
+      ram: "4GB RAM",
+      storage: "30GB SSD Storage",
+      ports: "5 Ports",
+    },
+    {
+      name: "Stone",
+      description: "Balanced plan for growing servers",
+      price: "$3.95",
+      cores: "2 Cores",
+      ram: "5GB RAM",
+      storage: "40GB SSD Storage",
+      ports: "5 Ports",
+    },
+    {
+      name: "Iron",
+      description: "Enhanced resources for larger servers",
+      price: "$4.74",
+      cores: "2 Cores",
+      ram: "6GB RAM",
+      storage: "50GB SSD Storage",
+      ports: "5 Ports",
+    },
+    {
+      name: "Gold",
+      description: "High-performance hosting for demanding servers",
+      price: "$5.53",
+      cores: "2 Cores",
+      ram: "7GB RAM",
+      storage: "65GB SSD Storage",
+      ports: "5 Ports",
+    },
+    {
+      name: "Redstone",
+      description: "For advanced users and modded servers",
+      price: "$6.32",
+      cores: "2.5 Cores",
+      ram: "8GB RAM",
+      storage: "70GB SSD Storage",
+      ports: "10 Ports",
+    },
+    {
+      name: "Emerald",
+      description: "Premium plan for larger communities",
+      price: "$7.90",
+      cores: "2.5 Cores",
+      ram: "10GB RAM",
+      storage: "80GB SSD Storage",
+      ports: "10 Ports",
+      popular: true,
+    },
+    {
+      name: "Diamond",
+      description: "High-end hosting for intensive servers",
+      price: "$9.48",
+      cores: "3 Cores",
+      ram: "12GB RAM",
+      storage: "90GB SSD Storage",
+      ports: "10 Ports",
+    },
+    {
+      name: "Netherite",
+      description: "Ultimate performance for heavy-duty servers",
+      price: "$12.64",
+      cores: "4 Cores",
+      ram: "16GB RAM",
+      storage: "100GB SSD Storage",
+      ports: "10 Ports",
+    },
+    {
+      name: "Beacon",
+      description: "Top-tier hosting for large-scale projects",
+      price: "$14.22",
+      cores: "5 Cores",
+      ram: "18GB RAM",
+      storage: "120GB SSD Storage",
+      ports: "10 Ports",
+    },
+    {
+      name: "End Portal",
+      description: "Maximum resources for enterprise servers",
+      price: "$17.38",
+      cores: "5 Cores",
+      ram: "22GB RAM",
+      storage: "140GB SSD Storage",
+      ports: "10 Ports",
+    },
+  ]
+
+  const commonFeatures = [
+    "One-Click Plugin Installer",
+    "Server Manager Access",
+    "NVMe SSD Storage",
+    "Advanced DDoS Protection",
+    "24/7 Support",
+  ]
+
   return (
     <div className="min-h-screen bg-[#010901]">
       <SpaceBackground />
@@ -74,9 +183,9 @@ export default function GameServersPage() {
       {/* Game Options Section */}
       <section className="py-16 relative">
         <div className="container px-4 mx-auto">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {gameOptions.map((game, index) => (
-              <Link key={index} href={game.href} className="group">
+              <div key={index} className="group">
                 <div className="relative overflow-hidden rounded-lg border border-green-500/20 bg-[#010901]/70 backdrop-blur-md hover:border-green-400/50 hover:shadow-[0_0_25px_rgba(16,185,129,0.3)] transition-all duration-500 h-full flex flex-col">
                   <div className="relative h-[28rem] overflow-hidden">
                     <Image
@@ -89,9 +198,91 @@ export default function GameServersPage() {
                   <div className="p-4 text-center">
                     <h3 className="text-xl font-bold text-white mb-1">{game.name}</h3>
                     <p className="text-green-400">Starting at $0</p>
+                    <p className="mt-2 text-gray-300">{game.description}</p>
                   </div>
                 </div>
-              </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Plans Section */}
+      <section className="py-16 relative">
+        <div className="container px-4 mx-auto">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">Choose Your Plan</h2>
+            <p className="text-xl text-gray-400">
+              Select the perfect plan for your server needs. All plans include premium features.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {pricingPlans.map((plan, index) => (
+              <div
+                key={index}
+                className={`relative overflow-hidden rounded-lg border ${
+                  plan.popular
+                    ? "border-green-400/50 shadow-[0_0_30px_rgba(16,185,129,0.4)]"
+                    : "border-green-500/20"
+                } bg-[#010901]/70 backdrop-blur-md hover:border-green-400/50 hover:shadow-[0_0_25px_rgba(16,185,129,0.3)] transition-all duration-500 flex flex-col`}
+              >
+                {plan.popular && (
+                  <div className="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                    POPULAR
+                  </div>
+                )}
+                <div className="p-6 flex-1 flex flex-col">
+                  <div className="mb-4">
+                    <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
+                    <p className="text-gray-400 text-sm">{plan.description}</p>
+                  </div>
+
+                  <div className="mb-6">
+                    <div className="text-3xl font-bold text-green-400">
+                      {plan.price}
+                      <span className="text-sm text-gray-400 font-normal"> per month</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3 mb-6 flex-1">
+                    <div className="flex items-center gap-2 text-gray-300">
+                      <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                      <span>{plan.cores}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-gray-300">
+                      <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                      <span>{plan.ram}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-gray-300">
+                      <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                      <span>{plan.storage}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-gray-300">
+                      <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                      <span>{plan.ports}</span>
+                    </div>
+                    <div className="border-t border-green-500/20 pt-3 mt-3">
+                      {commonFeatures.map((feature, idx) => (
+                        <div key={idx} className="flex items-center gap-2 text-gray-300 mb-2">
+                          <Check className="w-4 h-4 text-green-400 flex-shrink-0" />
+                          <span className="text-sm">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <button
+                    className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
+                      plan.popular
+                        ? "bg-green-500 hover:bg-green-600 text-white"
+                        : "bg-green-500/10 hover:bg-green-500/20 text-green-400 border border-green-500/30"
+                    }`}
+                  >
+                    Get Started
+                  </button>
+                </div>
+              </div>
             ))}
           </div>
         </div>
