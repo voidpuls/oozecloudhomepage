@@ -10,12 +10,47 @@ export const metadata = {
 }
 
 export default function GameServersPage() {
-  // Updated game server options with no links and uniform pricing
+  // Updated game server options with all supported games
   const gameOptions = [
     {
-      name: "Minecraft",
-      description: "Start your Minecraft server on the fastest hardware, with great proven value, at prices lower than you'll find anywhere else. Whether you're playing with friends, running mods, or building a community, we've got you covered.",
+      name: "Minecraft Java",
+      description: "Start your Minecraft Java server on the fastest hardware, with great proven value, at prices lower than you'll find anywhere else. Whether you're playing with friends, running mods, or building a community, we've got you covered.",
       image: "/images/minecraft.webp",
+    },
+    {
+      name: "Minecraft Bedrock",
+      description: "Host your Minecraft Bedrock server with cross-platform support for mobile, console, and Windows 10 players. Perfect for communities that want to play together across all devices.",
+      image: "/images/minecraft-bedrock.webp",
+    },
+    {
+      name: "Rust",
+      description: "Deploy your Rust server with high-performance hardware designed to handle intense PvP action and large player bases. Build, raid, and survive with minimal lag.",
+      image: "/images/rust.webp",
+    },
+    {
+      name: "Garry's Mod",
+      description: "Host your Garry's Mod server with support for all your favorite game modes and addons. From DarkRP to TTT, we provide the performance you need.",
+      image: "/images/garrysmod.webp",
+    },
+    {
+      name: "CS:GO",
+      description: "Run your Counter-Strike: Global Offensive server with ultra-low latency for competitive play. Perfect for scrims, pugs, and community servers.",
+      image: "/images/csgo.webp",
+    },
+    {
+      name: "Ark: Survival Evolved",
+      description: "Tame dinosaurs and build bases on your own Ark server. High-performance hosting with full mod support and easy configuration.",
+      image: "/images/ark.webp",
+    },
+    {
+      name: "Team Fortress 2",
+      description: "Host your Team Fortress 2 server for casual or competitive play. Support for custom maps, mods, and all game modes.",
+      image: "/images/tf2.webp",
+    },
+    {
+      name: "Insurgency",
+      description: "Deploy tactical Insurgency servers with low latency and high performance for intense close-quarters combat and strategic gameplay.",
+      image: "/images/insurgency.webp",
     },
     {
       name: "Unturned",
@@ -23,8 +58,18 @@ export default function GameServersPage() {
       image: "/images/unturned.webp",
     },
     {
+      name: "Node.js Bot",
+      description: "Host your Node.js applications and bots with blazing fast performance, full package manager support, and 24/7 uptime.",
+      image: "/images/nodejs.webp",
+    },
+    {
+      name: "Python Bot",
+      description: "Deploy Python bots and applications with ease. Full pip support, custom library installation, and reliable hosting for your automation needs.",
+      image: "/images/python.webp",
+    },
+    {
       name: "Discord Bot",
-      description: "Host a Discord bot with blazing fast performance, one-click setup, and 24/7 uptime.",
+      description: "Host a Discord bot with blazing fast performance, one-click setup, and 24/7 uptime. Support for all major Discord bot frameworks.",
       image: "/images/discordbot.webp",
     },
   ]
@@ -183,11 +228,18 @@ export default function GameServersPage() {
       {/* Game Options Section */}
       <section className="py-16 relative">
         <div className="container px-4 mx-auto">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">Supported Games & Platforms</h2>
+            <p className="text-xl text-gray-400">
+              From survival games to tactical shooters and custom bots - we've got you covered.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {gameOptions.map((game, index) => (
               <div key={index} className="group">
                 <div className="relative overflow-hidden rounded-lg border border-green-500/20 bg-[#010901]/70 backdrop-blur-md hover:border-green-400/50 hover:shadow-[0_0_25px_rgba(16,185,129,0.3)] transition-all duration-500 h-full flex flex-col">
-                  <div className="relative h-[28rem] overflow-hidden">
+                  <div className="relative h-48 overflow-hidden">
                     <Image
                       src={game.image || "/placeholder.svg"}
                       alt={game.name}
@@ -195,10 +247,10 @@ export default function GameServersPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
-                  <div className="p-4 text-center">
-                    <h3 className="text-xl font-bold text-white mb-1">{game.name}</h3>
-                    <p className="text-green-400">Starting at $0</p>
-                    <p className="mt-2 text-gray-300">{game.description}</p>
+                  <div className="p-4 text-center flex-1 flex flex-col">
+                    <h3 className="text-xl font-bold text-white mb-2">{game.name}</h3>
+                    <p className="text-green-400 mb-2">Starting at $2.37/mo</p>
+                    <p className="mt-auto text-sm text-gray-300">{game.description}</p>
                   </div>
                 </div>
               </div>
@@ -273,14 +325,15 @@ export default function GameServersPage() {
                   </div>
 
                   <button
-                    className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
-                      plan.popular
-                        ? "bg-green-500 hover:bg-green-600 text-white"
-                        : "bg-green-500/10 hover:bg-green-500/20 text-green-400 border border-green-500/30"
-                    }`}
-                  >
-                    Get Started
-                  </button>
+  onClick={() => window.open('https://client.oozecloud.com', '_blank')}
+  className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
+    plan.popular
+      ? "bg-green-500 hover:bg-green-600 text-white"
+      : "bg-green-500/10 hover:bg-green-500/20 text-green-400 border border-green-500/30"
+  }`}
+>
+  Get Started
+</button>
                 </div>
               </div>
             ))}
