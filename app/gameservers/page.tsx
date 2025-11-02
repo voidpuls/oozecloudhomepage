@@ -259,85 +259,96 @@ export default function GameServersPage() {
       </section>
 
       {/* Pricing Plans Section */}
-      <section className="py-16 relative">
-        <div className="container px-4 mx-auto">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">Choose Your Plan</h2>
-            <p className="text-xl text-gray-400">
-              Select the perfect plan for your server needs. All plans include premium features.
-            </p>
-          </div>
+<section className="py-16 relative">
+  <div className="container px-4 mx-auto">
+    <div className="max-w-3xl mx-auto text-center mb-12">
+      <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+        Choose Your Plan
+      </h2>
+      <p className="text-xl text-gray-400">
+        Select the perfect plan for your server needs. All plans include premium features.
+      </p>
+    </div>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {pricingPlans.map((plan, index) => (
-              <div
-                key={index}
-                className={`relative overflow-hidden rounded-lg border ${
-                  plan.popular
-                    ? "border-green-400/50 shadow-[0_0_30px_rgba(16,185,129,0.4)]"
-                    : "border-green-500/20"
-                } bg-[#010901]/70 backdrop-blur-md hover:border-green-400/50 hover:shadow-[0_0_25px_rgba(16,185,129,0.3)] transition-all duration-500 flex flex-col`}
-              >
-                {plan.popular && (
-                  <div className="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
-                    POPULAR
-                  </div>
-                )}
-                <div className="p-6 flex-1 flex flex-col">
-                  <div className="mb-4">
-                    <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
-                    <p className="text-gray-400 text-sm">{plan.description}</p>
-                  </div>
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {pricingPlans.map((plan, index) => (
+        <div
+          key={index}
+          className={`relative overflow-hidden rounded-lg border ${
+            plan.popular
+              ? "border-green-400/50 shadow-[0_0_30px_rgba(16,185,129,0.4)]"
+              : "border-green-500/20"
+          } bg-[#010901]/70 backdrop-blur-md hover:border-green-400/50 hover:shadow-[0_0_25px_rgba(16,185,129,0.3)] transition-all duration-500 flex flex-col`}
+        >
+          {plan.popular && (
+            <div className="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+              POPULAR
+            </div>
+          )}
 
-                  <div className="mb-6">
-                    <div className="text-3xl font-bold text-green-400">
-                      {plan.price}
-                      <span className="text-sm text-gray-400 font-normal"> per month</span>
-                    </div>
-                  </div>
+          <div className="p-6 flex-1 flex flex-col">
+            {/* Plan Header */}
+            <div className="mb-4">
+              <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
+              <p className="text-gray-400 text-sm">{plan.description}</p>
+            </div>
 
-                  <div className="space-y-3 mb-6 flex-1">
-                    <div className="flex items-center gap-2 text-gray-300">
-                      <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
-                      <span>{plan.cores}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-gray-300">
-                      <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
-                      <span>{plan.ram}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-gray-300">
-                      <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
-                      <span>{plan.storage}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-gray-300">
-                      <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
-                      <span>{plan.ports}</span>
-                    </div>
-                    <div className="border-t border-green-500/20 pt-3 mt-3">
-                      {commonFeatures.map((feature, idx) => (
-                        <div key={idx} className="flex items-center gap-2 text-gray-300 mb-2">
-                          <Check className="w-4 h-4 text-green-400 flex-shrink-0" />
-                          <span className="text-sm">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                   <button
-  onClick={() => window.open('https://client.oozecloud.com', '_blank')}
-  className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
-    plan.popular
-      ? "bg-green-500 hover:bg-green-600 text-white"
-      : "bg-green-500/10 hover:bg-green-500/20 text-green-400 border border-green-500/30"
-  }`}
->
-  Get Started
-</button>
-                </div>
+            {/* Price */}
+            <div className="mb-6">
+              <div className="text-3xl font-bold text-green-400">
+                {plan.price}
+                <span className="text-sm text-gray-400 font-normal"> per month</span>
               </div>
-            ))}
+            </div>
+
+            {/* Features */}
+            <div className="space-y-3 mb-6 flex-1">
+              <div className="flex items-center gap-2 text-gray-300">
+                <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                <span>{plan.cores}</span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-300">
+                <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                <span>{plan.ram}</span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-300">
+                <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                <span>{plan.storage}</span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-300">
+                <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                <span>{plan.ports}</span>
+              </div>
+
+              {/* Common Features */}
+              <div className="border-t border-green-500/20 pt-3 mt-3">
+                {commonFeatures.map((feature, idx) => (
+                  <div key={idx} className="flex items-center gap-2 text-gray-300 mb-2">
+                    <Check className="w-4 h-4 text-green-400 flex-shrink-0" />
+                    <span className="text-sm">{feature}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Fixed "Get Started" Button */}
+            <button
+              onClick={() => window.open("https://client.oozecloud.com", "_blank", "noopener,noreferrer")}
+              className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-black ${
+                plan.popular
+                  ? "bg-green-500 hover:bg-green-600 text-white"
+                  : "bg-green-500/10 hover:bg-green-500/20 text-green-400 border border-green-500/30"
+              }`}
+            >
+              Get Started
+            </button>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Features Section */}
       <FeaturesSection features={gameFeatures} />
