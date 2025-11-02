@@ -15,42 +15,42 @@ export default function GameServersPage() {
     {
       name: "Minecraft Java",
       description: "Start your Minecraft Java server on the fastest hardware, with great proven value, at prices lower than you'll find anywhere else. Whether you're playing with friends, running mods, or building a community, we've got you covered.",
-      image: "/images/minecraft.webp",
+      image: "/images/minecraft.png",
     },
     {
       name: "Minecraft Bedrock",
       description: "Host your Minecraft Bedrock server with cross-platform support for mobile, console, and Windows 10 players. Perfect for communities that want to play together across all devices.",
-      image: "/images/minecraft-bedrock.webp",
+      image: "/images/minecraft.png",
     },
     {
       name: "Rust",
       description: "Deploy your Rust server with high-performance hardware designed to handle intense PvP action and large player bases. Build, raid, and survive with minimal lag.",
-      image: "/images/rust.webp",
+      image: "/images/rust.jpg",
     },
     {
       name: "Garry's Mod",
       description: "Host your Garry's Mod server with support for all your favorite game modes and addons. From DarkRP to TTT, we provide the performance you need.",
-      image: "/images/garrysmod.webp",
+      image: "/images/garrys.jpg",
     },
     {
       name: "CS:GO",
       description: "Run your Counter-Strike: Global Offensive server with ultra-low latency for competitive play. Perfect for scrims, pugs, and community servers.",
-      image: "/images/csgo.webp",
+      image: "/images/csgo.jpg",
     },
     {
       name: "Ark: Survival Evolved",
       description: "Tame dinosaurs and build bases on your own Ark server. High-performance hosting with full mod support and easy configuration.",
-      image: "/images/ark.webp",
+      image: "/images/ark.jpg",
     },
     {
       name: "Team Fortress 2",
       description: "Host your Team Fortress 2 server for casual or competitive play. Support for custom maps, mods, and all game modes.",
-      image: "/images/tf2.webp",
+      image: "/images/tf2.jpg",
     },
     {
       name: "Insurgency",
       description: "Deploy tactical Insurgency servers with low latency and high performance for intense close-quarters combat and strategic gameplay.",
-      image: "/images/insurgency.webp",
+      image: "/images/Insurgency.jpg",
     },
     {
       name: "Unturned",
@@ -65,12 +65,7 @@ export default function GameServersPage() {
     {
       name: "Python Bot",
       description: "Deploy Python bots and applications with ease. Full pip support, custom library installation, and reliable hosting for your automation needs.",
-      image: "/images/python.webp",
-    },
-    {
-      name: "Discord Bot",
-      description: "Host a Discord bot with blazing fast performance, one-click setup, and 24/7 uptime. Support for all major Discord bot frameworks.",
-      image: "/images/discordbot.webp",
+      image: "/images/python.jpg",
     },
   ]
 
