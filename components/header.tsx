@@ -72,6 +72,11 @@ export default function Header() {
           href: "https://status.oozecloud.com/",
           icon: <Activity className="w-4 h-4 mr-2" />,
         },
+        {
+          text: "Docs",
+          href: "https://docs.oozecloud.com/",
+          icon: <Activity className="w-4 h-4 mr-2" />,
+        },
       ],
     },
   ]
