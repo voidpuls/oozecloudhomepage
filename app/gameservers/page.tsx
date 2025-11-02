@@ -331,17 +331,18 @@ export default function GameServersPage() {
               </div>
             </div>
 
-            {/* Fixed "Get Started" Button */}
-            <button
-              onClick={() => window.open("https://client.oozecloud.com", "_blank", "noopener,noreferrer")}
-              className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-black ${
-                plan.popular
-                  ? "bg-green-500 hover:bg-green-600 text-white"
-                  : "bg-green-500/10 hover:bg-green-500/20 text-green-400 border border-green-500/30"
-              }`}
-            >
-              Get Started
-            </button>
+            <a
+  href="https://client.oozecloud.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-black ${
+    plan.popular
+      ? "bg-green-500 hover:bg-green-600 text-white"
+      : "bg-green-500/10 hover:bg-green-500/20 text-green-400 border border-green-500/30"
+  }`}
+>
+  Get Started
+</a>
           </div>
         </div>
       ))}
