@@ -201,7 +201,6 @@ export default function GameServersPage() {
   ]
 
   const commonFeatures = [
-    "One-Click Plugin Installer",
     "Server Manager Access",
     "NVMe SSD Storage",
     "Advanced DDoS Protection",
@@ -323,8 +322,7 @@ export default function GameServersPage() {
                       ))}
                     </div>
                   </div>
-
-                  <button
+                   <button
   onClick={() => window.open('https://client.oozecloud.com', '_blank')}
   className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
     plan.popular
